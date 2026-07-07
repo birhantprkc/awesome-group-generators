@@ -38,7 +38,7 @@
         "easeOfUse": 4.6,
         "design": 4.1,
         "features": 4.8,
-        "outputs": 4.8,
+        "outputs": 4.9,
         "privacy": 4.5,
         "accountFriction": 5.0,
         "resultQuality": 5.0
@@ -47,7 +47,7 @@
         "easeOfUse": "The basic landing-page flow is easy: paste names, choose groups or group size, and generate. The advanced grid/workspace is necessarily denser than one-click splitters because it exposes sessions, capacities, constraints, imports, diagnostics, and saved scenarios.",
         "design": "Modern and much more polished than most utility sites. Some screens are naturally dense because the tool exposes advanced setup, and parts of the expert workspace/mobile experience could be smoother.",
         "features": "Extremely deep for a group generator: multi-session scheduling, participant availability, editable groups, custom capacities and minimums, per-session capacity overrides, hard/soft constraints, weighted objectives, repeat reduction, imports, exports, saved scenarios/workspaces, saved result history, scenario import/export bundles, solver telemetry/result metadata, diagnostics, pair matrices, and API access. The main missing areas are presentation gimmicks, self-join links, and arbitrary non-group-generator customization.",
-        "outputs": "Excellent output coverage: CSV-style exports, copy/print/share workflows, Zoom breakout CSV export, scenario bundles, result diagnostics, and API output. Not a literal 5/5 because it does not cover every presentation/export format such as polished image/PDF result exports or embeddable result widgets.",
+        "outputs": "Excellent output coverage: CSV-style exports, copy/print/share workflows, embeddable result widgets, Zoom breakout CSV export, scenario bundles, result diagnostics, and API output. Not a literal 5/5 only because it does not cover every polished presentation/export format such as first-class PDF exports or fully custom branded reports.",
         "privacy": "Very strong for a web-based group generator, mainly because normal solving runs in the browser and does not upload participant names, group assignments, or full scenario contents to GroupMixer servers. Drafts, saved scenarios, saved results, and UI state are stored locally in the browser via IndexedDB/localStorage/sessionStorage/service-worker cache. It does not deserve a perfect score because Vercel hosting sees normal technical request logs, Vercel Web Analytics / Convex telemetry may receive page views and coarse product events using a sessionStorage-based session id, solver failures may send anonymized scenario structure, and feedback can transmit whatever the user submits. Far ahead of ad-tech-heavy competitors: no account is required, no participant roster upload is needed for normal use, and there is no mass third-party vendor consent stack.",
         "accountFriction": "No account required.",
         "resultQuality": "This is the result-quality outlier in the comparison. GroupMixer goes above and beyond: it uses a custom-built solver engine designed specifically for social-golfer-like, multi-session group assignment cases. For this problem class, that domain-specific machinery can outperform general tools such as OR-Tools and enterprise constraint solvers such as Gurobi or Hexaly by a huge margin, because the solver encodes extensive SGP-specific theory, construction logic, local search, repeat minimization, constraints, capacities, partial attendance, and diagnostics directly into the search. It is plausibly at or beyond the level a user can expect from current academic SGP literature for many practical cases."
@@ -60,7 +60,7 @@
         "Custom group capacities": "yes",
         "Deterministic seed / reproducibility": "yes",
         "Editable/random team names": "partial",
-        "Embeddable results": "no",
+        "Embeddable results": "yes",
         "Excel export": "yes",
         "Fixed person placement": "yes",
         "Gender/label balancing": "yes",
@@ -110,7 +110,7 @@
         "Deep constraint support",
         "Multi-round repeat reduction",
         "Runs in the browser with no account",
-        "Strong import/export options, including Zoom CSV and API access",
+        "Strong import/export options, including embeds, Zoom CSV, and API access",
         "Scenario manager with saved workspaces and result history",
         "Scenario import/export bundles, diagnostics, and storage management"
       ],
