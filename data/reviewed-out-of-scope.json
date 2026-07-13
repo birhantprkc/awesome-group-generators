@@ -2,8 +2,8 @@
   "metadata": {
     "title": "Reviewed but out-of-scope group-generation-adjacent resources",
     "description": "Resources that were explicitly reviewed after the broader ecosystem pass, but not merged into the ranked Awesome Group Generators dataset because they are sales-gated, LMS-native documentation rather than a portable tool, app-store-only without a verified workflow, duplicate/fork variants, unavailable, or primarily research/reference material.",
-    "reviewedAt": "2026-06-03T16:21:22+00:00",
-    "itemCount": 103,
+    "reviewedAt": "2026-07-13T08:27:23+00:00",
+    "itemCount": 105,
     "policy": "These entries are evidence-tracked so future reviewers do not re-review the same adjacent resources. Promote an item into data/tools.json only after a directly usable generator, open demo, app workflow, or runnable implementation has been reviewed enough to assign the normal feature/rating fields.",
     "decisionStatuses": [
       "sales-gated",
@@ -1050,6 +1050,26 @@
       "whyOutOfScope": "Browser review failed with net::ERR_TOO_MANY_REDIRECTS, so no generator workflow could be verified.",
       "publicEvidence": "Playwright navigation to the candidate URL ended at about:blank with too many redirects.",
       "notes": "Revisit if the site fixes redirect loop."
+    },
+    {
+      "id": "wheelpage",
+      "name": "WheelPage",
+      "url": "https://wheelpage.com/",
+      "category": "generic random picker wheel",
+      "decisionStatus": "not-a-group-generator",
+      "whyOutOfScope": "Generic one-item random picker rather than a roster-to-groups tool; it does not automatically partition participants into teams or produce grouped assignments.",
+      "publicEvidence": "The reviewed page supports spinning a wheel to choose one entry for decisions, raffles, games, or classroom activities, but exposes no team-count, group-size, or grouped-result workflow.",
+      "notes": "Suggested in GitHub issue #2. Reconsider only if a direct group/team generator workflow is added."
+    },
+    {
+      "id": "randomanimalgen",
+      "name": "randomAnimalGen",
+      "url": "https://randomanimalgen.com/",
+      "category": "creative hybrid-animal generator",
+      "decisionStatus": "not-a-group-generator",
+      "whyOutOfScope": "Generates hybrid animals, creature names, traits, and image prompts rather than assigning participants to groups or teams.",
+      "publicEvidence": "The reviewed workflow randomizes eleven animal body-part slots and produces a creature concept and AI-art prompt; it has no participant roster, pairing, team split, or grouped assignment output.",
+      "notes": "Suggested in GitHub issue #1. Using generated animals as team names is an external naming workaround, not group generation."
     }
   ]
 }
