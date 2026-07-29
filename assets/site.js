@@ -10,6 +10,165 @@ import {
 } from './tool-card-renderer.js';
 
 const DATA_URL = './data/tools.json';
+const THEME_STORAGE_KEY = 'awesome-group-generators-theme';
+const THEME_LABELS = {
+  light: 'Light theme',
+  dark: 'Dark theme',
+  system: 'Use system theme',
+};
+
+function resolveTheme(mode) {
+  if (mode !== 'system') return mode;
+  return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+}
+
+function updateDocumentTheme(mode) {
+  const resolved = resolveTheme(mode);
+  const root = document.documentElement;
+  root.dataset.theme = resolved;
+  root.dataset.themeMode = mode;
+  root.style.colorScheme = resolved;
+  document.querySelectorAll('meta[name="theme-color"]').forEach((meta) => {
+    meta.content = resolved === 'dark' ? '#111318' : '#fffdf8';
+  });
+}
+
+function initThemeToggle() {
+  const control = document.querySelector('.theme-control');
+  const trigger = document.getElementById('theme-trigger');
+  const menu = document.getElementById('theme-menu');
+  if (!control || !trigger || !menu) return;
+
+  const options = [...menu.querySelectorAll('[data-theme-option]')];
+  const validModes = Object.keys(THEME_LABELS);
+  let mode = validModes.includes(document.documentElement.dataset.themeMode)
+    ? document.documentElement.dataset.themeMode
+    : 'system';
+  let requestId = 0;
+  let activeTransition = null;
+
+  function syncControl() {
+    const activeOption = options.find((option) => option.dataset.themeOption === mode);
+    if (activeOption) trigger.innerHTML = activeOption.innerHTML;
+    trigger.setAttribute('aria-label', `Color theme: ${THEME_LABELS[mode]}`);
+    trigger.title = `${THEME_LABELS[mode]} — choose theme`;
+    options.forEach((option) => {
+      const isActive = option.dataset.themeOption === mode;
+      option.hidden = isActive;
+    });
+  }
+
+  function openMenu(focusFirstOption = false) {
+    menu.hidden = false;
+    trigger.setAttribute('aria-expanded', 'true');
+    trigger.setAttribute('aria-controls', menu.id);
+    if (focusFirstOption) options.find((option) => !option.hidden)?.focus();
+  }
+
+  function closeMenu(restoreFocus = false) {
+    menu.hidden = true;
+    trigger.setAttribute('aria-expanded', 'false');
+    trigger.removeAttribute('aria-controls');
+    if (restoreFocus) trigger.focus();
+  }
+
+  function selectTheme(nextMode) {
+    if (!validModes.includes(nextMode)) return;
+    const request = ++requestId;
+    const root = document.documentElement;
+    const currentTheme = root.dataset.theme === 'dark' ? 'dark' : 'light';
+    const nextTheme = resolveTheme(nextMode);
+    const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    if (activeTransition) {
+      activeTransition.skipTransition();
+      activeTransition = null;
+    }
+    root.classList.remove('theme-transitioning');
+
+    const applyTheme = () => {
+      if (requestId !== request) return;
+      try { window.localStorage.setItem(THEME_STORAGE_KEY, nextMode); } catch (_) {}
+      mode = nextMode;
+      updateDocumentTheme(mode);
+      syncControl();
+    };
+
+    if (currentTheme === nextTheme || reducedMotion || typeof document.startViewTransition !== 'function') {
+      applyTheme();
+      return;
+    }
+
+    const rect = trigger.getBoundingClientRect();
+    const x = rect.left + rect.width / 2;
+    const y = rect.top + rect.height / 2;
+    const radius = Math.hypot(
+      Math.max(x, window.innerWidth - x),
+      Math.max(y, window.innerHeight - y),
+    );
+    root.style.setProperty('--theme-reveal-x', `${x}px`);
+    root.style.setProperty('--theme-reveal-y', `${y}px`);
+    root.style.setProperty('--theme-reveal-radius', `${radius}px`);
+    root.classList.add('theme-transitioning');
+    const transition = document.startViewTransition(applyTheme);
+    activeTransition = transition;
+    transition.finished.finally(() => {
+      if (activeTransition !== transition) return;
+      activeTransition = null;
+      root.classList.remove('theme-transitioning');
+    });
+  }
+
+  trigger.addEventListener('click', () => {
+    if (menu.hidden) openMenu();
+    else closeMenu();
+  });
+  trigger.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape' && !menu.hidden) {
+      event.preventDefault();
+      closeMenu(true);
+    } else if (event.key === 'ArrowDown' || event.key === 'ArrowUp') {
+      event.preventDefault();
+      openMenu(true);
+    }
+  });
+  menu.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape') {
+      event.preventDefault();
+      closeMenu(true);
+      return;
+    }
+    if (event.key !== 'ArrowDown' && event.key !== 'ArrowUp') return;
+    event.preventDefault();
+    const available = options.filter((option) => !option.hidden);
+    const currentIndex = available.indexOf(document.activeElement);
+    const direction = event.key === 'ArrowDown' ? 1 : -1;
+    available[(currentIndex + direction + available.length) % available.length]?.focus();
+  });
+  options.forEach((option) => {
+    option.addEventListener('click', () => {
+      const nextMode = option.dataset.themeOption;
+      closeMenu(true);
+      selectTheme(nextMode);
+    });
+  });
+  document.addEventListener('pointerdown', (event) => {
+    if (!menu.hidden && !control.contains(event.target)) closeMenu();
+  });
+
+  const systemTheme = window.matchMedia('(prefers-color-scheme: dark)');
+  const handleSystemThemeChange = () => {
+    if (mode === 'system') updateDocumentTheme('system');
+  };
+  if (typeof systemTheme.addEventListener === 'function') {
+    systemTheme.addEventListener('change', handleSystemThemeChange);
+  } else {
+    systemTheme.addListener(handleSystemThemeChange);
+  }
+
+  updateDocumentTheme(mode);
+  syncControl();
+}
   const PRESETS = [
     {
       id: 'serious',
@@ -74,6 +233,7 @@ const DATA_URL = './data/tools.json';
 
   async function init() {
     bindElements();
+    initThemeToggle();
     bindEvents();
     bindSectionToggles();
     try {
