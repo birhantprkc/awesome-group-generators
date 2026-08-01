@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-08-01
+
+- Retested UTEKAR Random Team Generator in a live browser and inspected its served frontend implementation.
+- Corrected its review after reproducible tests showed deterministic team membership, ineffective repeat-pairing reduction, and multi-round results available only through CSV/JSON export.
+- Updated its score, feature support, ranking, review evidence, CSV row, README listing, and generated site card.
+- Regenerated derived data views, correcting a pre-existing GroupMixer CSV rating mismatch with the canonical JSON.
+
 ## 2026-06-03
 
 - Expanded the ranked dataset from 256 to 501 reviewed tools across group generators, team pickers, classroom grouping tools, breakout-room planners, spreadsheet workarounds, AI workflows, and social-golfer schedulers.
