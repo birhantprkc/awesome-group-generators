@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-09-22
+
+- Added TeamCreator, Visimon Breakout Room Generator Lite, Random Wheel Tools Multi-Round Group Generator, and TeamShuffler after live workflow reviews.
+- Retired the unavailable 1000tools Random Pairs Generator and LessonKind Group Maker; recorded Chooseday's failing workflow as out of scope.
+- Rechecked pricing, access, constraints, and exports across the update queue; corrected verified feature flags and category ratings without changing existing overall scores.
+- Added HTTP and rendered-page snapshot manifests, a repeatable site-change check, and the review evidence report.
+- Preserved the August UTEKAR retest and its lower ranking while updating the generated catalog and site.
+
 ## 2026-08-01
 
 - Retested UTEKAR Random Team Generator in a live browser and inspected its served frontend implementation.

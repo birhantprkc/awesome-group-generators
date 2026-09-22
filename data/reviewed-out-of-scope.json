@@ -2,8 +2,8 @@
   "metadata": {
     "title": "Reviewed but out-of-scope group-generation-adjacent resources",
     "description": "Resources that were explicitly reviewed after the broader ecosystem pass, but not merged into the ranked Awesome Group Generators dataset because they are sales-gated, LMS-native documentation rather than a portable tool, app-store-only without a verified workflow, duplicate/fork variants, unavailable, or primarily research/reference material.",
-    "reviewedAt": "2026-07-13T08:27:23+00:00",
-    "itemCount": 105,
+    "reviewedAt": "2026-09-22T15:12:20+00:00",
+    "itemCount": 108,
     "policy": "These entries are evidence-tracked so future reviewers do not re-review the same adjacent resources. Promote an item into data/tools.json only after a directly usable generator, open demo, app workflow, or runnable implementation has been reviewed enough to assign the normal feature/rating fields.",
     "decisionStatuses": [
       "sales-gated",
@@ -866,7 +866,7 @@
       "name": "U2Tool Team Generator",
       "url": "https://www.u2tool.com/en/tools/team-generator/",
       "category": "non-functional generated tool article",
-      "decisionStatus": "not-working",
+      "decisionStatus": "broken-or-nonfunctional",
       "whyOutOfScope": "The page describes a team-generator concept but browser review found no actual generator form beyond site search/navigation controls.",
       "publicEvidence": "Public text claims metrics, constraints, seeds, CSV/JSON export, and backend processing, but the DOM exposed no participant/team inputs or generate workflow.",
       "notes": "Do not rank unless an actual working generator appears."
@@ -1070,6 +1070,36 @@
       "whyOutOfScope": "Generates hybrid animals, creature names, traits, and image prompts rather than assigning participants to groups or teams.",
       "publicEvidence": "The reviewed workflow randomizes eleven animal body-part slots and produces a creature concept and AI-art prompt; it has no participant roster, pairing, team split, or grouped assignment output.",
       "notes": "Suggested in GitHub issue #1. Using generated animals as team names is an external naming workaround, not group generation."
+    },
+    {
+      "id": "chooseday-random-group-generator",
+      "name": "Chooseday Random Group Generator",
+      "url": "https://chooseday.co/guides/random-team-generator",
+      "category": "public guide-page group generator",
+      "decisionStatus": "broken-or-nonfunctional",
+      "whyOutOfScope": "The public group-generation form did not generate assignments from sample rosters in two live browser reviews.",
+      "publicEvidence": "On 2026-09-22, six newline-separated names and then comma-separated names remained visible in the textarea, but Generate groups responded “Enter at least 2 names to generate groups” both times. A prior live review reproduced the same validation failure.",
+      "notes": "Revisit if the guide form is repaired or a working generator URL is supplied; its no-login and sharing claims were not verified."
+    },
+    {
+      "id": "1000tools-random-pairs-generator",
+      "name": "1000tools Random Pairs Generator",
+      "url": "https://1000tools.xyz/random-pairs-generator/",
+      "category": "formerly ranked group generator",
+      "decisionStatus": "parked-or-dead",
+      "whyOutOfScope": "The reviewed generator is no longer available at its ranked URL; the domain is parked.",
+      "publicEvidence": "Live browser review on 2026-09-22 found a 1000tools.xyz domain-for-sale landing page and no roster, generation, export, or history controls. No replacement route was found on the page.",
+      "notes": "Former ranked entry; restore only if a working generator route is located and tested."
+    },
+    {
+      "id": "lessonkind-group-maker",
+      "name": "LessonKind Group Maker",
+      "url": "https://lessonkind.com/tools/group-maker/",
+      "category": "formerly ranked classroom group maker",
+      "decisionStatus": "unavailable",
+      "whyOutOfScope": "The reviewed route redirects to a general tools index without a Group Maker workflow.",
+      "publicEvidence": "Live browser review on 2026-09-22 and the LessonKind homepage link both redirected from /tools/group-maker/ to /tools/. The tools index says it lists only live tools and currently exposes no Group Maker controls.",
+      "notes": "The homepage still advertises a Random Group Maker, but its own link redirects to the tools index. Revisit if a working route is restored."
     }
   ]
 }

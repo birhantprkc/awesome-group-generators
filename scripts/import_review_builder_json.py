@@ -277,8 +277,10 @@ This repository publishes a review dataset, scoring methodology, correction work
 - [`data/reviewed-out-of-scope.json`](./data/reviewed-out-of-scope.json) — reviewed adjacent resources that were deliberately not ranked
 - [`data/reviewed-out-of-scope.schema.json`](./data/reviewed-out-of-scope.schema.json) — schema for the reviewed out-of-scope list
 - [`METHODOLOGY.md`](./METHODOLOGY.md) — scoring rubric and review rules
+- [`docs/SITE_MONITORING.md`](./docs/SITE_MONITORING.md) — page-snapshot baseline and change-check workflow
+- [`docs/UPDATE_PASS_2026-09-22.md`](./docs/UPDATE_PASS_2026-09-22.md) — latest reviewed corrections and market intake
 
-Current export: **{meta['toolCount']} tools**, source revision **{meta.get('sourceRevisionId')}**, exported **{meta['exportedAt']}**.
+Current export: **{meta['toolCount']} tools**, base review-builder revision **{meta.get('sourceRevisionId')}**, exported **{meta['exportedAt']}**.
 
 ## Related and out-of-scope resources
 

@@ -23,7 +23,7 @@ export const CARD_RATING_KEYS = [
 export const PRICING_FILTERS = {
   any: 'Any pricing',
   'free-no-account': 'Free, no account',
-  'free-caveats': 'Free with ads/upsells',
+  'free-caveats': 'Free with caveats',
   paid: 'Paid or subscription',
   unclear: 'Unclear pricing',
 };
@@ -137,7 +137,7 @@ export function pricingTier(tool) {
     .replace(/no paid [^.]{0,80}/g, '')
     .replace(/not clearly priced/g, '');
   const hasFree = /\bfree\b|no account required|no account/.test(normalized);
-  const hasCaveat = /\bad-supported\b|\bads?\b|\bpremium\b|paid tier|paid plan|\bupgrade\b|\bfreemium\b|\bpaywall\b|\blimited\b|\blogin\b|sign-in|sign in|google account|microsoft account/.test(normalized);
+  const hasCaveat = /\bad-supported\b|\bads?\b|\bpremium\b|\bpro\b|paid tier|paid plan|\bupgrade\b|\bfreemium\b|\bpaywall\b|\blimited\b|\blogin\b|sign-in|sign in|google account|microsoft account|verified (?:free )?account|daily allowance/.test(normalized);
   const hasPaid = /\bpaid\b|\bsubscription\b|\bpurchase\b|app-store|app store|pro plan|per month|per year|monthly|yearly|\blicense\b|starts at|\bcosts\b|chatgpt pro|microsoft 365/.test(normalized);
   if (hasFree && !hasCaveat && !hasPaid) return 'free-no-account';
   if (hasFree) return 'free-caveats';

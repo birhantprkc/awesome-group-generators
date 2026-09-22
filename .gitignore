@@ -15,3 +15,8 @@ node_modules/
 __pycache__/
 .pytest_cache/
 .venv/
+out/
+
+# Public-site text is retained locally for comparison, not republished.
+data/site-snapshots/*.txt
+data/rendered-snapshots/*.txt
