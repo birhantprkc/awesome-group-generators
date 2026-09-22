@@ -279,6 +279,7 @@ This repository publishes a review dataset, scoring methodology, correction work
 - [`METHODOLOGY.md`](./METHODOLOGY.md) — scoring rubric and review rules
 - [`docs/SITE_MONITORING.md`](./docs/SITE_MONITORING.md) — page-snapshot baseline and change-check workflow
 - [`docs/UPDATE_PASS_2026-09-22.md`](./docs/UPDATE_PASS_2026-09-22.md) — latest reviewed corrections and market intake
+- [`docs/REPEAT_AVOIDANCE_BENCHMARK_2026-09-22.md`](./docs/REPEAT_AVOIDANCE_BENCHMARK_2026-09-22.md) — measured TeamCreator and GroupMixer repeat avoidance
 
 Current export: **{meta['toolCount']} tools**, base review-builder revision **{meta.get('sourceRevisionId')}**, exported **{meta['exportedAt']}**.
 

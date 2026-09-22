@@ -7,6 +7,7 @@
 - Rechecked pricing, access, constraints, and exports across the update queue; corrected verified feature flags and category ratings without changing existing overall scores.
 - Added HTTP and rendered-page snapshot manifests, a repeatable site-change check, and the review evidence report.
 - Preserved the August UTEKAR retest and its lower ranking while updating the generated catalog and site.
+- Benchmarked TeamCreator's live browser rotation against GroupMixer and its own Python reference; corrected TeamCreator's feature support and reduced its overall score from 4.3 to 3.2.
 
 ## 2026-08-01
 

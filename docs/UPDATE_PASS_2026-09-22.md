@@ -79,3 +79,7 @@ The first issue #5 intake found that Chooseday's form rejected a sample roster d
 | Random Wheel Tools Multi-Round Group Generator | Added at rank 30, overall 4.0. A 12-person four-round sample and plain-text schedule download worked; it reported repeat encounters. |
 
 The catalog edits were made directly in `data/tools.json`. Reconcile them with the review-builder source before running `scripts/import_review_builder_json.py` again; importing an older draft would overwrite these corrections and new entries. ToolV access and TheToolApp's live generation remain unresolved; the catalog flags reflect that limit.
+
+## Follow-up repeat benchmark
+
+The initial TeamCreator score of 4.3 and rank 5 above were superseded by a [15-run browser benchmark](REPEAT_AVOIDANCE_BENCHMARK_2026-09-22.md) on the same date. Its live multi-round output repeated many pairs in cases with repeat-free solutions. The browser implementation also used prior pairings and attribute slider scores only for scoring, not placement. TeamCreator is now scored 3.2 overall and ranked 192; the earlier successful two-round hard-constraint test remains valid.

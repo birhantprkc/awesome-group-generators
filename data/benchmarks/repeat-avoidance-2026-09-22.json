@@ -1,0 +1,6072 @@
+{
+  "date": "2026-09-22",
+  "description": "Synthetic rosters P00..Pnn; pair counts recomputed independently from full schedules; see docs/REPEAT_AVOIDANCE_BENCHMARK_2026-09-22.md",
+  "teamcreator_browser_script": "https://unitedwetransform.com/teamcreator_engine.js?v=uwt-v2f-20260716",
+  "teamcreator_browser_script_sha256": "64a2a178b8749335ced0670556ed794d723ba61617759e1b99c910194c65559a",
+  "teamcreator_python_commit": "4129776a38057426b4112d4bc4eca4d24dbb5c9f",
+  "groupmixer_api": "https://api.groupmixer.app/v1/sgp/{groups}-{group_size}-{rounds}/solve?objective=squared&seed={seed}",
+  "seeds": [
+    7,
+    42,
+    123
+  ],
+  "runs": [
+    {
+      "provider": "groupmixer_public_api",
+      "people": 9,
+      "groups": 3,
+      "group_size": 3,
+      "rounds": 4,
+      "seed": 7,
+      "status": "solved",
+      "metrics": {
+        "pair_incidents": 36,
+        "unique_pairs": 36,
+        "repeated_pair_incidents": 0,
+        "pairs_met_more_than_once": 0,
+        "max_pair_count": 1,
+        "simple_lower_bound": 0
+      },
+      "schedule": [
+        [
+          [
+            "P00",
+            "P01",
+            "P05"
+          ],
+          [
+            "P02",
+            "P06",
+            "P07"
+          ],
+          [
+            "P03",
+            "P04",
+            "P08"
+          ]
+        ],
+        [
+          [
+            "P01",
+            "P06",
+            "P08"
+          ],
+          [
+            "P03",
+            "P05",
+            "P07"
+          ],
+          [
+            "P00",
+            "P02",
+            "P04"
+          ]
+        ],
+        [
+          [
+            "P01",
+            "P04",
+            "P07"
+          ],
+          [
+            "P00",
+            "P03",
+            "P06"
+          ],
+          [
+            "P02",
+            "P05",
+            "P08"
+          ]
+        ],
+        [
+          [
+            "P04",
+            "P05",
+            "P06"
+          ],
+          [
+            "P00",
+            "P07",
+            "P08"
+          ],
+          [
+            "P01",
+            "P02",
+            "P03"
+          ]
+        ]
+      ]
+    },
+    {
+      "provider": "teamcreator_browser",
+      "people": 9,
+      "groups": 3,
+      "group_size": 3,
+      "rounds": 4,
+      "seed": 7,
+      "status": "Done. 4 rounds formed, entirely in your browser.",
+      "metrics": {
+        "pair_incidents": 36,
+        "unique_pairs": 22,
+        "repeated_pair_incidents": 14,
+        "pairs_met_more_than_once": 12,
+        "max_pair_count": 4,
+        "simple_lower_bound": 0
+      },
+      "schedule": [
+        [
+          [
+            "P00",
+            "P05",
+            "P08"
+          ],
+          [
+            "P01",
+            "P03",
+            "P06"
+          ],
+          [
+            "P02",
+            "P04",
+            "P07"
+          ]
+        ],
+        [
+          [
+            "P00",
+            "P03",
+            "P08"
+          ],
+          [
+            "P02",
+            "P06",
+            "P07"
+          ],
+          [
+            "P01",
+            "P04",
+            "P05"
+          ]
+        ],
+        [
+          [
+            "P04",
+            "P05",
+            "P06"
+          ],
+          [
+            "P00",
+            "P01",
+            "P03"
+          ],
+          [
+            "P02",
+            "P07",
+            "P08"
+          ]
+        ],
+        [
+          [
+            "P00",
+            "P01",
+            "P05"
+          ],
+          [
+            "P03",
+            "P06",
+            "P08"
+          ],
+          [
+            "P02",
+            "P04",
+            "P07"
+          ]
+        ]
+      ]
+    },
+    {
+      "provider": "teamcreator_python_reference",
+      "people": 9,
+      "groups": 3,
+      "group_size": 3,
+      "rounds": 4,
+      "seed": 7,
+      "status": "success",
+      "metrics": {
+        "pair_incidents": 36,
+        "unique_pairs": 36,
+        "repeated_pair_incidents": 0,
+        "pairs_met_more_than_once": 0,
+        "max_pair_count": 1,
+        "simple_lower_bound": 0
+      },
+      "schedule": [
+        [
+          [
+            "P00",
+            "P05",
+            "P08"
+          ],
+          [
+            "P01",
+            "P03",
+            "P06"
+          ],
+          [
+            "P02",
+            "P04",
+            "P07"
+          ]
+        ],
+        [
+          [
+            "P04",
+            "P05",
+            "P06"
+          ],
+          [
+            "P01",
+            "P00",
+            "P07"
+          ],
+          [
+            "P02",
+            "P03",
+            "P08"
+          ]
+        ],
+        [
+          [
+            "P07",
+            "P08",
+            "P06"
+          ],
+          [
+            "P03",
+            "P04",
+            "P00"
+          ],
+          [
+            "P02",
+            "P05",
+            "P01"
+          ]
+        ],
+        [
+          [
+            "P05",
+            "P03",
+            "P07"
+          ],
+          [
+            "P01",
+            "P04",
+            "P08"
+          ],
+          [
+            "P02",
+            "P00",
+            "P06"
+          ]
+        ]
+      ]
+    },
+    {
+      "provider": "groupmixer_public_api",
+      "people": 9,
+      "groups": 3,
+      "group_size": 3,
+      "rounds": 4,
+      "seed": 42,
+      "status": "solved",
+      "metrics": {
+        "pair_incidents": 36,
+        "unique_pairs": 36,
+        "repeated_pair_incidents": 0,
+        "pairs_met_more_than_once": 0,
+        "max_pair_count": 1,
+        "simple_lower_bound": 0
+      },
+      "schedule": [
+        [
+          [
+            "P00",
+            "P01",
+            "P05"
+          ],
+          [
+            "P02",
+            "P06",
+            "P07"
+          ],
+          [
+            "P03",
+            "P04",
+            "P08"
+          ]
+        ],
+        [
+          [
+            "P01",
+            "P06",
+            "P08"
+          ],
+          [
+            "P03",
+            "P05",
+            "P07"
+          ],
+          [
+            "P00",
+            "P02",
+            "P04"
+          ]
+        ],
+        [
+          [
+            "P01",
+            "P04",
+            "P07"
+          ],
+          [
+            "P00",
+            "P03",
+            "P06"
+          ],
+          [
+            "P02",
+            "P05",
+            "P08"
+          ]
+        ],
+        [
+          [
+            "P04",
+            "P05",
+            "P06"
+          ],
+          [
+            "P00",
+            "P07",
+            "P08"
+          ],
+          [
+            "P01",
+            "P02",
+            "P03"
+          ]
+        ]
+      ]
+    },
+    {
+      "provider": "teamcreator_browser",
+      "people": 9,
+      "groups": 3,
+      "group_size": 3,
+      "rounds": 4,
+      "seed": 42,
+      "status": "Done. 4 rounds formed, entirely in your browser.",
+      "metrics": {
+        "pair_incidents": 36,
+        "unique_pairs": 21,
+        "repeated_pair_incidents": 15,
+        "pairs_met_more_than_once": 13,
+        "max_pair_count": 4,
+        "simple_lower_bound": 0
+      },
+      "schedule": [
+        [
+          [
+            "P03",
+            "P04",
+            "P05"
+          ],
+          [
+            "P00",
+            "P02",
+            "P06"
+          ],
+          [
+            "P01",
+            "P07",
+            "P08"
+          ]
+        ],
+        [
+          [
+            "P02",
+            "P06",
+            "P07"
+          ],
+          [
+            "P01",
+            "P03",
+            "P04"
+          ],
+          [
+            "P00",
+            "P05",
+            "P08"
+          ]
+        ],
+        [
+          [
+            "P01",
+            "P03",
+            "P04"
+          ],
+          [
+            "P02",
+            "P05",
+            "P08"
+          ],
+          [
+            "P00",
+            "P06",
+            "P07"
+          ]
+        ],
+        [
+          [
+            "P00",
+            "P02",
+            "P05"
+          ],
+          [
+            "P03",
+            "P04",
+            "P06"
+          ],
+          [
+            "P01",
+            "P07",
+            "P08"
+          ]
+        ]
+      ]
+    },
+    {
+      "provider": "teamcreator_python_reference",
+      "people": 9,
+      "groups": 3,
+      "group_size": 3,
+      "rounds": 4,
+      "seed": 42,
+      "status": "success",
+      "metrics": {
+        "pair_incidents": 36,
+        "unique_pairs": 36,
+        "repeated_pair_incidents": 0,
+        "pairs_met_more_than_once": 0,
+        "max_pair_count": 1,
+        "simple_lower_bound": 0
+      },
+      "schedule": [
+        [
+          [
+            "P03",
+            "P04",
+            "P05"
+          ],
+          [
+            "P00",
+            "P02",
+            "P06"
+          ],
+          [
+            "P01",
+            "P07",
+            "P08"
+          ]
+        ],
+        [
+          [
+            "P01",
+            "P03",
+            "P06"
+          ],
+          [
+            "P00",
+            "P04",
+            "P07"
+          ],
+          [
+            "P02",
+            "P05",
+            "P08"
+          ]
+        ],
+        [
+          [
+            "P08",
+            "P04",
+            "P06"
+          ],
+          [
+            "P01",
+            "P05",
+            "P00"
+          ],
+          [
+            "P02",
+            "P03",
+            "P07"
+          ]
+        ],
+        [
+          [
+            "P05",
+            "P07",
+            "P06"
+          ],
+          [
+            "P01",
+            "P04",
+            "P02"
+          ],
+          [
+            "P03",
+            "P00",
+            "P08"
+          ]
+        ]
+      ]
+    },
+    {
+      "provider": "groupmixer_public_api",
+      "people": 9,
+      "groups": 3,
+      "group_size": 3,
+      "rounds": 4,
+      "seed": 123,
+      "status": "solved",
+      "metrics": {
+        "pair_incidents": 36,
+        "unique_pairs": 36,
+        "repeated_pair_incidents": 0,
+        "pairs_met_more_than_once": 0,
+        "max_pair_count": 1,
+        "simple_lower_bound": 0
+      },
+      "schedule": [
+        [
+          [
+            "P00",
+            "P01",
+            "P05"
+          ],
+          [
+            "P02",
+            "P06",
+            "P07"
+          ],
+          [
+            "P03",
+            "P04",
+            "P08"
+          ]
+        ],
+        [
+          [
+            "P01",
+            "P06",
+            "P08"
+          ],
+          [
+            "P03",
+            "P05",
+            "P07"
+          ],
+          [
+            "P00",
+            "P02",
+            "P04"
+          ]
+        ],
+        [
+          [
+            "P01",
+            "P04",
+            "P07"
+          ],
+          [
+            "P00",
+            "P03",
+            "P06"
+          ],
+          [
+            "P02",
+            "P05",
+            "P08"
+          ]
+        ],
+        [
+          [
+            "P04",
+            "P05",
+            "P06"
+          ],
+          [
+            "P00",
+            "P07",
+            "P08"
+          ],
+          [
+            "P01",
+            "P02",
+            "P03"
+          ]
+        ]
+      ]
+    },
+    {
+      "provider": "teamcreator_browser",
+      "people": 9,
+      "groups": 3,
+      "group_size": 3,
+      "rounds": 4,
+      "seed": 123,
+      "status": "Done. 4 rounds formed, entirely in your browser.",
+      "metrics": {
+        "pair_incidents": 36,
+        "unique_pairs": 23,
+        "repeated_pair_incidents": 13,
+        "pairs_met_more_than_once": 10,
+        "max_pair_count": 3,
+        "simple_lower_bound": 0
+      },
+      "schedule": [
+        [
+          [
+            "P01",
+            "P02",
+            "P05"
+          ],
+          [
+            "P03",
+            "P06",
+            "P08"
+          ],
+          [
+            "P00",
+            "P04",
+            "P07"
+          ]
+        ],
+        [
+          [
+            "P01",
+            "P03",
+            "P07"
+          ],
+          [
+            "P02",
+            "P06",
+            "P08"
+          ],
+          [
+            "P00",
+            "P04",
+            "P05"
+          ]
+        ],
+        [
+          [
+            "P01",
+            "P02",
+            "P06"
+          ],
+          [
+            "P00",
+            "P04",
+            "P05"
+          ],
+          [
+            "P03",
+            "P07",
+            "P08"
+          ]
+        ],
+        [
+          [
+            "P00",
+            "P05",
+            "P08"
+          ],
+          [
+            "P01",
+            "P02",
+            "P03"
+          ],
+          [
+            "P04",
+            "P06",
+            "P07"
+          ]
+        ]
+      ]
+    },
+    {
+      "provider": "teamcreator_python_reference",
+      "people": 9,
+      "groups": 3,
+      "group_size": 3,
+      "rounds": 4,
+      "seed": 123,
+      "status": "success",
+      "metrics": {
+        "pair_incidents": 36,
+        "unique_pairs": 36,
+        "repeated_pair_incidents": 0,
+        "pairs_met_more_than_once": 0,
+        "max_pair_count": 1,
+        "simple_lower_bound": 0
+      },
+      "schedule": [
+        [
+          [
+            "P01",
+            "P02",
+            "P05"
+          ],
+          [
+            "P03",
+            "P06",
+            "P08"
+          ],
+          [
+            "P00",
+            "P04",
+            "P07"
+          ]
+        ],
+        [
+          [
+            "P00",
+            "P01",
+            "P06"
+          ],
+          [
+            "P03",
+            "P02",
+            "P07"
+          ],
+          [
+            "P04",
+            "P05",
+            "P08"
+          ]
+        ],
+        [
+          [
+            "P05",
+            "P07",
+            "P06"
+          ],
+          [
+            "P01",
+            "P04",
+            "P03"
+          ],
+          [
+            "P00",
+            "P02",
+            "P08"
+          ]
+        ],
+        [
+          [
+            "P02",
+            "P04",
+            "P06"
+          ],
+          [
+            "P01",
+            "P08",
+            "P07"
+          ],
+          [
+            "P00",
+            "P05",
+            "P03"
+          ]
+        ]
+      ]
+    },
+    {
+      "provider": "groupmixer_public_api",
+      "people": 12,
+      "groups": 4,
+      "group_size": 3,
+      "rounds": 4,
+      "seed": 7,
+      "status": "solved",
+      "metrics": {
+        "pair_incidents": 48,
+        "unique_pairs": 48,
+        "repeated_pair_incidents": 0,
+        "pairs_met_more_than_once": 0,
+        "max_pair_count": 1,
+        "simple_lower_bound": 0
+      },
+      "schedule": [
+        [
+          [
+            "P00",
+            "P04",
+            "P08"
+          ],
+          [
+            "P01",
+            "P05",
+            "P10"
+          ],
+          [
+            "P02",
+            "P06",
+            "P11"
+          ],
+          [
+            "P03",
+            "P07",
+            "P09"
+          ]
+        ],
+        [
+          [
+            "P01",
+            "P04",
+            "P09"
+          ],
+          [
+            "P00",
+            "P05",
+            "P11"
+          ],
+          [
+            "P03",
+            "P06",
+            "P10"
+          ],
+          [
+            "P02",
+            "P07",
+            "P08"
+          ]
+        ],
+        [
+          [
+            "P02",
+            "P04",
+            "P10"
+          ],
+          [
+            "P03",
+            "P05",
+            "P08"
+          ],
+          [
+            "P00",
+            "P06",
+            "P09"
+          ],
+          [
+            "P01",
+            "P07",
+            "P11"
+          ]
+        ],
+        [
+          [
+            "P03",
+            "P04",
+            "P11"
+          ],
+          [
+            "P02",
+            "P05",
+            "P09"
+          ],
+          [
+            "P01",
+            "P06",
+            "P08"
+          ],
+          [
+            "P00",
+            "P07",
+            "P10"
+          ]
+        ]
+      ]
+    },
+    {
+      "provider": "teamcreator_browser",
+      "people": 12,
+      "groups": 4,
+      "group_size": 3,
+      "rounds": 4,
+      "seed": 7,
+      "status": "Done. 4 rounds formed, entirely in your browser.",
+      "metrics": {
+        "pair_incidents": 48,
+        "unique_pairs": 33,
+        "repeated_pair_incidents": 15,
+        "pairs_met_more_than_once": 12,
+        "max_pair_count": 3,
+        "simple_lower_bound": 0
+      },
+      "schedule": [
+        [
+          [
+            "P00",
+            "P08",
+            "P10"
+          ],
+          [
+            "P01",
+            "P03",
+            "P05"
+          ],
+          [
+            "P06",
+            "P09",
+            "P11"
+          ],
+          [
+            "P02",
+            "P04",
+            "P07"
+          ]
+        ],
+        [
+          [
+            "P03",
+            "P08",
+            "P09"
+          ],
+          [
+            "P02",
+            "P06",
+            "P11"
+          ],
+          [
+            "P04",
+            "P07",
+            "P10"
+          ],
+          [
+            "P00",
+            "P01",
+            "P05"
+          ]
+        ],
+        [
+          [
+            "P06",
+            "P09",
+            "P11"
+          ],
+          [
+            "P00",
+            "P03",
+            "P05"
+          ],
+          [
+            "P01",
+            "P02",
+            "P07"
+          ],
+          [
+            "P04",
+            "P08",
+            "P10"
+          ]
+        ],
+        [
+          [
+            "P00",
+            "P05",
+            "P09"
+          ],
+          [
+            "P03",
+            "P06",
+            "P08"
+          ],
+          [
+            "P02",
+            "P07",
+            "P10"
+          ],
+          [
+            "P01",
+            "P04",
+            "P11"
+          ]
+        ]
+      ]
+    },
+    {
+      "provider": "teamcreator_python_reference",
+      "people": 12,
+      "groups": 4,
+      "group_size": 3,
+      "rounds": 4,
+      "seed": 7,
+      "status": "success",
+      "metrics": {
+        "pair_incidents": 48,
+        "unique_pairs": 48,
+        "repeated_pair_incidents": 0,
+        "pairs_met_more_than_once": 0,
+        "max_pair_count": 1,
+        "simple_lower_bound": 0
+      },
+      "schedule": [
+        [
+          [
+            "P00",
+            "P08",
+            "P10"
+          ],
+          [
+            "P01",
+            "P03",
+            "P05"
+          ],
+          [
+            "P06",
+            "P09",
+            "P11"
+          ],
+          [
+            "P02",
+            "P04",
+            "P07"
+          ]
+        ],
+        [
+          [
+            "P02",
+            "P00",
+            "P09"
+          ],
+          [
+            "P01",
+            "P06",
+            "P10"
+          ],
+          [
+            "P03",
+            "P07",
+            "P11"
+          ],
+          [
+            "P05",
+            "P04",
+            "P08"
+          ]
+        ],
+        [
+          [
+            "P05",
+            "P11",
+            "P10"
+          ],
+          [
+            "P02",
+            "P03",
+            "P08"
+          ],
+          [
+            "P00",
+            "P07",
+            "P06"
+          ],
+          [
+            "P01",
+            "P04",
+            "P09"
+          ]
+        ],
+        [
+          [
+            "P01",
+            "P08",
+            "P11"
+          ],
+          [
+            "P03",
+            "P04",
+            "P00"
+          ],
+          [
+            "P07",
+            "P10",
+            "P09"
+          ],
+          [
+            "P02",
+            "P06",
+            "P05"
+          ]
+        ]
+      ]
+    },
+    {
+      "provider": "groupmixer_public_api",
+      "people": 12,
+      "groups": 4,
+      "group_size": 3,
+      "rounds": 4,
+      "seed": 42,
+      "status": "solved",
+      "metrics": {
+        "pair_incidents": 48,
+        "unique_pairs": 48,
+        "repeated_pair_incidents": 0,
+        "pairs_met_more_than_once": 0,
+        "max_pair_count": 1,
+        "simple_lower_bound": 0
+      },
+      "schedule": [
+        [
+          [
+            "P00",
+            "P04",
+            "P08"
+          ],
+          [
+            "P01",
+            "P05",
+            "P10"
+          ],
+          [
+            "P02",
+            "P06",
+            "P11"
+          ],
+          [
+            "P03",
+            "P07",
+            "P09"
+          ]
+        ],
+        [
+          [
+            "P01",
+            "P04",
+            "P09"
+          ],
+          [
+            "P00",
+            "P05",
+            "P11"
+          ],
+          [
+            "P03",
+            "P06",
+            "P10"
+          ],
+          [
+            "P02",
+            "P07",
+            "P08"
+          ]
+        ],
+        [
+          [
+            "P02",
+            "P04",
+            "P10"
+          ],
+          [
+            "P03",
+            "P05",
+            "P08"
+          ],
+          [
+            "P00",
+            "P06",
+            "P09"
+          ],
+          [
+            "P01",
+            "P07",
+            "P11"
+          ]
+        ],
+        [
+          [
+            "P03",
+            "P04",
+            "P11"
+          ],
+          [
+            "P02",
+            "P05",
+            "P09"
+          ],
+          [
+            "P01",
+            "P06",
+            "P08"
+          ],
+          [
+            "P00",
+            "P07",
+            "P10"
+          ]
+        ]
+      ]
+    },
+    {
+      "provider": "teamcreator_browser",
+      "people": 12,
+      "groups": 4,
+      "group_size": 3,
+      "rounds": 4,
+      "seed": 42,
+      "status": "Done. 4 rounds formed, entirely in your browser.",
+      "metrics": {
+        "pair_incidents": 48,
+        "unique_pairs": 33,
+        "repeated_pair_incidents": 15,
+        "pairs_met_more_than_once": 11,
+        "max_pair_count": 4,
+        "simple_lower_bound": 0
+      },
+      "schedule": [
+        [
+          [
+            "P03",
+            "P04",
+            "P09"
+          ],
+          [
+            "P02",
+            "P05",
+            "P10"
+          ],
+          [
+            "P00",
+            "P06",
+            "P08"
+          ],
+          [
+            "P01",
+            "P07",
+            "P11"
+          ]
+        ],
+        [
+          [
+            "P02",
+            "P07",
+            "P10"
+          ],
+          [
+            "P01",
+            "P03",
+            "P04"
+          ],
+          [
+            "P00",
+            "P05",
+            "P09"
+          ],
+          [
+            "P06",
+            "P08",
+            "P11"
+          ]
+        ],
+        [
+          [
+            "P01",
+            "P06",
+            "P10"
+          ],
+          [
+            "P03",
+            "P04",
+            "P05"
+          ],
+          [
+            "P00",
+            "P02",
+            "P09"
+          ],
+          [
+            "P07",
+            "P08",
+            "P11"
+          ]
+        ],
+        [
+          [
+            "P00",
+            "P02",
+            "P05"
+          ],
+          [
+            "P03",
+            "P04",
+            "P10"
+          ],
+          [
+            "P06",
+            "P08",
+            "P11"
+          ],
+          [
+            "P01",
+            "P07",
+            "P09"
+          ]
+        ]
+      ]
+    },
+    {
+      "provider": "teamcreator_python_reference",
+      "people": 12,
+      "groups": 4,
+      "group_size": 3,
+      "rounds": 4,
+      "seed": 42,
+      "status": "success",
+      "metrics": {
+        "pair_incidents": 48,
+        "unique_pairs": 48,
+        "repeated_pair_incidents": 0,
+        "pairs_met_more_than_once": 0,
+        "max_pair_count": 1,
+        "simple_lower_bound": 0
+      },
+      "schedule": [
+        [
+          [
+            "P03",
+            "P04",
+            "P09"
+          ],
+          [
+            "P02",
+            "P05",
+            "P10"
+          ],
+          [
+            "P00",
+            "P06",
+            "P08"
+          ],
+          [
+            "P01",
+            "P07",
+            "P11"
+          ]
+        ],
+        [
+          [
+            "P00",
+            "P05",
+            "P09"
+          ],
+          [
+            "P07",
+            "P06",
+            "P10"
+          ],
+          [
+            "P02",
+            "P03",
+            "P11"
+          ],
+          [
+            "P01",
+            "P04",
+            "P08"
+          ]
+        ],
+        [
+          [
+            "P11",
+            "P00",
+            "P10"
+          ],
+          [
+            "P08",
+            "P07",
+            "P09"
+          ],
+          [
+            "P06",
+            "P04",
+            "P02"
+          ],
+          [
+            "P01",
+            "P05",
+            "P03"
+          ]
+        ],
+        [
+          [
+            "P05",
+            "P04",
+            "P11"
+          ],
+          [
+            "P00",
+            "P02",
+            "P07"
+          ],
+          [
+            "P01",
+            "P06",
+            "P09"
+          ],
+          [
+            "P03",
+            "P08",
+            "P10"
+          ]
+        ]
+      ]
+    },
+    {
+      "provider": "groupmixer_public_api",
+      "people": 12,
+      "groups": 4,
+      "group_size": 3,
+      "rounds": 4,
+      "seed": 123,
+      "status": "solved",
+      "metrics": {
+        "pair_incidents": 48,
+        "unique_pairs": 48,
+        "repeated_pair_incidents": 0,
+        "pairs_met_more_than_once": 0,
+        "max_pair_count": 1,
+        "simple_lower_bound": 0
+      },
+      "schedule": [
+        [
+          [
+            "P00",
+            "P04",
+            "P08"
+          ],
+          [
+            "P01",
+            "P05",
+            "P10"
+          ],
+          [
+            "P02",
+            "P06",
+            "P11"
+          ],
+          [
+            "P03",
+            "P07",
+            "P09"
+          ]
+        ],
+        [
+          [
+            "P01",
+            "P04",
+            "P09"
+          ],
+          [
+            "P00",
+            "P05",
+            "P11"
+          ],
+          [
+            "P03",
+            "P06",
+            "P10"
+          ],
+          [
+            "P02",
+            "P07",
+            "P08"
+          ]
+        ],
+        [
+          [
+            "P02",
+            "P04",
+            "P10"
+          ],
+          [
+            "P03",
+            "P05",
+            "P08"
+          ],
+          [
+            "P00",
+            "P06",
+            "P09"
+          ],
+          [
+            "P01",
+            "P07",
+            "P11"
+          ]
+        ],
+        [
+          [
+            "P03",
+            "P04",
+            "P11"
+          ],
+          [
+            "P02",
+            "P05",
+            "P09"
+          ],
+          [
+            "P01",
+            "P06",
+            "P08"
+          ],
+          [
+            "P00",
+            "P07",
+            "P10"
+          ]
+        ]
+      ]
+    },
+    {
+      "provider": "teamcreator_browser",
+      "people": 12,
+      "groups": 4,
+      "group_size": 3,
+      "rounds": 4,
+      "seed": 123,
+      "status": "Done. 4 rounds formed, entirely in your browser.",
+      "metrics": {
+        "pair_incidents": 48,
+        "unique_pairs": 34,
+        "repeated_pair_incidents": 14,
+        "pairs_met_more_than_once": 12,
+        "max_pair_count": 3,
+        "simple_lower_bound": 0
+      },
+      "schedule": [
+        [
+          [
+            "P01",
+            "P02",
+            "P05"
+          ],
+          [
+            "P03",
+            "P06",
+            "P10"
+          ],
+          [
+            "P04",
+            "P07",
+            "P08"
+          ],
+          [
+            "P00",
+            "P09",
+            "P11"
+          ]
+        ],
+        [
+          [
+            "P01",
+            "P02",
+            "P09"
+          ],
+          [
+            "P05",
+            "P06",
+            "P10"
+          ],
+          [
+            "P00",
+            "P07",
+            "P11"
+          ],
+          [
+            "P03",
+            "P04",
+            "P08"
+          ]
+        ],
+        [
+          [
+            "P02",
+            "P10",
+            "P11"
+          ],
+          [
+            "P01",
+            "P05",
+            "P06"
+          ],
+          [
+            "P00",
+            "P04",
+            "P07"
+          ],
+          [
+            "P03",
+            "P08",
+            "P09"
+          ]
+        ],
+        [
+          [
+            "P02",
+            "P06",
+            "P10"
+          ],
+          [
+            "P05",
+            "P07",
+            "P11"
+          ],
+          [
+            "P00",
+            "P03",
+            "P08"
+          ],
+          [
+            "P01",
+            "P04",
+            "P09"
+          ]
+        ]
+      ]
+    },
+    {
+      "provider": "teamcreator_python_reference",
+      "people": 12,
+      "groups": 4,
+      "group_size": 3,
+      "rounds": 4,
+      "seed": 123,
+      "status": "success",
+      "metrics": {
+        "pair_incidents": 48,
+        "unique_pairs": 48,
+        "repeated_pair_incidents": 0,
+        "pairs_met_more_than_once": 0,
+        "max_pair_count": 1,
+        "simple_lower_bound": 0
+      },
+      "schedule": [
+        [
+          [
+            "P01",
+            "P02",
+            "P05"
+          ],
+          [
+            "P03",
+            "P06",
+            "P10"
+          ],
+          [
+            "P04",
+            "P07",
+            "P08"
+          ],
+          [
+            "P00",
+            "P09",
+            "P11"
+          ]
+        ],
+        [
+          [
+            "P04",
+            "P05",
+            "P09"
+          ],
+          [
+            "P07",
+            "P01",
+            "P10"
+          ],
+          [
+            "P03",
+            "P02",
+            "P11"
+          ],
+          [
+            "P00",
+            "P06",
+            "P08"
+          ]
+        ],
+        [
+          [
+            "P02",
+            "P00",
+            "P10"
+          ],
+          [
+            "P06",
+            "P07",
+            "P09"
+          ],
+          [
+            "P03",
+            "P05",
+            "P08"
+          ],
+          [
+            "P01",
+            "P04",
+            "P11"
+          ]
+        ],
+        [
+          [
+            "P05",
+            "P10",
+            "P11"
+          ],
+          [
+            "P00",
+            "P07",
+            "P03"
+          ],
+          [
+            "P01",
+            "P08",
+            "P09"
+          ],
+          [
+            "P02",
+            "P06",
+            "P04"
+          ]
+        ]
+      ]
+    },
+    {
+      "provider": "groupmixer_public_api",
+      "people": 12,
+      "groups": 4,
+      "group_size": 3,
+      "rounds": 6,
+      "seed": 7,
+      "status": "time_limited",
+      "metrics": {
+        "pair_incidents": 72,
+        "unique_pairs": 65,
+        "repeated_pair_incidents": 7,
+        "pairs_met_more_than_once": 7,
+        "max_pair_count": 2,
+        "simple_lower_bound": 6
+      },
+      "schedule": [
+        [
+          [
+            "P00",
+            "P04",
+            "P08"
+          ],
+          [
+            "P01",
+            "P05",
+            "P10"
+          ],
+          [
+            "P02",
+            "P06",
+            "P11"
+          ],
+          [
+            "P03",
+            "P07",
+            "P09"
+          ]
+        ],
+        [
+          [
+            "P01",
+            "P04",
+            "P09"
+          ],
+          [
+            "P00",
+            "P05",
+            "P11"
+          ],
+          [
+            "P03",
+            "P06",
+            "P10"
+          ],
+          [
+            "P02",
+            "P07",
+            "P08"
+          ]
+        ],
+        [
+          [
+            "P02",
+            "P04",
+            "P10"
+          ],
+          [
+            "P03",
+            "P05",
+            "P08"
+          ],
+          [
+            "P00",
+            "P06",
+            "P09"
+          ],
+          [
+            "P01",
+            "P07",
+            "P11"
+          ]
+        ],
+        [
+          [
+            "P03",
+            "P04",
+            "P11"
+          ],
+          [
+            "P02",
+            "P08",
+            "P09"
+          ],
+          [
+            "P01",
+            "P05",
+            "P06"
+          ],
+          [
+            "P00",
+            "P07",
+            "P10"
+          ]
+        ],
+        [
+          [
+            "P09",
+            "P10",
+            "P11"
+          ],
+          [
+            "P00",
+            "P02",
+            "P03"
+          ],
+          [
+            "P04",
+            "P05",
+            "P07"
+          ],
+          [
+            "P01",
+            "P06",
+            "P08"
+          ]
+        ],
+        [
+          [
+            "P08",
+            "P10",
+            "P11"
+          ],
+          [
+            "P04",
+            "P06",
+            "P07"
+          ],
+          [
+            "P00",
+            "P01",
+            "P03"
+          ],
+          [
+            "P02",
+            "P05",
+            "P09"
+          ]
+        ]
+      ]
+    },
+    {
+      "provider": "teamcreator_browser",
+      "people": 12,
+      "groups": 4,
+      "group_size": 3,
+      "rounds": 6,
+      "seed": 7,
+      "status": "Done. 6 rounds formed, entirely in your browser.",
+      "metrics": {
+        "pair_incidents": 72,
+        "unique_pairs": 44,
+        "repeated_pair_incidents": 28,
+        "pairs_met_more_than_once": 18,
+        "max_pair_count": 5,
+        "simple_lower_bound": 6
+      },
+      "schedule": [
+        [
+          [
+            "P00",
+            "P08",
+            "P10"
+          ],
+          [
+            "P01",
+            "P03",
+            "P05"
+          ],
+          [
+            "P06",
+            "P09",
+            "P11"
+          ],
+          [
+            "P02",
+            "P04",
+            "P07"
+          ]
+        ],
+        [
+          [
+            "P03",
+            "P08",
+            "P09"
+          ],
+          [
+            "P02",
+            "P06",
+            "P11"
+          ],
+          [
+            "P04",
+            "P07",
+            "P10"
+          ],
+          [
+            "P00",
+            "P01",
+            "P05"
+          ]
+        ],
+        [
+          [
+            "P06",
+            "P09",
+            "P11"
+          ],
+          [
+            "P00",
+            "P03",
+            "P05"
+          ],
+          [
+            "P01",
+            "P02",
+            "P07"
+          ],
+          [
+            "P04",
+            "P08",
+            "P10"
+          ]
+        ],
+        [
+          [
+            "P00",
+            "P05",
+            "P09"
+          ],
+          [
+            "P03",
+            "P06",
+            "P08"
+          ],
+          [
+            "P02",
+            "P07",
+            "P10"
+          ],
+          [
+            "P01",
+            "P04",
+            "P11"
+          ]
+        ],
+        [
+          [
+            "P03",
+            "P05",
+            "P10"
+          ],
+          [
+            "P06",
+            "P09",
+            "P11"
+          ],
+          [
+            "P00",
+            "P01",
+            "P02"
+          ],
+          [
+            "P04",
+            "P07",
+            "P08"
+          ]
+        ],
+        [
+          [
+            "P00",
+            "P04",
+            "P09"
+          ],
+          [
+            "P02",
+            "P05",
+            "P08"
+          ],
+          [
+            "P01",
+            "P07",
+            "P10"
+          ],
+          [
+            "P03",
+            "P06",
+            "P11"
+          ]
+        ]
+      ]
+    },
+    {
+      "provider": "teamcreator_python_reference",
+      "people": 12,
+      "groups": 4,
+      "group_size": 3,
+      "rounds": 6,
+      "seed": 7,
+      "status": "success",
+      "metrics": {
+        "pair_incidents": 72,
+        "unique_pairs": 63,
+        "repeated_pair_incidents": 9,
+        "pairs_met_more_than_once": 8,
+        "max_pair_count": 3,
+        "simple_lower_bound": 6
+      },
+      "schedule": [
+        [
+          [
+            "P00",
+            "P08",
+            "P10"
+          ],
+          [
+            "P01",
+            "P03",
+            "P05"
+          ],
+          [
+            "P06",
+            "P09",
+            "P11"
+          ],
+          [
+            "P02",
+            "P04",
+            "P07"
+          ]
+        ],
+        [
+          [
+            "P02",
+            "P00",
+            "P09"
+          ],
+          [
+            "P01",
+            "P06",
+            "P10"
+          ],
+          [
+            "P03",
+            "P07",
+            "P11"
+          ],
+          [
+            "P05",
+            "P04",
+            "P08"
+          ]
+        ],
+        [
+          [
+            "P05",
+            "P11",
+            "P10"
+          ],
+          [
+            "P02",
+            "P03",
+            "P08"
+          ],
+          [
+            "P00",
+            "P07",
+            "P06"
+          ],
+          [
+            "P01",
+            "P04",
+            "P09"
+          ]
+        ],
+        [
+          [
+            "P01",
+            "P08",
+            "P11"
+          ],
+          [
+            "P03",
+            "P04",
+            "P00"
+          ],
+          [
+            "P07",
+            "P10",
+            "P09"
+          ],
+          [
+            "P02",
+            "P06",
+            "P05"
+          ]
+        ],
+        [
+          [
+            "P07",
+            "P09",
+            "P08"
+          ],
+          [
+            "P00",
+            "P05",
+            "P01"
+          ],
+          [
+            "P02",
+            "P03",
+            "P10"
+          ],
+          [
+            "P04",
+            "P06",
+            "P11"
+          ]
+        ],
+        [
+          [
+            "P07",
+            "P05",
+            "P09"
+          ],
+          [
+            "P02",
+            "P01",
+            "P11"
+          ],
+          [
+            "P04",
+            "P00",
+            "P10"
+          ],
+          [
+            "P03",
+            "P06",
+            "P08"
+          ]
+        ]
+      ]
+    },
+    {
+      "provider": "groupmixer_public_api",
+      "people": 12,
+      "groups": 4,
+      "group_size": 3,
+      "rounds": 6,
+      "seed": 42,
+      "status": "time_limited",
+      "metrics": {
+        "pair_incidents": 72,
+        "unique_pairs": 65,
+        "repeated_pair_incidents": 7,
+        "pairs_met_more_than_once": 7,
+        "max_pair_count": 2,
+        "simple_lower_bound": 6
+      },
+      "schedule": [
+        [
+          [
+            "P04",
+            "P05",
+            "P08"
+          ],
+          [
+            "P00",
+            "P01",
+            "P10"
+          ],
+          [
+            "P02",
+            "P06",
+            "P11"
+          ],
+          [
+            "P03",
+            "P07",
+            "P09"
+          ]
+        ],
+        [
+          [
+            "P01",
+            "P04",
+            "P09"
+          ],
+          [
+            "P00",
+            "P05",
+            "P11"
+          ],
+          [
+            "P03",
+            "P06",
+            "P10"
+          ],
+          [
+            "P02",
+            "P07",
+            "P08"
+          ]
+        ],
+        [
+          [
+            "P02",
+            "P04",
+            "P10"
+          ],
+          [
+            "P03",
+            "P05",
+            "P08"
+          ],
+          [
+            "P00",
+            "P06",
+            "P09"
+          ],
+          [
+            "P01",
+            "P07",
+            "P11"
+          ]
+        ],
+        [
+          [
+            "P03",
+            "P04",
+            "P11"
+          ],
+          [
+            "P02",
+            "P05",
+            "P09"
+          ],
+          [
+            "P01",
+            "P06",
+            "P08"
+          ],
+          [
+            "P00",
+            "P07",
+            "P10"
+          ]
+        ],
+        [
+          [
+            "P08",
+            "P09",
+            "P11"
+          ],
+          [
+            "P00",
+            "P02",
+            "P03"
+          ],
+          [
+            "P04",
+            "P06",
+            "P07"
+          ],
+          [
+            "P01",
+            "P05",
+            "P10"
+          ]
+        ],
+        [
+          [
+            "P09",
+            "P10",
+            "P11"
+          ],
+          [
+            "P01",
+            "P02",
+            "P03"
+          ],
+          [
+            "P05",
+            "P06",
+            "P07"
+          ],
+          [
+            "P00",
+            "P04",
+            "P08"
+          ]
+        ]
+      ]
+    },
+    {
+      "provider": "teamcreator_browser",
+      "people": 12,
+      "groups": 4,
+      "group_size": 3,
+      "rounds": 6,
+      "seed": 42,
+      "status": "Done. 6 rounds formed, entirely in your browser.",
+      "metrics": {
+        "pair_incidents": 72,
+        "unique_pairs": 44,
+        "repeated_pair_incidents": 28,
+        "pairs_met_more_than_once": 22,
+        "max_pair_count": 5,
+        "simple_lower_bound": 6
+      },
+      "schedule": [
+        [
+          [
+            "P03",
+            "P04",
+            "P09"
+          ],
+          [
+            "P02",
+            "P05",
+            "P10"
+          ],
+          [
+            "P00",
+            "P06",
+            "P08"
+          ],
+          [
+            "P01",
+            "P07",
+            "P11"
+          ]
+        ],
+        [
+          [
+            "P02",
+            "P07",
+            "P10"
+          ],
+          [
+            "P01",
+            "P03",
+            "P04"
+          ],
+          [
+            "P00",
+            "P05",
+            "P09"
+          ],
+          [
+            "P06",
+            "P08",
+            "P11"
+          ]
+        ],
+        [
+          [
+            "P01",
+            "P06",
+            "P10"
+          ],
+          [
+            "P03",
+            "P04",
+            "P05"
+          ],
+          [
+            "P00",
+            "P02",
+            "P09"
+          ],
+          [
+            "P07",
+            "P08",
+            "P11"
+          ]
+        ],
+        [
+          [
+            "P00",
+            "P02",
+            "P05"
+          ],
+          [
+            "P03",
+            "P04",
+            "P10"
+          ],
+          [
+            "P06",
+            "P08",
+            "P11"
+          ],
+          [
+            "P01",
+            "P07",
+            "P09"
+          ]
+        ],
+        [
+          [
+            "P03",
+            "P04",
+            "P08"
+          ],
+          [
+            "P05",
+            "P10",
+            "P11"
+          ],
+          [
+            "P02",
+            "P07",
+            "P09"
+          ],
+          [
+            "P00",
+            "P01",
+            "P06"
+          ]
+        ],
+        [
+          [
+            "P02",
+            "P05",
+            "P06"
+          ],
+          [
+            "P00",
+            "P01",
+            "P03"
+          ],
+          [
+            "P04",
+            "P09",
+            "P11"
+          ],
+          [
+            "P07",
+            "P08",
+            "P10"
+          ]
+        ]
+      ]
+    },
+    {
+      "provider": "teamcreator_python_reference",
+      "people": 12,
+      "groups": 4,
+      "group_size": 3,
+      "rounds": 6,
+      "seed": 42,
+      "status": "success",
+      "metrics": {
+        "pair_incidents": 72,
+        "unique_pairs": 63,
+        "repeated_pair_incidents": 9,
+        "pairs_met_more_than_once": 8,
+        "max_pair_count": 3,
+        "simple_lower_bound": 6
+      },
+      "schedule": [
+        [
+          [
+            "P03",
+            "P04",
+            "P09"
+          ],
+          [
+            "P02",
+            "P05",
+            "P10"
+          ],
+          [
+            "P00",
+            "P06",
+            "P08"
+          ],
+          [
+            "P01",
+            "P07",
+            "P11"
+          ]
+        ],
+        [
+          [
+            "P00",
+            "P05",
+            "P09"
+          ],
+          [
+            "P07",
+            "P06",
+            "P10"
+          ],
+          [
+            "P02",
+            "P03",
+            "P11"
+          ],
+          [
+            "P01",
+            "P04",
+            "P08"
+          ]
+        ],
+        [
+          [
+            "P11",
+            "P00",
+            "P10"
+          ],
+          [
+            "P08",
+            "P07",
+            "P09"
+          ],
+          [
+            "P06",
+            "P04",
+            "P02"
+          ],
+          [
+            "P01",
+            "P05",
+            "P03"
+          ]
+        ],
+        [
+          [
+            "P05",
+            "P04",
+            "P11"
+          ],
+          [
+            "P00",
+            "P02",
+            "P07"
+          ],
+          [
+            "P01",
+            "P06",
+            "P09"
+          ],
+          [
+            "P03",
+            "P08",
+            "P10"
+          ]
+        ],
+        [
+          [
+            "P02",
+            "P09",
+            "P10"
+          ],
+          [
+            "P01",
+            "P00",
+            "P04"
+          ],
+          [
+            "P11",
+            "P06",
+            "P08"
+          ],
+          [
+            "P03",
+            "P07",
+            "P05"
+          ]
+        ],
+        [
+          [
+            "P11",
+            "P00",
+            "P09"
+          ],
+          [
+            "P01",
+            "P02",
+            "P08"
+          ],
+          [
+            "P03",
+            "P05",
+            "P06"
+          ],
+          [
+            "P07",
+            "P04",
+            "P10"
+          ]
+        ]
+      ]
+    },
+    {
+      "provider": "groupmixer_public_api",
+      "people": 12,
+      "groups": 4,
+      "group_size": 3,
+      "rounds": 6,
+      "seed": 123,
+      "status": "time_limited",
+      "metrics": {
+        "pair_incidents": 72,
+        "unique_pairs": 65,
+        "repeated_pair_incidents": 7,
+        "pairs_met_more_than_once": 7,
+        "max_pair_count": 2,
+        "simple_lower_bound": 6
+      },
+      "schedule": [
+        [
+          [
+            "P00",
+            "P04",
+            "P08"
+          ],
+          [
+            "P01",
+            "P05",
+            "P10"
+          ],
+          [
+            "P02",
+            "P06",
+            "P11"
+          ],
+          [
+            "P03",
+            "P07",
+            "P09"
+          ]
+        ],
+        [
+          [
+            "P04",
+            "P06",
+            "P09"
+          ],
+          [
+            "P00",
+            "P05",
+            "P11"
+          ],
+          [
+            "P01",
+            "P03",
+            "P10"
+          ],
+          [
+            "P02",
+            "P07",
+            "P08"
+          ]
+        ],
+        [
+          [
+            "P02",
+            "P04",
+            "P10"
+          ],
+          [
+            "P03",
+            "P05",
+            "P08"
+          ],
+          [
+            "P00",
+            "P06",
+            "P09"
+          ],
+          [
+            "P01",
+            "P07",
+            "P11"
+          ]
+        ],
+        [
+          [
+            "P03",
+            "P04",
+            "P11"
+          ],
+          [
+            "P02",
+            "P05",
+            "P09"
+          ],
+          [
+            "P01",
+            "P06",
+            "P08"
+          ],
+          [
+            "P00",
+            "P07",
+            "P10"
+          ]
+        ],
+        [
+          [
+            "P00",
+            "P01",
+            "P02"
+          ],
+          [
+            "P04",
+            "P05",
+            "P07"
+          ],
+          [
+            "P03",
+            "P06",
+            "P10"
+          ],
+          [
+            "P08",
+            "P09",
+            "P11"
+          ]
+        ],
+        [
+          [
+            "P00",
+            "P02",
+            "P03"
+          ],
+          [
+            "P08",
+            "P10",
+            "P11"
+          ],
+          [
+            "P05",
+            "P06",
+            "P07"
+          ],
+          [
+            "P01",
+            "P04",
+            "P09"
+          ]
+        ]
+      ]
+    },
+    {
+      "provider": "teamcreator_browser",
+      "people": 12,
+      "groups": 4,
+      "group_size": 3,
+      "rounds": 6,
+      "seed": 123,
+      "status": "Done. 6 rounds formed, entirely in your browser.",
+      "metrics": {
+        "pair_incidents": 72,
+        "unique_pairs": 46,
+        "repeated_pair_incidents": 26,
+        "pairs_met_more_than_once": 19,
+        "max_pair_count": 3,
+        "simple_lower_bound": 6
+      },
+      "schedule": [
+        [
+          [
+            "P01",
+            "P02",
+            "P05"
+          ],
+          [
+            "P03",
+            "P06",
+            "P10"
+          ],
+          [
+            "P04",
+            "P07",
+            "P08"
+          ],
+          [
+            "P00",
+            "P09",
+            "P11"
+          ]
+        ],
+        [
+          [
+            "P01",
+            "P02",
+            "P09"
+          ],
+          [
+            "P05",
+            "P06",
+            "P10"
+          ],
+          [
+            "P00",
+            "P07",
+            "P11"
+          ],
+          [
+            "P03",
+            "P04",
+            "P08"
+          ]
+        ],
+        [
+          [
+            "P02",
+            "P10",
+            "P11"
+          ],
+          [
+            "P01",
+            "P05",
+            "P06"
+          ],
+          [
+            "P00",
+            "P04",
+            "P07"
+          ],
+          [
+            "P03",
+            "P08",
+            "P09"
+          ]
+        ],
+        [
+          [
+            "P02",
+            "P06",
+            "P10"
+          ],
+          [
+            "P05",
+            "P07",
+            "P11"
+          ],
+          [
+            "P00",
+            "P03",
+            "P08"
+          ],
+          [
+            "P01",
+            "P04",
+            "P09"
+          ]
+        ],
+        [
+          [
+            "P01",
+            "P03",
+            "P10"
+          ],
+          [
+            "P00",
+            "P07",
+            "P09"
+          ],
+          [
+            "P04",
+            "P05",
+            "P11"
+          ],
+          [
+            "P02",
+            "P06",
+            "P08"
+          ]
+        ],
+        [
+          [
+            "P00",
+            "P09",
+            "P10"
+          ],
+          [
+            "P03",
+            "P04",
+            "P07"
+          ],
+          [
+            "P01",
+            "P02",
+            "P05"
+          ],
+          [
+            "P06",
+            "P08",
+            "P11"
+          ]
+        ]
+      ]
+    },
+    {
+      "provider": "teamcreator_python_reference",
+      "people": 12,
+      "groups": 4,
+      "group_size": 3,
+      "rounds": 6,
+      "seed": 123,
+      "status": "success",
+      "metrics": {
+        "pair_incidents": 72,
+        "unique_pairs": 62,
+        "repeated_pair_incidents": 10,
+        "pairs_met_more_than_once": 8,
+        "max_pair_count": 3,
+        "simple_lower_bound": 6
+      },
+      "schedule": [
+        [
+          [
+            "P01",
+            "P02",
+            "P05"
+          ],
+          [
+            "P03",
+            "P06",
+            "P10"
+          ],
+          [
+            "P04",
+            "P07",
+            "P08"
+          ],
+          [
+            "P00",
+            "P09",
+            "P11"
+          ]
+        ],
+        [
+          [
+            "P04",
+            "P05",
+            "P09"
+          ],
+          [
+            "P07",
+            "P01",
+            "P10"
+          ],
+          [
+            "P03",
+            "P02",
+            "P11"
+          ],
+          [
+            "P00",
+            "P06",
+            "P08"
+          ]
+        ],
+        [
+          [
+            "P02",
+            "P00",
+            "P10"
+          ],
+          [
+            "P06",
+            "P07",
+            "P09"
+          ],
+          [
+            "P03",
+            "P05",
+            "P08"
+          ],
+          [
+            "P01",
+            "P04",
+            "P11"
+          ]
+        ],
+        [
+          [
+            "P05",
+            "P10",
+            "P11"
+          ],
+          [
+            "P00",
+            "P07",
+            "P03"
+          ],
+          [
+            "P01",
+            "P08",
+            "P09"
+          ],
+          [
+            "P02",
+            "P06",
+            "P04"
+          ]
+        ],
+        [
+          [
+            "P10",
+            "P04",
+            "P03"
+          ],
+          [
+            "P01",
+            "P05",
+            "P00"
+          ],
+          [
+            "P09",
+            "P08",
+            "P02"
+          ],
+          [
+            "P06",
+            "P07",
+            "P11"
+          ]
+        ],
+        [
+          [
+            "P10",
+            "P03",
+            "P09"
+          ],
+          [
+            "P01",
+            "P06",
+            "P05"
+          ],
+          [
+            "P02",
+            "P07",
+            "P11"
+          ],
+          [
+            "P00",
+            "P04",
+            "P08"
+          ]
+        ]
+      ]
+    },
+    {
+      "provider": "groupmixer_public_api",
+      "people": 16,
+      "groups": 4,
+      "group_size": 4,
+      "rounds": 5,
+      "seed": 7,
+      "status": "solved",
+      "metrics": {
+        "pair_incidents": 120,
+        "unique_pairs": 120,
+        "repeated_pair_incidents": 0,
+        "pairs_met_more_than_once": 0,
+        "max_pair_count": 1,
+        "simple_lower_bound": 0
+      },
+      "schedule": [
+        [
+          [
+            "P00",
+            "P01",
+            "P02",
+            "P03"
+          ],
+          [
+            "P04",
+            "P05",
+            "P06",
+            "P07"
+          ],
+          [
+            "P08",
+            "P09",
+            "P10",
+            "P11"
+          ],
+          [
+            "P12",
+            "P13",
+            "P14",
+            "P15"
+          ]
+        ],
+        [
+          [
+            "P00",
+            "P04",
+            "P08",
+            "P12"
+          ],
+          [
+            "P01",
+            "P05",
+            "P09",
+            "P13"
+          ],
+          [
+            "P02",
+            "P06",
+            "P10",
+            "P14"
+          ],
+          [
+            "P03",
+            "P07",
+            "P11",
+            "P15"
+          ]
+        ],
+        [
+          [
+            "P00",
+            "P05",
+            "P10",
+            "P15"
+          ],
+          [
+            "P01",
+            "P04",
+            "P11",
+            "P14"
+          ],
+          [
+            "P02",
+            "P07",
+            "P08",
+            "P13"
+          ],
+          [
+            "P03",
+            "P06",
+            "P09",
+            "P12"
+          ]
+        ],
+        [
+          [
+            "P00",
+            "P06",
+            "P11",
+            "P13"
+          ],
+          [
+            "P01",
+            "P07",
+            "P10",
+            "P12"
+          ],
+          [
+            "P02",
+            "P04",
+            "P09",
+            "P15"
+          ],
+          [
+            "P03",
+            "P05",
+            "P08",
+            "P14"
+          ]
+        ],
+        [
+          [
+            "P00",
+            "P07",
+            "P09",
+            "P14"
+          ],
+          [
+            "P01",
+            "P06",
+            "P08",
+            "P15"
+          ],
+          [
+            "P02",
+            "P05",
+            "P11",
+            "P12"
+          ],
+          [
+            "P03",
+            "P04",
+            "P10",
+            "P13"
+          ]
+        ]
+      ]
+    },
+    {
+      "provider": "teamcreator_browser",
+      "people": 16,
+      "groups": 4,
+      "group_size": 4,
+      "rounds": 5,
+      "seed": 7,
+      "status": "Done. 5 rounds formed, entirely in your browser.",
+      "metrics": {
+        "pair_incidents": 120,
+        "unique_pairs": 83,
+        "repeated_pair_incidents": 37,
+        "pairs_met_more_than_once": 30,
+        "max_pair_count": 4,
+        "simple_lower_bound": 0
+      },
+      "schedule": [
+        [
+          [
+            "P00",
+            "P03",
+            "P06",
+            "P07"
+          ],
+          [
+            "P01",
+            "P09",
+            "P10",
+            "P13"
+          ],
+          [
+            "P04",
+            "P11",
+            "P12",
+            "P15"
+          ],
+          [
+            "P02",
+            "P05",
+            "P08",
+            "P14"
+          ]
+        ],
+        [
+          [
+            "P03",
+            "P08",
+            "P14",
+            "P15"
+          ],
+          [
+            "P06",
+            "P09",
+            "P10",
+            "P11"
+          ],
+          [
+            "P04",
+            "P07",
+            "P12",
+            "P13"
+          ],
+          [
+            "P00",
+            "P01",
+            "P02",
+            "P05"
+          ]
+        ],
+        [
+          [
+            "P00",
+            "P01",
+            "P02",
+            "P11"
+          ],
+          [
+            "P04",
+            "P08",
+            "P13",
+            "P14"
+          ],
+          [
+            "P05",
+            "P06",
+            "P07",
+            "P12"
+          ],
+          [
+            "P03",
+            "P09",
+            "P10",
+            "P15"
+          ]
+        ],
+        [
+          [
+            "P03",
+            "P06",
+            "P07",
+            "P13"
+          ],
+          [
+            "P01",
+            "P02",
+            "P10",
+            "P15"
+          ],
+          [
+            "P04",
+            "P05",
+            "P09",
+            "P11"
+          ],
+          [
+            "P00",
+            "P08",
+            "P12",
+            "P14"
+          ]
+        ],
+        [
+          [
+            "P01",
+            "P03",
+            "P05",
+            "P10"
+          ],
+          [
+            "P06",
+            "P11",
+            "P13",
+            "P15"
+          ],
+          [
+            "P00",
+            "P02",
+            "P12",
+            "P14"
+          ],
+          [
+            "P04",
+            "P07",
+            "P08",
+            "P09"
+          ]
+        ]
+      ]
+    },
+    {
+      "provider": "teamcreator_python_reference",
+      "people": 16,
+      "groups": 4,
+      "group_size": 4,
+      "rounds": 5,
+      "seed": 7,
+      "status": "success",
+      "metrics": {
+        "pair_incidents": 120,
+        "unique_pairs": 112,
+        "repeated_pair_incidents": 8,
+        "pairs_met_more_than_once": 8,
+        "max_pair_count": 2,
+        "simple_lower_bound": 0
+      },
+      "schedule": [
+        [
+          [
+            "P00",
+            "P03",
+            "P06",
+            "P07"
+          ],
+          [
+            "P01",
+            "P09",
+            "P10",
+            "P13"
+          ],
+          [
+            "P04",
+            "P11",
+            "P12",
+            "P15"
+          ],
+          [
+            "P02",
+            "P05",
+            "P08",
+            "P14"
+          ]
+        ],
+        [
+          [
+            "P03",
+            "P05",
+            "P11",
+            "P13"
+          ],
+          [
+            "P04",
+            "P06",
+            "P10",
+            "P14"
+          ],
+          [
+            "P02",
+            "P07",
+            "P09",
+            "P15"
+          ],
+          [
+            "P00",
+            "P01",
+            "P08",
+            "P12"
+          ]
+        ],
+        [
+          [
+            "P01",
+            "P03",
+            "P15",
+            "P14"
+          ],
+          [
+            "P10",
+            "P08",
+            "P11",
+            "P07"
+          ],
+          [
+            "P00",
+            "P04",
+            "P05",
+            "P09"
+          ],
+          [
+            "P12",
+            "P02",
+            "P06",
+            "P13"
+          ]
+        ],
+        [
+          [
+            "P00",
+            "P08",
+            "P13",
+            "P15"
+          ],
+          [
+            "P14",
+            "P09",
+            "P07",
+            "P12"
+          ],
+          [
+            "P01",
+            "P11",
+            "P06",
+            "P05"
+          ],
+          [
+            "P02",
+            "P04",
+            "P10",
+            "P03"
+          ]
+        ],
+        [
+          [
+            "P10",
+            "P15",
+            "P05",
+            "P12"
+          ],
+          [
+            "P04",
+            "P07",
+            "P01",
+            "P13"
+          ],
+          [
+            "P02",
+            "P00",
+            "P11",
+            "P14"
+          ],
+          [
+            "P06",
+            "P09",
+            "P08",
+            "P03"
+          ]
+        ]
+      ]
+    },
+    {
+      "provider": "groupmixer_public_api",
+      "people": 16,
+      "groups": 4,
+      "group_size": 4,
+      "rounds": 5,
+      "seed": 42,
+      "status": "solved",
+      "metrics": {
+        "pair_incidents": 120,
+        "unique_pairs": 120,
+        "repeated_pair_incidents": 0,
+        "pairs_met_more_than_once": 0,
+        "max_pair_count": 1,
+        "simple_lower_bound": 0
+      },
+      "schedule": [
+        [
+          [
+            "P00",
+            "P01",
+            "P02",
+            "P03"
+          ],
+          [
+            "P04",
+            "P05",
+            "P06",
+            "P07"
+          ],
+          [
+            "P08",
+            "P09",
+            "P10",
+            "P11"
+          ],
+          [
+            "P12",
+            "P13",
+            "P14",
+            "P15"
+          ]
+        ],
+        [
+          [
+            "P00",
+            "P04",
+            "P08",
+            "P12"
+          ],
+          [
+            "P01",
+            "P05",
+            "P09",
+            "P13"
+          ],
+          [
+            "P02",
+            "P06",
+            "P10",
+            "P14"
+          ],
+          [
+            "P03",
+            "P07",
+            "P11",
+            "P15"
+          ]
+        ],
+        [
+          [
+            "P00",
+            "P05",
+            "P10",
+            "P15"
+          ],
+          [
+            "P01",
+            "P04",
+            "P11",
+            "P14"
+          ],
+          [
+            "P02",
+            "P07",
+            "P08",
+            "P13"
+          ],
+          [
+            "P03",
+            "P06",
+            "P09",
+            "P12"
+          ]
+        ],
+        [
+          [
+            "P00",
+            "P06",
+            "P11",
+            "P13"
+          ],
+          [
+            "P01",
+            "P07",
+            "P10",
+            "P12"
+          ],
+          [
+            "P02",
+            "P04",
+            "P09",
+            "P15"
+          ],
+          [
+            "P03",
+            "P05",
+            "P08",
+            "P14"
+          ]
+        ],
+        [
+          [
+            "P00",
+            "P07",
+            "P09",
+            "P14"
+          ],
+          [
+            "P01",
+            "P06",
+            "P08",
+            "P15"
+          ],
+          [
+            "P02",
+            "P05",
+            "P11",
+            "P12"
+          ],
+          [
+            "P03",
+            "P04",
+            "P10",
+            "P13"
+          ]
+        ]
+      ]
+    },
+    {
+      "provider": "teamcreator_browser",
+      "people": 16,
+      "groups": 4,
+      "group_size": 4,
+      "rounds": 5,
+      "seed": 42,
+      "status": "Done. 5 rounds formed, entirely in your browser.",
+      "metrics": {
+        "pair_incidents": 120,
+        "unique_pairs": 78,
+        "repeated_pair_incidents": 42,
+        "pairs_met_more_than_once": 35,
+        "max_pair_count": 3,
+        "simple_lower_bound": 0
+      },
+      "schedule": [
+        [
+          [
+            "P04",
+            "P05",
+            "P12",
+            "P13"
+          ],
+          [
+            "P00",
+            "P01",
+            "P02",
+            "P14"
+          ],
+          [
+            "P07",
+            "P08",
+            "P09",
+            "P10"
+          ],
+          [
+            "P03",
+            "P06",
+            "P11",
+            "P15"
+          ]
+        ],
+        [
+          [
+            "P06",
+            "P07",
+            "P09",
+            "P11"
+          ],
+          [
+            "P02",
+            "P10",
+            "P12",
+            "P14"
+          ],
+          [
+            "P01",
+            "P03",
+            "P08",
+            "P15"
+          ],
+          [
+            "P00",
+            "P04",
+            "P05",
+            "P13"
+          ]
+        ],
+        [
+          [
+            "P01",
+            "P02",
+            "P08",
+            "P10"
+          ],
+          [
+            "P04",
+            "P05",
+            "P06",
+            "P14"
+          ],
+          [
+            "P00",
+            "P12",
+            "P13",
+            "P15"
+          ],
+          [
+            "P03",
+            "P07",
+            "P09",
+            "P11"
+          ]
+        ],
+        [
+          [
+            "P03",
+            "P04",
+            "P06",
+            "P14"
+          ],
+          [
+            "P07",
+            "P08",
+            "P11",
+            "P13"
+          ],
+          [
+            "P01",
+            "P02",
+            "P05",
+            "P09"
+          ],
+          [
+            "P00",
+            "P10",
+            "P12",
+            "P15"
+          ]
+        ],
+        [
+          [
+            "P00",
+            "P01",
+            "P10",
+            "P13"
+          ],
+          [
+            "P04",
+            "P08",
+            "P09",
+            "P12"
+          ],
+          [
+            "P05",
+            "P06",
+            "P11",
+            "P15"
+          ],
+          [
+            "P02",
+            "P03",
+            "P07",
+            "P14"
+          ]
+        ]
+      ]
+    },
+    {
+      "provider": "teamcreator_python_reference",
+      "people": 16,
+      "groups": 4,
+      "group_size": 4,
+      "rounds": 5,
+      "seed": 42,
+      "status": "success",
+      "metrics": {
+        "pair_incidents": 120,
+        "unique_pairs": 112,
+        "repeated_pair_incidents": 8,
+        "pairs_met_more_than_once": 8,
+        "max_pair_count": 2,
+        "simple_lower_bound": 0
+      },
+      "schedule": [
+        [
+          [
+            "P04",
+            "P05",
+            "P12",
+            "P13"
+          ],
+          [
+            "P00",
+            "P01",
+            "P02",
+            "P14"
+          ],
+          [
+            "P07",
+            "P08",
+            "P09",
+            "P10"
+          ],
+          [
+            "P03",
+            "P06",
+            "P11",
+            "P15"
+          ]
+        ],
+        [
+          [
+            "P03",
+            "P02",
+            "P09",
+            "P13"
+          ],
+          [
+            "P05",
+            "P06",
+            "P10",
+            "P14"
+          ],
+          [
+            "P01",
+            "P07",
+            "P04",
+            "P15"
+          ],
+          [
+            "P00",
+            "P11",
+            "P08",
+            "P12"
+          ]
+        ],
+        [
+          [
+            "P13",
+            "P15",
+            "P08",
+            "P14"
+          ],
+          [
+            "P02",
+            "P05",
+            "P07",
+            "P11"
+          ],
+          [
+            "P03",
+            "P04",
+            "P10",
+            "P00"
+          ],
+          [
+            "P01",
+            "P06",
+            "P09",
+            "P12"
+          ]
+        ],
+        [
+          [
+            "P09",
+            "P10",
+            "P11",
+            "P15"
+          ],
+          [
+            "P03",
+            "P07",
+            "P14",
+            "P12"
+          ],
+          [
+            "P00",
+            "P05",
+            "P01",
+            "P13"
+          ],
+          [
+            "P02",
+            "P06",
+            "P04",
+            "P08"
+          ]
+        ],
+        [
+          [
+            "P03",
+            "P05",
+            "P08",
+            "P01"
+          ],
+          [
+            "P14",
+            "P04",
+            "P09",
+            "P11"
+          ],
+          [
+            "P02",
+            "P12",
+            "P10",
+            "P15"
+          ],
+          [
+            "P06",
+            "P07",
+            "P00",
+            "P13"
+          ]
+        ]
+      ]
+    },
+    {
+      "provider": "groupmixer_public_api",
+      "people": 16,
+      "groups": 4,
+      "group_size": 4,
+      "rounds": 5,
+      "seed": 123,
+      "status": "solved",
+      "metrics": {
+        "pair_incidents": 120,
+        "unique_pairs": 120,
+        "repeated_pair_incidents": 0,
+        "pairs_met_more_than_once": 0,
+        "max_pair_count": 1,
+        "simple_lower_bound": 0
+      },
+      "schedule": [
+        [
+          [
+            "P00",
+            "P01",
+            "P02",
+            "P03"
+          ],
+          [
+            "P04",
+            "P05",
+            "P06",
+            "P07"
+          ],
+          [
+            "P08",
+            "P09",
+            "P10",
+            "P11"
+          ],
+          [
+            "P12",
+            "P13",
+            "P14",
+            "P15"
+          ]
+        ],
+        [
+          [
+            "P00",
+            "P04",
+            "P08",
+            "P12"
+          ],
+          [
+            "P01",
+            "P05",
+            "P09",
+            "P13"
+          ],
+          [
+            "P02",
+            "P06",
+            "P10",
+            "P14"
+          ],
+          [
+            "P03",
+            "P07",
+            "P11",
+            "P15"
+          ]
+        ],
+        [
+          [
+            "P00",
+            "P05",
+            "P10",
+            "P15"
+          ],
+          [
+            "P01",
+            "P04",
+            "P11",
+            "P14"
+          ],
+          [
+            "P02",
+            "P07",
+            "P08",
+            "P13"
+          ],
+          [
+            "P03",
+            "P06",
+            "P09",
+            "P12"
+          ]
+        ],
+        [
+          [
+            "P00",
+            "P06",
+            "P11",
+            "P13"
+          ],
+          [
+            "P01",
+            "P07",
+            "P10",
+            "P12"
+          ],
+          [
+            "P02",
+            "P04",
+            "P09",
+            "P15"
+          ],
+          [
+            "P03",
+            "P05",
+            "P08",
+            "P14"
+          ]
+        ],
+        [
+          [
+            "P00",
+            "P07",
+            "P09",
+            "P14"
+          ],
+          [
+            "P01",
+            "P06",
+            "P08",
+            "P15"
+          ],
+          [
+            "P02",
+            "P05",
+            "P11",
+            "P12"
+          ],
+          [
+            "P03",
+            "P04",
+            "P10",
+            "P13"
+          ]
+        ]
+      ]
+    },
+    {
+      "provider": "teamcreator_browser",
+      "people": 16,
+      "groups": 4,
+      "group_size": 4,
+      "rounds": 5,
+      "seed": 123,
+      "status": "Done. 5 rounds formed, entirely in your browser.",
+      "metrics": {
+        "pair_incidents": 120,
+        "unique_pairs": 77,
+        "repeated_pair_incidents": 43,
+        "pairs_met_more_than_once": 32,
+        "max_pair_count": 4,
+        "simple_lower_bound": 0
+      },
+      "schedule": [
+        [
+          [
+            "P05",
+            "P13",
+            "P14",
+            "P15"
+          ],
+          [
+            "P01",
+            "P04",
+            "P06",
+            "P10"
+          ],
+          [
+            "P07",
+            "P08",
+            "P09",
+            "P12"
+          ],
+          [
+            "P00",
+            "P02",
+            "P03",
+            "P11"
+          ]
+        ],
+        [
+          [
+            "P01",
+            "P03",
+            "P09",
+            "P15"
+          ],
+          [
+            "P02",
+            "P06",
+            "P10",
+            "P14"
+          ],
+          [
+            "P05",
+            "P11",
+            "P12",
+            "P13"
+          ],
+          [
+            "P00",
+            "P04",
+            "P07",
+            "P08"
+          ]
+        ],
+        [
+          [
+            "P02",
+            "P05",
+            "P06",
+            "P11"
+          ],
+          [
+            "P01",
+            "P04",
+            "P07",
+            "P14"
+          ],
+          [
+            "P00",
+            "P03",
+            "P09",
+            "P13"
+          ],
+          [
+            "P08",
+            "P10",
+            "P12",
+            "P15"
+          ]
+        ],
+        [
+          [
+            "P01",
+            "P03",
+            "P09",
+            "P10"
+          ],
+          [
+            "P02",
+            "P06",
+            "P11",
+            "P14"
+          ],
+          [
+            "P04",
+            "P05",
+            "P07",
+            "P12"
+          ],
+          [
+            "P00",
+            "P08",
+            "P13",
+            "P15"
+          ]
+        ],
+        [
+          [
+            "P03",
+            "P05",
+            "P09",
+            "P10"
+          ],
+          [
+            "P00",
+            "P04",
+            "P07",
+            "P08"
+          ],
+          [
+            "P01",
+            "P11",
+            "P12",
+            "P13"
+          ],
+          [
+            "P02",
+            "P06",
+            "P14",
+            "P15"
+          ]
+        ]
+      ]
+    },
+    {
+      "provider": "teamcreator_python_reference",
+      "people": 16,
+      "groups": 4,
+      "group_size": 4,
+      "rounds": 5,
+      "seed": 123,
+      "status": "success",
+      "metrics": {
+        "pair_incidents": 120,
+        "unique_pairs": 112,
+        "repeated_pair_incidents": 8,
+        "pairs_met_more_than_once": 8,
+        "max_pair_count": 2,
+        "simple_lower_bound": 0
+      },
+      "schedule": [
+        [
+          [
+            "P05",
+            "P13",
+            "P14",
+            "P15"
+          ],
+          [
+            "P01",
+            "P04",
+            "P06",
+            "P10"
+          ],
+          [
+            "P07",
+            "P08",
+            "P09",
+            "P12"
+          ],
+          [
+            "P00",
+            "P02",
+            "P03",
+            "P11"
+          ]
+        ],
+        [
+          [
+            "P03",
+            "P04",
+            "P09",
+            "P13"
+          ],
+          [
+            "P02",
+            "P08",
+            "P10",
+            "P14"
+          ],
+          [
+            "P01",
+            "P07",
+            "P11",
+            "P15"
+          ],
+          [
+            "P00",
+            "P05",
+            "P06",
+            "P12"
+          ]
+        ],
+        [
+          [
+            "P00",
+            "P07",
+            "P13",
+            "P10"
+          ],
+          [
+            "P08",
+            "P06",
+            "P03",
+            "P15"
+          ],
+          [
+            "P11",
+            "P04",
+            "P14",
+            "P12"
+          ],
+          [
+            "P01",
+            "P05",
+            "P09",
+            "P02"
+          ]
+        ],
+        [
+          [
+            "P11",
+            "P05",
+            "P10",
+            "P08"
+          ],
+          [
+            "P00",
+            "P04",
+            "P15",
+            "P02"
+          ],
+          [
+            "P01",
+            "P12",
+            "P03",
+            "P13"
+          ],
+          [
+            "P09",
+            "P06",
+            "P07",
+            "P14"
+          ]
+        ],
+        [
+          [
+            "P12",
+            "P15",
+            "P09",
+            "P10"
+          ],
+          [
+            "P00",
+            "P01",
+            "P08",
+            "P14"
+          ],
+          [
+            "P11",
+            "P06",
+            "P02",
+            "P13"
+          ],
+          [
+            "P04",
+            "P07",
+            "P03",
+            "P05"
+          ]
+        ]
+      ]
+    },
+    {
+      "provider": "groupmixer_public_api",
+      "people": 20,
+      "groups": 5,
+      "group_size": 4,
+      "rounds": 5,
+      "seed": 7,
+      "status": "solved",
+      "metrics": {
+        "pair_incidents": 150,
+        "unique_pairs": 150,
+        "repeated_pair_incidents": 0,
+        "pairs_met_more_than_once": 0,
+        "max_pair_count": 1,
+        "simple_lower_bound": 0
+      },
+      "schedule": [
+        [
+          [
+            "P00",
+            "P05",
+            "P10",
+            "P15"
+          ],
+          [
+            "P01",
+            "P06",
+            "P12",
+            "P18"
+          ],
+          [
+            "P02",
+            "P07",
+            "P14",
+            "P16"
+          ],
+          [
+            "P03",
+            "P08",
+            "P11",
+            "P19"
+          ],
+          [
+            "P04",
+            "P09",
+            "P13",
+            "P17"
+          ]
+        ],
+        [
+          [
+            "P01",
+            "P05",
+            "P11",
+            "P16"
+          ],
+          [
+            "P02",
+            "P06",
+            "P13",
+            "P19"
+          ],
+          [
+            "P03",
+            "P07",
+            "P10",
+            "P17"
+          ],
+          [
+            "P04",
+            "P08",
+            "P12",
+            "P15"
+          ],
+          [
+            "P00",
+            "P09",
+            "P14",
+            "P18"
+          ]
+        ],
+        [
+          [
+            "P02",
+            "P05",
+            "P12",
+            "P17"
+          ],
+          [
+            "P03",
+            "P06",
+            "P14",
+            "P15"
+          ],
+          [
+            "P04",
+            "P07",
+            "P11",
+            "P18"
+          ],
+          [
+            "P00",
+            "P08",
+            "P13",
+            "P16"
+          ],
+          [
+            "P01",
+            "P09",
+            "P10",
+            "P19"
+          ]
+        ],
+        [
+          [
+            "P03",
+            "P05",
+            "P13",
+            "P18"
+          ],
+          [
+            "P04",
+            "P06",
+            "P10",
+            "P16"
+          ],
+          [
+            "P00",
+            "P07",
+            "P12",
+            "P19"
+          ],
+          [
+            "P01",
+            "P08",
+            "P14",
+            "P17"
+          ],
+          [
+            "P02",
+            "P09",
+            "P11",
+            "P15"
+          ]
+        ],
+        [
+          [
+            "P04",
+            "P05",
+            "P14",
+            "P19"
+          ],
+          [
+            "P00",
+            "P06",
+            "P11",
+            "P17"
+          ],
+          [
+            "P01",
+            "P07",
+            "P13",
+            "P15"
+          ],
+          [
+            "P02",
+            "P08",
+            "P10",
+            "P18"
+          ],
+          [
+            "P03",
+            "P09",
+            "P12",
+            "P16"
+          ]
+        ]
+      ]
+    },
+    {
+      "provider": "teamcreator_browser",
+      "people": 20,
+      "groups": 5,
+      "group_size": 4,
+      "rounds": 5,
+      "seed": 7,
+      "status": "Done. 5 rounds formed, entirely in your browser.",
+      "metrics": {
+        "pair_incidents": 150,
+        "unique_pairs": 110,
+        "repeated_pair_incidents": 40,
+        "pairs_met_more_than_once": 35,
+        "max_pair_count": 3,
+        "simple_lower_bound": 0
+      },
+      "schedule": [
+        [
+          [
+            "P00",
+            "P03",
+            "P06",
+            "P10"
+          ],
+          [
+            "P01",
+            "P09",
+            "P13",
+            "P16"
+          ],
+          [
+            "P04",
+            "P11",
+            "P12",
+            "P18"
+          ],
+          [
+            "P02",
+            "P14",
+            "P15",
+            "P17"
+          ],
+          [
+            "P05",
+            "P07",
+            "P08",
+            "P19"
+          ]
+        ],
+        [
+          [
+            "P03",
+            "P11",
+            "P14",
+            "P15"
+          ],
+          [
+            "P06",
+            "P09",
+            "P10",
+            "P18"
+          ],
+          [
+            "P04",
+            "P07",
+            "P12",
+            "P13"
+          ],
+          [
+            "P00",
+            "P02",
+            "P05",
+            "P17"
+          ],
+          [
+            "P01",
+            "P08",
+            "P16",
+            "P19"
+          ]
+        ],
+        [
+          [
+            "P08",
+            "P11",
+            "P17",
+            "P19"
+          ],
+          [
+            "P00",
+            "P04",
+            "P06",
+            "P14"
+          ],
+          [
+            "P03",
+            "P05",
+            "P12",
+            "P13"
+          ],
+          [
+            "P02",
+            "P07",
+            "P15",
+            "P18"
+          ],
+          [
+            "P01",
+            "P09",
+            "P10",
+            "P16"
+          ]
+        ],
+        [
+          [
+            "P06",
+            "P13",
+            "P16",
+            "P17"
+          ],
+          [
+            "P01",
+            "P03",
+            "P10",
+            "P15"
+          ],
+          [
+            "P02",
+            "P05",
+            "P18",
+            "P19"
+          ],
+          [
+            "P04",
+            "P08",
+            "P09",
+            "P11"
+          ],
+          [
+            "P00",
+            "P07",
+            "P12",
+            "P14"
+          ]
+        ],
+        [
+          [
+            "P01",
+            "P04",
+            "P10",
+            "P19"
+          ],
+          [
+            "P03",
+            "P05",
+            "P13",
+            "P15"
+          ],
+          [
+            "P06",
+            "P11",
+            "P14",
+            "P17"
+          ],
+          [
+            "P02",
+            "P09",
+            "P12",
+            "P16"
+          ],
+          [
+            "P00",
+            "P07",
+            "P08",
+            "P18"
+          ]
+        ]
+      ]
+    },
+    {
+      "provider": "teamcreator_python_reference",
+      "people": 20,
+      "groups": 5,
+      "group_size": 4,
+      "rounds": 5,
+      "seed": 7,
+      "status": "success",
+      "metrics": {
+        "pair_incidents": 150,
+        "unique_pairs": 141,
+        "repeated_pair_incidents": 9,
+        "pairs_met_more_than_once": 9,
+        "max_pair_count": 2,
+        "simple_lower_bound": 0
+      },
+      "schedule": [
+        [
+          [
+            "P00",
+            "P03",
+            "P06",
+            "P10"
+          ],
+          [
+            "P01",
+            "P09",
+            "P13",
+            "P16"
+          ],
+          [
+            "P04",
+            "P11",
+            "P12",
+            "P18"
+          ],
+          [
+            "P02",
+            "P14",
+            "P15",
+            "P17"
+          ],
+          [
+            "P05",
+            "P07",
+            "P08",
+            "P19"
+          ]
+        ],
+        [
+          [
+            "P03",
+            "P01",
+            "P12",
+            "P17"
+          ],
+          [
+            "P02",
+            "P08",
+            "P00",
+            "P18"
+          ],
+          [
+            "P04",
+            "P09",
+            "P14",
+            "P19"
+          ],
+          [
+            "P13",
+            "P05",
+            "P10",
+            "P15"
+          ],
+          [
+            "P07",
+            "P06",
+            "P11",
+            "P16"
+          ]
+        ],
+        [
+          [
+            "P06",
+            "P01",
+            "P15",
+            "P04"
+          ],
+          [
+            "P11",
+            "P17",
+            "P00",
+            "P05"
+          ],
+          [
+            "P14",
+            "P10",
+            "P08",
+            "P16"
+          ],
+          [
+            "P02",
+            "P07",
+            "P12",
+            "P09"
+          ],
+          [
+            "P03",
+            "P19",
+            "P13",
+            "P18"
+          ]
+        ],
+        [
+          [
+            "P15",
+            "P00",
+            "P03",
+            "P09"
+          ],
+          [
+            "P19",
+            "P16",
+            "P12",
+            "P06"
+          ],
+          [
+            "P11",
+            "P08",
+            "P13",
+            "P02"
+          ],
+          [
+            "P18",
+            "P01",
+            "P14",
+            "P05"
+          ],
+          [
+            "P04",
+            "P07",
+            "P10",
+            "P17"
+          ]
+        ],
+        [
+          [
+            "P07",
+            "P14",
+            "P00",
+            "P01"
+          ],
+          [
+            "P03",
+            "P11",
+            "P08",
+            "P09"
+          ],
+          [
+            "P19",
+            "P12",
+            "P10",
+            "P15"
+          ],
+          [
+            "P05",
+            "P02",
+            "P04",
+            "P16"
+          ],
+          [
+            "P13",
+            "P06",
+            "P18",
+            "P17"
+          ]
+        ]
+      ]
+    },
+    {
+      "provider": "groupmixer_public_api",
+      "people": 20,
+      "groups": 5,
+      "group_size": 4,
+      "rounds": 5,
+      "seed": 42,
+      "status": "solved",
+      "metrics": {
+        "pair_incidents": 150,
+        "unique_pairs": 150,
+        "repeated_pair_incidents": 0,
+        "pairs_met_more_than_once": 0,
+        "max_pair_count": 1,
+        "simple_lower_bound": 0
+      },
+      "schedule": [
+        [
+          [
+            "P00",
+            "P05",
+            "P10",
+            "P15"
+          ],
+          [
+            "P01",
+            "P06",
+            "P12",
+            "P18"
+          ],
+          [
+            "P02",
+            "P07",
+            "P14",
+            "P16"
+          ],
+          [
+            "P03",
+            "P08",
+            "P11",
+            "P19"
+          ],
+          [
+            "P04",
+            "P09",
+            "P13",
+            "P17"
+          ]
+        ],
+        [
+          [
+            "P01",
+            "P05",
+            "P11",
+            "P16"
+          ],
+          [
+            "P02",
+            "P06",
+            "P13",
+            "P19"
+          ],
+          [
+            "P03",
+            "P07",
+            "P10",
+            "P17"
+          ],
+          [
+            "P04",
+            "P08",
+            "P12",
+            "P15"
+          ],
+          [
+            "P00",
+            "P09",
+            "P14",
+            "P18"
+          ]
+        ],
+        [
+          [
+            "P02",
+            "P05",
+            "P12",
+            "P17"
+          ],
+          [
+            "P03",
+            "P06",
+            "P14",
+            "P15"
+          ],
+          [
+            "P04",
+            "P07",
+            "P11",
+            "P18"
+          ],
+          [
+            "P00",
+            "P08",
+            "P13",
+            "P16"
+          ],
+          [
+            "P01",
+            "P09",
+            "P10",
+            "P19"
+          ]
+        ],
+        [
+          [
+            "P03",
+            "P05",
+            "P13",
+            "P18"
+          ],
+          [
+            "P04",
+            "P06",
+            "P10",
+            "P16"
+          ],
+          [
+            "P00",
+            "P07",
+            "P12",
+            "P19"
+          ],
+          [
+            "P01",
+            "P08",
+            "P14",
+            "P17"
+          ],
+          [
+            "P02",
+            "P09",
+            "P11",
+            "P15"
+          ]
+        ],
+        [
+          [
+            "P04",
+            "P05",
+            "P14",
+            "P19"
+          ],
+          [
+            "P00",
+            "P06",
+            "P11",
+            "P17"
+          ],
+          [
+            "P01",
+            "P07",
+            "P13",
+            "P15"
+          ],
+          [
+            "P02",
+            "P08",
+            "P10",
+            "P18"
+          ],
+          [
+            "P03",
+            "P09",
+            "P12",
+            "P16"
+          ]
+        ]
+      ]
+    },
+    {
+      "provider": "teamcreator_browser",
+      "people": 20,
+      "groups": 5,
+      "group_size": 4,
+      "rounds": 5,
+      "seed": 42,
+      "status": "Done. 5 rounds formed, entirely in your browser.",
+      "metrics": {
+        "pair_incidents": 150,
+        "unique_pairs": 107,
+        "repeated_pair_incidents": 43,
+        "pairs_met_more_than_once": 33,
+        "max_pair_count": 4,
+        "simple_lower_bound": 0
+      },
+      "schedule": [
+        [
+          [
+            "P05",
+            "P13",
+            "P16",
+            "P18"
+          ],
+          [
+            "P00",
+            "P01",
+            "P04",
+            "P12"
+          ],
+          [
+            "P02",
+            "P14",
+            "P17",
+            "P19"
+          ],
+          [
+            "P07",
+            "P08",
+            "P09",
+            "P10"
+          ],
+          [
+            "P03",
+            "P06",
+            "P11",
+            "P15"
+          ]
+        ],
+        [
+          [
+            "P06",
+            "P07",
+            "P09",
+            "P18"
+          ],
+          [
+            "P10",
+            "P11",
+            "P17",
+            "P19"
+          ],
+          [
+            "P02",
+            "P12",
+            "P14",
+            "P16"
+          ],
+          [
+            "P01",
+            "P03",
+            "P08",
+            "P15"
+          ],
+          [
+            "P00",
+            "P04",
+            "P05",
+            "P13"
+          ]
+        ],
+        [
+          [
+            "P08",
+            "P10",
+            "P14",
+            "P18"
+          ],
+          [
+            "P01",
+            "P04",
+            "P06",
+            "P16"
+          ],
+          [
+            "P05",
+            "P13",
+            "P15",
+            "P17"
+          ],
+          [
+            "P00",
+            "P03",
+            "P12",
+            "P19"
+          ],
+          [
+            "P02",
+            "P07",
+            "P09",
+            "P11"
+          ]
+        ],
+        [
+          [
+            "P03",
+            "P06",
+            "P14",
+            "P16"
+          ],
+          [
+            "P07",
+            "P08",
+            "P18",
+            "P19"
+          ],
+          [
+            "P05",
+            "P09",
+            "P11",
+            "P13"
+          ],
+          [
+            "P01",
+            "P02",
+            "P15",
+            "P17"
+          ],
+          [
+            "P00",
+            "P04",
+            "P10",
+            "P12"
+          ]
+        ],
+        [
+          [
+            "P04",
+            "P09",
+            "P12",
+            "P13"
+          ],
+          [
+            "P08",
+            "P15",
+            "P17",
+            "P19"
+          ],
+          [
+            "P03",
+            "P05",
+            "P06",
+            "P11"
+          ],
+          [
+            "P02",
+            "P07",
+            "P16",
+            "P18"
+          ],
+          [
+            "P00",
+            "P01",
+            "P10",
+            "P14"
+          ]
+        ]
+      ]
+    },
+    {
+      "provider": "teamcreator_python_reference",
+      "people": 20,
+      "groups": 5,
+      "group_size": 4,
+      "rounds": 5,
+      "seed": 42,
+      "status": "success",
+      "metrics": {
+        "pair_incidents": 150,
+        "unique_pairs": 143,
+        "repeated_pair_incidents": 7,
+        "pairs_met_more_than_once": 7,
+        "max_pair_count": 2,
+        "simple_lower_bound": 0
+      },
+      "schedule": [
+        [
+          [
+            "P05",
+            "P13",
+            "P16",
+            "P18"
+          ],
+          [
+            "P00",
+            "P01",
+            "P04",
+            "P12"
+          ],
+          [
+            "P02",
+            "P14",
+            "P17",
+            "P19"
+          ],
+          [
+            "P07",
+            "P08",
+            "P09",
+            "P10"
+          ],
+          [
+            "P03",
+            "P06",
+            "P11",
+            "P15"
+          ]
+        ],
+        [
+          [
+            "P13",
+            "P06",
+            "P12",
+            "P17"
+          ],
+          [
+            "P02",
+            "P08",
+            "P03",
+            "P18"
+          ],
+          [
+            "P04",
+            "P09",
+            "P05",
+            "P19"
+          ],
+          [
+            "P00",
+            "P14",
+            "P10",
+            "P15"
+          ],
+          [
+            "P01",
+            "P07",
+            "P11",
+            "P16"
+          ]
+        ],
+        [
+          [
+            "P18",
+            "P17",
+            "P15",
+            "P09"
+          ],
+          [
+            "P12",
+            "P16",
+            "P10",
+            "P02"
+          ],
+          [
+            "P00",
+            "P08",
+            "P11",
+            "P05"
+          ],
+          [
+            "P14",
+            "P07",
+            "P04",
+            "P06"
+          ],
+          [
+            "P19",
+            "P03",
+            "P13",
+            "P01"
+          ]
+        ],
+        [
+          [
+            "P09",
+            "P00",
+            "P03",
+            "P16"
+          ],
+          [
+            "P15",
+            "P07",
+            "P05",
+            "P17"
+          ],
+          [
+            "P04",
+            "P02",
+            "P13",
+            "P11"
+          ],
+          [
+            "P08",
+            "P14",
+            "P12",
+            "P19"
+          ],
+          [
+            "P01",
+            "P06",
+            "P10",
+            "P18"
+          ]
+        ],
+        [
+          [
+            "P07",
+            "P00",
+            "P19",
+            "P02"
+          ],
+          [
+            "P13",
+            "P09",
+            "P14",
+            "P01"
+          ],
+          [
+            "P04",
+            "P03",
+            "P10",
+            "P17"
+          ],
+          [
+            "P15",
+            "P06",
+            "P08",
+            "P16"
+          ],
+          [
+            "P18",
+            "P11",
+            "P12",
+            "P05"
+          ]
+        ]
+      ]
+    },
+    {
+      "provider": "groupmixer_public_api",
+      "people": 20,
+      "groups": 5,
+      "group_size": 4,
+      "rounds": 5,
+      "seed": 123,
+      "status": "solved",
+      "metrics": {
+        "pair_incidents": 150,
+        "unique_pairs": 150,
+        "repeated_pair_incidents": 0,
+        "pairs_met_more_than_once": 0,
+        "max_pair_count": 1,
+        "simple_lower_bound": 0
+      },
+      "schedule": [
+        [
+          [
+            "P00",
+            "P05",
+            "P10",
+            "P15"
+          ],
+          [
+            "P01",
+            "P06",
+            "P12",
+            "P18"
+          ],
+          [
+            "P02",
+            "P07",
+            "P14",
+            "P16"
+          ],
+          [
+            "P03",
+            "P08",
+            "P11",
+            "P19"
+          ],
+          [
+            "P04",
+            "P09",
+            "P13",
+            "P17"
+          ]
+        ],
+        [
+          [
+            "P01",
+            "P05",
+            "P11",
+            "P16"
+          ],
+          [
+            "P02",
+            "P06",
+            "P13",
+            "P19"
+          ],
+          [
+            "P03",
+            "P07",
+            "P10",
+            "P17"
+          ],
+          [
+            "P04",
+            "P08",
+            "P12",
+            "P15"
+          ],
+          [
+            "P00",
+            "P09",
+            "P14",
+            "P18"
+          ]
+        ],
+        [
+          [
+            "P02",
+            "P05",
+            "P12",
+            "P17"
+          ],
+          [
+            "P03",
+            "P06",
+            "P14",
+            "P15"
+          ],
+          [
+            "P04",
+            "P07",
+            "P11",
+            "P18"
+          ],
+          [
+            "P00",
+            "P08",
+            "P13",
+            "P16"
+          ],
+          [
+            "P01",
+            "P09",
+            "P10",
+            "P19"
+          ]
+        ],
+        [
+          [
+            "P03",
+            "P05",
+            "P13",
+            "P18"
+          ],
+          [
+            "P04",
+            "P06",
+            "P10",
+            "P16"
+          ],
+          [
+            "P00",
+            "P07",
+            "P12",
+            "P19"
+          ],
+          [
+            "P01",
+            "P08",
+            "P14",
+            "P17"
+          ],
+          [
+            "P02",
+            "P09",
+            "P11",
+            "P15"
+          ]
+        ],
+        [
+          [
+            "P04",
+            "P05",
+            "P14",
+            "P19"
+          ],
+          [
+            "P00",
+            "P06",
+            "P11",
+            "P17"
+          ],
+          [
+            "P01",
+            "P07",
+            "P13",
+            "P15"
+          ],
+          [
+            "P02",
+            "P08",
+            "P10",
+            "P18"
+          ],
+          [
+            "P03",
+            "P09",
+            "P12",
+            "P16"
+          ]
+        ]
+      ]
+    },
+    {
+      "provider": "teamcreator_browser",
+      "people": 20,
+      "groups": 5,
+      "group_size": 4,
+      "rounds": 5,
+      "seed": 123,
+      "status": "Done. 5 rounds formed, entirely in your browser.",
+      "metrics": {
+        "pair_incidents": 150,
+        "unique_pairs": 111,
+        "repeated_pair_incidents": 39,
+        "pairs_met_more_than_once": 28,
+        "max_pair_count": 4,
+        "simple_lower_bound": 0
+      },
+      "schedule": [
+        [
+          [
+            "P00",
+            "P13",
+            "P15",
+            "P16"
+          ],
+          [
+            "P01",
+            "P04",
+            "P05",
+            "P17"
+          ],
+          [
+            "P06",
+            "P09",
+            "P12",
+            "P14"
+          ],
+          [
+            "P02",
+            "P07",
+            "P10",
+            "P18"
+          ],
+          [
+            "P03",
+            "P08",
+            "P11",
+            "P19"
+          ]
+        ],
+        [
+          [
+            "P00",
+            "P01",
+            "P07",
+            "P08"
+          ],
+          [
+            "P03",
+            "P06",
+            "P09",
+            "P15"
+          ],
+          [
+            "P02",
+            "P10",
+            "P14",
+            "P17"
+          ],
+          [
+            "P05",
+            "P11",
+            "P13",
+            "P19"
+          ],
+          [
+            "P04",
+            "P12",
+            "P16",
+            "P18"
+          ]
+        ],
+        [
+          [
+            "P02",
+            "P11",
+            "P17",
+            "P18"
+          ],
+          [
+            "P01",
+            "P05",
+            "P06",
+            "P14"
+          ],
+          [
+            "P00",
+            "P04",
+            "P07",
+            "P16"
+          ],
+          [
+            "P03",
+            "P08",
+            "P09",
+            "P13"
+          ],
+          [
+            "P10",
+            "P12",
+            "P15",
+            "P19"
+          ]
+        ],
+        [
+          [
+            "P01",
+            "P02",
+            "P10",
+            "P14"
+          ],
+          [
+            "P04",
+            "P06",
+            "P11",
+            "P18"
+          ],
+          [
+            "P05",
+            "P07",
+            "P12",
+            "P15"
+          ],
+          [
+            "P00",
+            "P08",
+            "P13",
+            "P16"
+          ],
+          [
+            "P03",
+            "P09",
+            "P17",
+            "P19"
+          ]
+        ],
+        [
+          [
+            "P03",
+            "P05",
+            "P09",
+            "P10"
+          ],
+          [
+            "P00",
+            "P04",
+            "P16",
+            "P18"
+          ],
+          [
+            "P07",
+            "P08",
+            "P12",
+            "P13"
+          ],
+          [
+            "P01",
+            "P11",
+            "P14",
+            "P19"
+          ],
+          [
+            "P02",
+            "P06",
+            "P15",
+            "P17"
+          ]
+        ]
+      ]
+    },
+    {
+      "provider": "teamcreator_python_reference",
+      "people": 20,
+      "groups": 5,
+      "group_size": 4,
+      "rounds": 5,
+      "seed": 123,
+      "status": "success",
+      "metrics": {
+        "pair_incidents": 150,
+        "unique_pairs": 145,
+        "repeated_pair_incidents": 5,
+        "pairs_met_more_than_once": 5,
+        "max_pair_count": 2,
+        "simple_lower_bound": 0
+      },
+      "schedule": [
+        [
+          [
+            "P00",
+            "P13",
+            "P15",
+            "P16"
+          ],
+          [
+            "P01",
+            "P04",
+            "P05",
+            "P17"
+          ],
+          [
+            "P06",
+            "P09",
+            "P12",
+            "P14"
+          ],
+          [
+            "P02",
+            "P07",
+            "P10",
+            "P18"
+          ],
+          [
+            "P03",
+            "P08",
+            "P11",
+            "P19"
+          ]
+        ],
+        [
+          [
+            "P00",
+            "P07",
+            "P12",
+            "P17"
+          ],
+          [
+            "P09",
+            "P08",
+            "P13",
+            "P18"
+          ],
+          [
+            "P02",
+            "P04",
+            "P14",
+            "P19"
+          ],
+          [
+            "P03",
+            "P05",
+            "P10",
+            "P15"
+          ],
+          [
+            "P01",
+            "P06",
+            "P11",
+            "P16"
+          ]
+        ],
+        [
+          [
+            "P18",
+            "P17",
+            "P15",
+            "P19"
+          ],
+          [
+            "P04",
+            "P06",
+            "P07",
+            "P03"
+          ],
+          [
+            "P05",
+            "P09",
+            "P11",
+            "P00"
+          ],
+          [
+            "P02",
+            "P13",
+            "P12",
+            "P01"
+          ],
+          [
+            "P14",
+            "P10",
+            "P16",
+            "P08"
+          ]
+        ],
+        [
+          [
+            "P13",
+            "P16",
+            "P05",
+            "P07"
+          ],
+          [
+            "P15",
+            "P11",
+            "P12",
+            "P04"
+          ],
+          [
+            "P06",
+            "P17",
+            "P08",
+            "P02"
+          ],
+          [
+            "P01",
+            "P09",
+            "P10",
+            "P19"
+          ],
+          [
+            "P00",
+            "P03",
+            "P14",
+            "P18"
+          ]
+        ],
+        [
+          [
+            "P03",
+            "P16",
+            "P12",
+            "P02"
+          ],
+          [
+            "P05",
+            "P18",
+            "P06",
+            "P19"
+          ],
+          [
+            "P00",
+            "P08",
+            "P01",
+            "P04"
+          ],
+          [
+            "P07",
+            "P14",
+            "P09",
+            "P15"
+          ],
+          [
+            "P10",
+            "P13",
+            "P11",
+            "P17"
+          ]
+        ]
+      ]
+    }
+  ]
+}

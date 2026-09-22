@@ -22,8 +22,9 @@ This repository publishes a review dataset, scoring methodology, correction work
 - [`METHODOLOGY.md`](./METHODOLOGY.md) — scoring rubric and review rules
 - [`docs/SITE_MONITORING.md`](./docs/SITE_MONITORING.md) — page-snapshot baseline and change-check workflow
 - [`docs/UPDATE_PASS_2026-09-22.md`](./docs/UPDATE_PASS_2026-09-22.md) — latest reviewed corrections and market intake
+- [`docs/REPEAT_AVOIDANCE_BENCHMARK_2026-09-22.md`](./docs/REPEAT_AVOIDANCE_BENCHMARK_2026-09-22.md) — measured TeamCreator and GroupMixer repeat avoidance
 
-Current export: **503 tools**, base review-builder revision **552**, exported **2026-09-22T15:26:24+00:00**.
+Current export: **503 tools**, base review-builder revision **552**, exported **2026-09-22T16:47:43+00:00**.
 
 ## Related and out-of-scope resources
 
@@ -54,22 +55,22 @@ The shortlists below show three candidates per use case so readers can compare l
 | 2 | [ChatGPT Pro Extended Reasoning](https://chatgpt.com/plans/pro/) | 4.5 | Complex natural-language grouping drafts when cost and verification are acceptable | multi-round, constraints, strong-exports, ai-assisted |
 | 3 | [Social Golfer Online](https://socialgolfer.online/) | 4.3 | Golf leagues, trips, tournaments, and other multi-round schedules where avoiding repeat pairings matters | multi-round, constraints, strong-exports |
 | 4 | [TourneyCard Golf Randomizer](https://tourneycard.com/) | 4.3 | Social-golfer-style golf schedule optimizer with repeat diagnostics, partner preferences, and Excel/Markdown output | multi-round, constraints, strong-exports |
-| 5 | [TeamCreator](https://unitedwetransform.com/team-creator/) | 4.3 | Browser-local constraint-aware teams with attribute dimensions | multi-round, constraints, privacy-friendly, strong-exports |
-| 6 | [Clever Groups](https://clevergroups.com/tryit) | 4.2 | Preference-based classroom, camp, event, and accommodation grouping | constraints, self-join, strong-exports |
-| 7 | [Balanced Random Team Maker / Hobbada](https://hobbada.github.io/en/) | 4.1 | Multilingual browser team maker with ability balancing, keep-apart, keep-together, and captains | constraints |
-| 8 | [CATME Team-Maker](https://info.catme.org/features/team-maker/) | 4.1 | Criterion-based student team formation with weighted instructor survey criteria | constraints |
-| 9 | [ClassroomGroupGenerator.com](https://classroomgroupgenerator.com/) | 4.1 | Teachers who want browser-saved rosters, constraints, presentation mode, and classroom-tool integration | constraints, strong-exports |
-| 10 | [Group Balancer](https://groupbalancer.com/) | 4.1 | Reusable group generator with bags, multi-person slips, custom group sizes, editing, sharing, and history | constraints |
-| 11 | [gruepr](https://github.com/gruepr/gruepr) | 4.1 | Open-source optimized student-team formation from survey/CSV data | constraints, strong-exports |
-| 12 | [TeamBracket Generator](https://teambracketgenerator.com/) | 4.1 | Browser-local random/skill-balanced teams plus printable tournament brackets | privacy-friendly, strong-exports |
-| 13 | [Visimon Breakout Room Generator Lite](https://www.visimon.de/breakout-room-generator-lite/) | 4.1 | Repeat-aware breakout groups across several rounds with encounter reporting | multi-round, privacy-friendly |
-| 14 | [Barasu-kun](https://yto.github.io/barasu/barasukun.html) | 4 | Japanese repeated grouping with low repeat co-member overlap | multi-round, privacy-friendly |
-| 15 | [Educatarea Random Group Generator](https://educatarea.com/random-group-generator/) | 4 | Teachers who need roles, restrictions, multiple pools, history, PDF, and print without an account | constraints, strong-exports |
-| 16 | [Good-Enough Golfers](https://goodenoughgolfers.com/) | 4 | Simple social-golfer-style multi-round schedules | multi-round, constraints, privacy-friendly, strong-exports |
-| 17 | [GoTimer Group Generator](https://gotimer.org/classroom/group-generator) | 4 | Teacher group generator with seed, fullscreen, save, copy, and recent-repeat avoidance | — |
-| 18 | [Grouper.school](https://grouper.school/) | 4 | Account-based classroom grouping with Google Classroom/Clever rosters and student attributes | constraints |
-| 19 | [Halftime Team Pairings](https://halftime.coffee/tools/team-pairings) | 4 | Pair/group generator with recent-repeat avoidance, markdown/text copy, saved browser history, and saved rounds | constraints |
-| 20 | [IIENSTITU Zufallsgruppen Generator](https://www.iienstitu.com/de/tools/random-group-generator) | 4 | German random group generator with keep-together/separate rules, level balancing, repeat-pair avoidance, leaders, saved lists, and CSV export | constraints |
+| 5 | [Clever Groups](https://clevergroups.com/tryit) | 4.2 | Preference-based classroom, camp, event, and accommodation grouping | constraints, self-join, strong-exports |
+| 6 | [Balanced Random Team Maker / Hobbada](https://hobbada.github.io/en/) | 4.1 | Multilingual browser team maker with ability balancing, keep-apart, keep-together, and captains | constraints |
+| 7 | [CATME Team-Maker](https://info.catme.org/features/team-maker/) | 4.1 | Criterion-based student team formation with weighted instructor survey criteria | constraints |
+| 8 | [ClassroomGroupGenerator.com](https://classroomgroupgenerator.com/) | 4.1 | Teachers who want browser-saved rosters, constraints, presentation mode, and classroom-tool integration | constraints, strong-exports |
+| 9 | [Group Balancer](https://groupbalancer.com/) | 4.1 | Reusable group generator with bags, multi-person slips, custom group sizes, editing, sharing, and history | constraints |
+| 10 | [gruepr](https://github.com/gruepr/gruepr) | 4.1 | Open-source optimized student-team formation from survey/CSV data | constraints, strong-exports |
+| 11 | [TeamBracket Generator](https://teambracketgenerator.com/) | 4.1 | Browser-local random/skill-balanced teams plus printable tournament brackets | privacy-friendly, strong-exports |
+| 12 | [Visimon Breakout Room Generator Lite](https://www.visimon.de/breakout-room-generator-lite/) | 4.1 | Repeat-aware breakout groups across several rounds with encounter reporting | multi-round, privacy-friendly |
+| 13 | [Barasu-kun](https://yto.github.io/barasu/barasukun.html) | 4 | Japanese repeated grouping with low repeat co-member overlap | multi-round, privacy-friendly |
+| 14 | [Educatarea Random Group Generator](https://educatarea.com/random-group-generator/) | 4 | Teachers who need roles, restrictions, multiple pools, history, PDF, and print without an account | constraints, strong-exports |
+| 15 | [Good-Enough Golfers](https://goodenoughgolfers.com/) | 4 | Simple social-golfer-style multi-round schedules | multi-round, constraints, privacy-friendly, strong-exports |
+| 16 | [GoTimer Group Generator](https://gotimer.org/classroom/group-generator) | 4 | Teacher group generator with seed, fullscreen, save, copy, and recent-repeat avoidance | — |
+| 17 | [Grouper.school](https://grouper.school/) | 4 | Account-based classroom grouping with Google Classroom/Clever rosters and student attributes | constraints |
+| 18 | [Halftime Team Pairings](https://halftime.coffee/tools/team-pairings) | 4 | Pair/group generator with recent-repeat avoidance, markdown/text copy, saved browser history, and saved rounds | constraints |
+| 19 | [IIENSTITU Zufallsgruppen Generator](https://www.iienstitu.com/de/tools/random-group-generator) | 4 | German random group generator with keep-together/separate rules, level balancing, repeat-pair avoidance, leaders, saved lists, and CSV export | constraints |
+| 20 | [Not Random Groups](https://notrandomgroups.com/) | 4 | Teacher group generator with random and keep-together/keep-apart modes plus optional Google Classroom import | constraints |
 
 ## All reviewed tools
 
@@ -79,194 +80,194 @@ The shortlists below show three candidates per use case so readers can compare l
 | 2 | [ChatGPT Pro Extended Reasoning](https://chatgpt.com/plans/pro/) | 4.5 | Complex natural-language grouping drafts when cost and verification are acceptable | multi-round, constraints, strong-exports, ai-assisted |
 | 3 | [Social Golfer Online](https://socialgolfer.online/) | 4.3 | Golf leagues, trips, tournaments, and other multi-round schedules where avoiding repeat pairings matters | multi-round, constraints, strong-exports |
 | 4 | [TourneyCard Golf Randomizer](https://tourneycard.com/) | 4.3 | Social-golfer-style golf schedule optimizer with repeat diagnostics, partner preferences, and Excel/Markdown output | multi-round, constraints, strong-exports |
-| 5 | [TeamCreator](https://unitedwetransform.com/team-creator/) | 4.3 | Browser-local constraint-aware teams with attribute dimensions | multi-round, constraints, privacy-friendly, strong-exports |
-| 6 | [Clever Groups](https://clevergroups.com/tryit) | 4.2 | Preference-based classroom, camp, event, and accommodation grouping | constraints, self-join, strong-exports |
-| 7 | [Balanced Random Team Maker / Hobbada](https://hobbada.github.io/en/) | 4.1 | Multilingual browser team maker with ability balancing, keep-apart, keep-together, and captains | constraints |
-| 8 | [CATME Team-Maker](https://info.catme.org/features/team-maker/) | 4.1 | Criterion-based student team formation with weighted instructor survey criteria | constraints |
-| 9 | [ClassroomGroupGenerator.com](https://classroomgroupgenerator.com/) | 4.1 | Teachers who want browser-saved rosters, constraints, presentation mode, and classroom-tool integration | constraints, strong-exports |
-| 10 | [Group Balancer](https://groupbalancer.com/) | 4.1 | Reusable group generator with bags, multi-person slips, custom group sizes, editing, sharing, and history | constraints |
-| 11 | [gruepr](https://github.com/gruepr/gruepr) | 4.1 | Open-source optimized student-team formation from survey/CSV data | constraints, strong-exports |
-| 12 | [TeamBracket Generator](https://teambracketgenerator.com/) | 4.1 | Browser-local random/skill-balanced teams plus printable tournament brackets | privacy-friendly, strong-exports |
-| 13 | [Visimon Breakout Room Generator Lite](https://www.visimon.de/breakout-room-generator-lite/) | 4.1 | Repeat-aware breakout groups across several rounds with encounter reporting | multi-round, privacy-friendly |
-| 14 | [Barasu-kun](https://yto.github.io/barasu/barasukun.html) | 4 | Japanese repeated grouping with low repeat co-member overlap | multi-round, privacy-friendly |
-| 15 | [Educatarea Random Group Generator](https://educatarea.com/random-group-generator/) | 4 | Teachers who need roles, restrictions, multiple pools, history, PDF, and print without an account | constraints, strong-exports |
-| 16 | [Good-Enough Golfers](https://goodenoughgolfers.com/) | 4 | Simple social-golfer-style multi-round schedules | multi-round, constraints, privacy-friendly, strong-exports |
-| 17 | [GoTimer Group Generator](https://gotimer.org/classroom/group-generator) | 4 | Teacher group generator with seed, fullscreen, save, copy, and recent-repeat avoidance | — |
-| 18 | [Grouper.school](https://grouper.school/) | 4 | Account-based classroom grouping with Google Classroom/Clever rosters and student attributes | constraints |
-| 19 | [Halftime Team Pairings](https://halftime.coffee/tools/team-pairings) | 4 | Pair/group generator with recent-repeat avoidance, markdown/text copy, saved browser history, and saved rounds | constraints |
-| 20 | [IIENSTITU Zufallsgruppen Generator](https://www.iienstitu.com/de/tools/random-group-generator) | 4 | German random group generator with keep-together/separate rules, level balancing, repeat-pair avoidance, leaders, saved lists, and CSV export | constraints |
-| 21 | [Not Random Groups](https://notrandomgroups.com/) | 4 | Teacher group generator with random and keep-together/keep-apart modes plus optional Google Classroom import | constraints |
-| 22 | [Optimal Group Generator](https://optimal-group-generator.com/) | 4 | Open-source repeat-avoidance group maker with previous records and no-login local storage | multi-round |
-| 23 | [PairForm](https://pair-form.com/) | 4 | Role-balanced event/workshop group formation with participant self-join links | constraints, self-join |
-| 24 | [PickTeams.net](https://pickteams.net/) | 4 | Featureful team picker with skill/gender tags, locked players, CSV export, and share links | constraints, strong-exports |
-| 25 | [QuizQuestions.org Team Generator](https://www.quizquestions.org/team-generator) | 4 | Advanced no-account team generator with labels, locks, drag-and-drop, added teams, and exports | constraints, strong-exports |
-| 26 | [RandomTeamGenerator.io](https://randomteamgenerator.io/) | 4 | Featureful random team generator with leaders, keep-together groups, share, TXT/CSV export, and locale support | constraints, strong-exports |
-| 27 | [Shuffly](https://shuffly.netlify.app/) | 4 | Skill- and gender-balanced random teams with strong free exports | constraints, strong-exports |
-| 28 | [Team Shake](https://www.rhine-o.com/www/iphone-apps/team-shake/) | 4 | Mobile-first balanced team generation for teachers and coaches | constraints, strong-exports |
-| 29 | [TeamMaker App](https://teammakerapp.vercel.app/) | 4 | Local, no-account team making with strong classroom presentation and exports | constraints, strong-exports |
-| 30 | [Random Wheel Tools Multi-Round Group Generator](https://randomwheeltools.com/en/multi-round-group-generator) | 4 | Private multi-round groups with visible repeat diagnostics | multi-round, privacy-friendly |
-| 31 | [Instructron Group Generator](https://instructron.com/tools/group-generator) | 3.9 | Teachers who want quick random groups with basic balancing and keep-apart rules | constraints, privacy-friendly, strong-exports |
-| 32 | [JAY Project Team Picker](https://jay-project.kr/ko/apps/team) | 3.9 | Korean browser-local team picker with balance mode, fixed people, saved rosters, and share URLs | — |
-| 33 | [Peerceptiv Group Formation](https://peerceptiv.zendesk.com/hc/en-us/articles/34657548219795-Group-Formation) | 3.9 | LMS-integrated optimized groups from survey, schedule, and topic preferences | constraints |
-| 34 | [ReadyGroupGo](https://www.readygroupgo.com/) | 3.9 | Classroom group generator with smart attributes, saved classes, share links, and class-code joining | constraints, self-join |
-| 35 | [BuddyMatcher](https://www.buddymatcher.co.uk/) | 3.8 | Teachers who need pairs/trios, local saved lists, and optional paid control features | constraints, privacy-friendly, strong-exports |
-| 36 | [Calcbe Team Generator](https://calcbe.com/en/tools/team-generator/) | 3.8 | Privacy-conscious one-session random teams with simple constraints and strong exports | constraints, privacy-friendly, strong-exports |
-| 37 | [Cogitans Générateur d’équipes](https://cogitans.fr/fr/outils/aleatoire/repartir-en-equipes/) | 3.8 | French local random or level-balanced team generator | privacy-friendly |
-| 38 | [MontaTime](https://montatime.com/) | 3.8 | Brazilian football team balancer with star levels, goalkeeper distribution, WhatsApp import, saved lists, and sharing | constraints, privacy-friendly |
-| 39 | [PickSpin Team Generator](https://pickspin.app/team-generator) | 3.8 | Polished team generator with templates, count/size modes, naming styles, text/CSV export, print, share, and local history | strong-exports |
-| 40 | [PlayRez Tennis Round Robin Generator](https://playrez.com/tools/tennis-round-robin-generator) | 3.8 | No-signup tennis/social round-robin generator with PDF/share outputs | multi-round, strong-exports |
-| 41 | [Random Group Picker](https://randomgrouppicker.com/) | 3.8 | Feature-rich random group picker with CSV import, label/gender balance, representatives, and exports | constraints, strong-exports |
-| 42 | [Random Roster](https://randomroster.com/) | 3.8 | Teacher group generator with capability balance, preferences, history, and seating charts | constraints |
-| 43 | [Randomify Team Generator](https://www.randomify.org/team-generator?entries=Alex%252CSam%252CJordan%252CCasey%252CRiley%252CMorgan&teams=2&size=3) | 3.8 | Well-rounded team generator with shareable parameters, captain mode, themed team names, copy, and CSV download | strong-exports |
-| 44 | [RandomPicker Random Team Generator](https://random-picker.app/random-team-generator) | 3.8 | Advanced browser-side teams with CSV/TXT import, locks, exclusions, skills, copy, and TXT download | constraints |
-| 45 | [Sabura Student Group Maker](https://sabura.app/en/groups) | 3.8 | Classroom group maker with optional leaders, saved lists for signed-in users, reshuffle, and share | privacy-friendly |
-| 46 | [Smart Group Maker](https://smartgroupmaker.com/) | 3.8 | Free visual group maker with balancing, fixed placements, and member relationship rules | constraints, strong-exports |
-| 47 | [Spinzoro Team Picker for Classrooms](https://spinzoro.com/en/team-picker-for-classrooms/) | 3.8 | Classroom team picker with count/size modes, strong-player marking, copy/share, Excel, and PDF export | constraints, strong-exports |
-| 48 | [Teach Arcade Group Maker](https://www.teacharcade.com/tools/group-maker.html) | 3.8 | Teacher group maker with repeat-avoidance history, print/share, and pairing records | — |
-| 49 | [Team Balancer Pro](https://autoteambalancer.pages.dev/) | 3.8 | Korean MMR/role-based team balancer for LoL, Valorant, and Overwatch internal matches | constraints, strong-exports |
-| 50 | [Team Randomizer Classroom Generator](https://team-randomizer.com/random-team-generator-for-classroom) | 3.8 | Classroom team randomizer with participant/team uploads, seed, CSV, screenshot, and sharing | strong-exports |
-| 51 | [TeamMixer](https://www.team-mixer.com/) | 3.8 | Korean AI-assisted team builder with tiers, positions, presets, and no-server-data claim | constraints, ai-assisted |
-| 52 | [WebToolNexus Random Team Generator](https://webtoolnexus.com/tools/random-team-generator/) | 3.8 | Skill-aware random teams with balance report and text export | constraints, privacy-friendly |
-| 53 | [BracketMaker.app Round Robin](https://bracketmaker.app/round-robin/) | 3.7 | Web round-robin tournament maker for singles, doubles, mixed doubles, and teams | multi-round, strong-exports |
-| 54 | [CedarWater Visibly Random](https://cedarwater.net/visiblyrandom/) | 3.7 | Teacher-oriented visibly random group maker with smart roster parsing, subjects, fullscreen, and roster save/download | privacy-friendly |
-| 55 | [Classroomscreen Group Maker](https://classroomscreen.com/app/template/widget-tutorials-tutorial-group-maker-v1) | 3.7 | Teachers already using Classroomscreen who want visual classroom groups, saved name lists, exclusions, and manual adjustment | constraints, privacy-friendly |
-| 56 | [digtools Team Generator](https://tools.digrart.jp/en/team-gen) | 3.7 | Browser-side teams with skills, NG pairs, leaders, save/load, CSV, text, and image output | constraints, strong-exports |
-| 57 | [FutScore Sorteio de Times](https://futscore.online/sorteio-de-times) | 3.7 | Portuguese football team sorter with skill stars, goalkeeper distribution, and quick mode | constraints, privacy-friendly |
-| 58 | [Game on Field Team Picker](https://www.gameonfield.in/game-setup/team-picker) | 3.7 | Sports team picker with crypto shuffle, skill snake draft, stratified pots, seed audit, CSV, and sharing | constraints, strong-exports |
-| 59 | [Klasindeling.be Groepjesmaker](https://klasindeling.be/groepjesmaker) | 3.7 | Dutch/Flemish teacher grouping with saved classes, student attributes, PDF, and print | constraints |
-| 60 | [MiniBreaks Squad Shuffle](https://minibreaks.io/apps/squad-shuffle) | 3.7 | Polished group shuffler with min/max/#groups modes, copy, print, share, editable links, and app chaining | — |
-| 61 | [Peon Inc Random Team Generator](https://www.peon-inc.net/community-tools/RandomTeamGenerator.html) | 3.7 | Local sports/team draft generator with pins, buddies, conflicts, and CSV roster import/export | constraints, privacy-friendly, strong-exports |
-| 62 | [Pickleheads Round Robin](https://www.pickleheads.com/round-robin) | 3.7 | Pickleball round robin and rotating-partner event tool | multi-round, self-join |
-| 63 | [Randomizer.uk Create Groups](https://randomizer.uk/multicriteria-team) | 3.7 | Multi-criteria random groups with proof/share/export options | constraints, strong-exports |
-| 64 | [RandomSelect Group Maker](https://randomselect.net/en/group-maker/) | 3.7 | Featureful group maker with count/size modes, AI fill, list save/load, share, and export | constraints, ai-assisted |
-| 65 | [Randraw Asia Constitute Team](https://cn.randraw.asia/constitute-team) | 3.7 | Pool-based random team generator with share/export/proof workflows | constraints, strong-exports |
-| 66 | [Randraw Multicriteria Team](https://randraw.com/multicriteria-team) | 3.7 | No-account multicriteria grouping with pots, separation rules, and exports | constraints, privacy-friendly, strong-exports |
-| 67 | [Shuffly.eu](https://shuffly.eu/) | 3.7 | Productized balanced team generator with skill/gender balance, imports, exports, saved setups, and subscriptions | constraints |
-| 68 | [Spin With The Wheel Group Maker](https://spinwiththewheel.com/group-maker) | 3.7 | Advanced browser group maker with single/bulk entry, multiple assignment methods, copy, print, and text export | — |
-| 69 | [SpinItWheel Team Generator](https://www.spinitwheel.com/team-generator.html) | 3.7 | Visual wheel-based team generator with custom names/colors, share, copy, and Excel export | — |
-| 70 | [SpinVibe Teachers](https://spinvibe.io/teachers/) | 3.7 | Teacher-focused classroom spinner, random group maker, speaker order, no-repeat picking, and projector mode | privacy-friendly |
-| 71 | [sptoolbox Random Group Generator](https://sptoolbox.com/tools/random-groups) | 3.7 | Teacher random groups with local saved class lists and keep-together/apart fields | constraints, privacy-friendly |
-| 72 | [TeamSplit](https://teamsplit.net/) | 3.7 | Polished no-account team splitting with import/export, reps, and team names | privacy-friendly |
-| 73 | [Tirage-au-Sort.net Constituer une équipe](https://www.tirage-au-sort.net/constituer-equipe) | 3.7 | French pool-based random team creator with share/export/proof workflows | constraints, strong-exports |
-| 74 | [VMaths Générateur Groupes Aléatoires Élèves](https://www.vmaths.fr/apps/generateur-groupes-aleatoires-eleves.html) | 3.7 | French student group generator with manual/CSV import, group count/size modes, keep-together constraints, and CSV export | constraints, strong-exports |
-| 75 | [Zapadisk Team Generator](https://zapadisk.be/team-generator.html) | 3.7 | Balancing sport/player teams by level, gender, and multi-day attendance | constraints |
-| 76 | [Zufallsgenerator Gruppen bilden](https://zufallsgenerator.de/gruppen-bilden) | 3.7 | German-speaking users who need random groups with pots, separation rules, fixed placements, and exports | constraints, strong-exports |
-| 77 | [TeamShuffler](https://teamshuffler.com/team-generator) | 3.7 | Quick free team splits with a paid round-robin extension | constraints |
-| 78 | [Batch Group Generator](https://batch.basith.me/) | 3.6 | Minimal aesthetic group generator with team size, prefix, extras options, suspense mode, drag/drop, and download | privacy-friendly |
-| 79 | [Draftastic](https://www.draftastic.co/) | 3.6 | Account-based team drafting platform with auto-pick, labels, invites, and CSV export | constraints, self-join, strong-exports |
-| 80 | [FerramentasJá Sorteador de Times](https://www.ferramentasja.com.br/app/sorteador-de-times) | 3.6 | Portuguese team sorter with score balancing, custom team names, copy, and report download | — |
-| 81 | [FreeRandomTools Random Team Generator](https://freerandomtools.org/random-team-generator/) | 3.6 | Sports-style teams with skill-balanced and captain modes, copy formats, history, and local state | constraints |
-| 82 | [FussFreeTools Random Group Generator](https://www.fussfreetools.com/random-group-generator.html) | 3.6 | Classroom-oriented group generator with pairs/size/count modes, copy, fullscreen, absent exclusion, and repeat-pair lock option | — |
-| 83 | [Genvalo Random Group Generator](https://www.genvalo.com/tools/random-group) | 3.6 | Clean random group generator with count/size modes and per-group copy buttons | — |
-| 84 | [GroupEng](https://groupeng.org/) | 3.6 | Open-source command-line grouping with distribute, aggregate, cluster, and balance rules | constraints |
-| 85 | [InstaGroups](https://instagroups.app/) | 3.6 | PE/coaching team generator with balancing, tournaments, analytics, and collaboration | constraints |
-| 86 | [Lazy Cat Tools Random Team Generator](https://lazycattools.com/tools/random-team-generator/) | 3.6 | Random team generator with upload, random names, reshuffle, share, copy, and print | — |
-| 87 | [LeagueLobster Round Robin Generator](https://scheduler.leaguelobster.com/round-robin-generator/) | 3.6 | Sports league round-robin scheduler with teams, games, weeks, scores, standings, and CSV export | multi-round, strong-exports |
-| 88 | [LiveReacting Random Team Generator](https://www.livereacting.com/tools/random-team-generator) | 3.6 | No-signup random teams with leaders, skill levels, custom names, and CSV/TXT export | constraints, strong-exports |
-| 89 | [Picker Wheel Team Picker](https://pickerwheel.com/tools/random-team-generator/) | 3.6 | Visual live random grouping and self-join team picking | constraints, self-join, strong-exports |
-| 90 | [Prompt2Tool Team Grouping Tool](https://prompt2tool.com/tools/productivity/team-grouping-tool) | 3.6 | Random teams with leader distribution and Excel export | constraints, privacy-friendly |
-| 91 | [Rise Random Team Generator](https://rise.global/tools/random-team-generator/) | 3.6 | Polished random team generator with count/size modes, copy, image export, and share links | — |
-| 92 | [Réparticlasse](https://shenriot.forge.apps.education.fr/reparticlasse) | 3.6 | French education group distributor with gender mix, level balancing, avatars, save/restore, and Scoregroupe mode | constraints, privacy-friendly |
-| 93 | [SnappyWords Random Group Generator](https://www.snappywords.com/random-generators/random-group-generator) | 3.6 | Group generator with count/size modes, leader options, image download, and CSV | strong-exports |
-| 94 | [Sorteador de Times](https://sorteadordetimes.com.br/sorteador-times) | 3.6 | Brazilian sports/esports team generator with skill stars, roles, saved lists, and import/export | constraints |
-| 95 | [TEAM MAKER](https://team-maker.net/) | 3.6 | Rating-based balanced team generator for games and small communities | — |
-| 96 | [Toolgami Random Team Generator](https://toolgami.bildirchin.com/tool/random-team-generator) | 3.6 | Random or skill-based teams with CSV/JSON export | constraints, strong-exports |
-| 97 | [ToolV Team Generator](https://toolv.com/en/app/team-generator) | 3.6 | Multi-mode browser-local team, pair, role, and seating generator | privacy-friendly |
-| 98 | [Akousa Random Team Generator](https://akousa.net/zh/tools/random-team-generator) | 3.5 | Browser-local random team generator with skill-balance toggle, captains, CSV/TXT export, and history | strong-exports |
-| 99 | [AttentionFlow Random Group Generator](https://www.attentionflow.net/en/tools/random/random-group-generator) | 3.5 | Local-browser group generator with CSV/Excel import/export claims and fair mode | privacy-friendly |
-| 100 | [BasicFreeTools Random Student Group Generator](https://basicfreetools.com/random-student-group-generator/) | 3.5 | Privacy-friendly student group generator with absent exclusions, reshuffle history, copy, and print | privacy-friendly |
-| 101 | [BestRandom Random Team Generator](https://bestrandom.net/random-team-generator) | 3.5 | Seeded random team generator with copy/share/reroll controls | — |
-| 102 | [Eenie Meenie Random Team Generator](https://eeniemeenie.photonbuilder.com/team-generator) | 3.5 | Browser-side teams with captain mode, skill ratings, and local saved groups | constraints |
-| 103 | [EveryRandom Team Generator](https://everyrandom.com/team-generator) | 3.5 | Featureful random team generator with count/size modes, copy, download, shuffle, and history | — |
-| 104 | [FlameAI Random Team Generator](https://www.flameai.net/tools/random-team) | 3.5 | Privacy-framed random team splitter with count/size modes, copy, download, and share | ai-assisted |
-| 105 | [Fly63 Random Group Tool](https://fly63.com/tool/team_group/) | 3.5 | Chinese random grouping with mutually exclusive members and Excel export | constraints |
-| 106 | [GroupMixes](https://groupmixes.com/group-generator) | 3.5 | Teachers who want quick mixed-ability classroom groups | constraints, strong-exports |
-| 107 | [LiveCloud Groepjesmaker](https://basisonderwijs.online/groepjesmaker) | 3.5 | Dutch classroom group maker with advanced keep-together/apart and board/PDF workflows | constraints |
-| 108 | [OnlineRadDraaien Groepjesmaker](https://onlineraddraaien.nl/groepjesmaker/) | 3.5 | Dutch group maker with count/size modes, copy, CSV export, and sharing | strong-exports |
-| 109 | [PickerSpin Team Generator](https://pickerspin.co/team-generator/) | 3.5 | Polished team picker with paste/comma input, count/size modes, copy-all, and reshuffle | — |
-| 110 | [Playpass Golf Schedule Maker](https://playpass.com/sports-software/golf-schedule-maker) | 3.5 | Golf rotating-partner and round-robin schedules | multi-round, constraints, strong-exports |
-| 111 | [RandoFox Random Team Generator](https://randofox.com/generators/random-teams) | 3.5 | Polished random team generator with secure randomness claims and copy controls | — |
-| 112 | [Randomly Pick Team Generator](https://randomly-pick.com/en/team-generator/) | 3.5 | Excel-friendly random or score-balanced team splitter with CSV output | strong-exports |
-| 113 | [RandomlyFun Random Pair Generator](https://randomlyfun.app/tools/random-pair-generator) | 3.5 | Fast random partner/pair generator with odd-person handling, copy, and share | — |
-| 114 | [RandomTeamMaker.click](https://randomteammaker.click/) | 3.5 | Private in-browser pair/group generator with group-size and leftovers policies | privacy-friendly |
-| 115 | [RobinDraw](https://robindraw.com/generator) | 3.5 | Instant browser round-robin schedule generator with CSV/PDF/share/live outputs | multi-round, strong-exports |
-| 116 | [TheToolApp Team Generator](https://thetoolapp.com/generators/team-generator/) | 3.5 | Modern team generator with paste, count/size modes, captains, colors, and drag/drop examples | — |
-| 117 | [ToolsZone Random Team Generator](https://www.toolszone.net/en/tools/random-team-generator) | 3.5 | Polished random team generator with count/size modes, regenerate, and copy-all output | — |
-| 118 | [Writing in the Stream Smart Group Generator](https://writinginthestream.com/wp-content/uploads/2026/03/randomgroupgenerator.html) | 3.5 | Teacher-owned local HTML grouping with attendance, class storage, drag/drop, and JSON import/export | constraints, privacy-friendly |
-| 119 | [AlhazApp Group Generator](https://alhazapp.com/en/groups) | 3.4 | Random group splitter with optional group heads, reshuffle, share, and saved-list account option | — |
-| 120 | [Classroom Toolkit Group Generator](https://classroomtoolkit.co.uk/group-generator) | 3.4 | Privacy-friendly classroom group generator with saved list and count/size modes | privacy-friendly |
-| 121 | [Decidable Team Divider](https://decidable-tools.com/en/team-divider) | 3.4 | Team divider with single/bulk add, leader support, and re-division | — |
-| 122 | [GetRandomNumber Random Team Generator](https://www.getrandomnumber.com/team-generator/) | 3.4 | Advanced team generator with save/load lists, size bounds, seed, balance mode, history, copy, and text export claims | — |
-| 123 | [GolfSoftware Play All Schedule Generator](https://www.golfsoftware.com/tools/schedule/playall.html) | 3.4 | Golf groups that need multi-event pairings from preset golfer counts and group sizes | multi-round, constraints, privacy-friendly |
-| 124 | [Groupformer](https://groupformer.com/) | 3.4 | Danish group former for repeated groups with gender/min-same-gender and host rotation use cases | — |
-| 125 | [GroupGuru Online](https://www.groupguruonline.com/) | 3.4 | Organizer-led classroom/activity group maker with participant join codes and criteria-based grouping | constraints, self-join |
-| 126 | [Kuakua Random Group Generator](https://kuakua.app/tools/random-group-generator) | 3.4 | Polished random group generator with count/size modes, reshuffle, and copy results | — |
-| 127 | [LoCo Disc Golf Team Generator](https://www.locodiscgolf.com/teams/) | 3.4 | Disc-golf team generator with team-size mode, output format choice, reset, and copy | privacy-friendly |
-| 128 | [MultiPicker Team Picker](https://multipicker.com/team-picker) | 3.4 | Simple teams where gender distribution, representatives, and custom team names matter | constraints |
-| 129 | [Randomara Classroom Group Generator](https://randomara.com/random-team-generator/for-classroom/) | 3.4 | Classroom random team generator with copy and fullscreen controls | — |
-| 130 | [RandomGroupGenerator.net](https://randomgroupgenerator.net/) | 3.4 | Polished one-off random groups with CSV/Excel-style exports | strong-exports |
-| 131 | [Sorteio Random Team Generator](https://sorteio.com/random-team-generator) | 3.4 | Random team generator with team-count/participants-per-team modes, leaders, and copy result | — |
-| 132 | [SpacebarCount Team Generator](https://www.spacebarcount.com/randomizers/team-generator/) | 3.4 | Polished browser-local team cards with bench and dedupe options | privacy-friendly |
-| 133 | [SpinRandomTool Team Generator](https://spinrandomtool.com/team-generator/) | 3.4 | Local browser team generator with presets, history, copy, and no-upload claim | privacy-friendly |
-| 134 | [Strategic Group Maker](https://workspace.google.com/marketplace/app/strategic_group_maker/997854293694) | 3.4 | Google Sheets add-on for strategic classroom groups and Zoom breakout export | constraints, strong-exports |
-| 135 | [TeamGenerator.net Team Generator](https://www.teamgenerator.net/team-generator) | 3.4 | Sports and game teams balanced by skill ratings and roles | constraints |
-| 136 | [TimeTiki Group Generator](https://timetiki.com/group-generator/) | 3.4 | Group-size generator with list utilities, copy, recent groups, and history | — |
-| 137 | [Toolora Team Generator](https://toolora.info/en/t/team-generator/) | 3.4 | Private browser-side random teams with copy and settings share | privacy-friendly |
-| 138 | [TXToolbox Smart Team Splitter](https://www.txtoolbox.com/tool/team-splitter) | 3.4 | Balanced team splitter with skill levels and greedy balancing algorithm | constraints |
-| 139 | [VMaths Générateur d’Équipes Aléatoires](https://www.vmaths.fr/apps/generateur-equipes-aleatoires.html) | 3.4 | French random team generator with TXT/CSV import, 2-20 teams, copy controls, and Fisher-Yates documentation | — |
-| 140 | [AI225 Team Generator](https://tools.ai225.com/en/tools/team-generator/) | 3.3 | Browser-side random teams with import, exclude toggles, history, copy, and export | ai-assisted |
-| 141 | [Calculation Support Random Group Generator](https://www.calculation.support/en/work-school/random-group-generator) | 3.3 | Random group generator with placeholders, file import, and Excel download | — |
-| 142 | [ClassInteractives Formgroup Creator](https://groupings.classinteractives.co.uk/) | 3.3 | UK-style form/class allocation using friends and must-avoid relationships | constraints, strong-exports |
-| 143 | [Clock Buddies Generator](https://clockbuddies.skillsconverged.com/) | 3.3 | Training/classroom clock-buddies partner generator with duplicate checks and themed labels | — |
-| 144 | [CodersTool Random Group Generator](https://www.coderstool.com/random-group-generator) | 3.3 | Reusable random groups with seed, history, sharing, TXT/CSV, and saved lists | constraints, strong-exports |
-| 145 | [DateRounds](https://daterounds.com/) | 3.3 | Small free speed-dating or networking rotation events | multi-round, constraints, self-join |
-| 146 | [DRAW-LOTS Team Generator](https://www.draw-lots.com/teams-generate/) | 3.3 | Team generator with seed/skill seeding controls, group sizing, and configurable picking | constraints |
-| 147 | [FreeClassroomTools Group Generator](https://www.freeclassroomtools.com/tools/group-generator) | 3.3 | Teacher-focused random group generator with reshuffle and classroom display styling | privacy-friendly |
-| 148 | [FreeToolly Random Group Picker](https://freetoolly.com/en/tools/random-group-picker) | 3.3 | Random group picker with count/size modes, leader/vice-leader assignment, and CSV export | — |
-| 149 | [Lembog Random Group Generator](https://lembog.com/tools/random-group-generator) | 3.3 | Clean random group generator with quick group-count buttons and copy-all output | — |
-| 150 | [MatchBalancer Volleyball Team Generator](https://matchbalancer.com/volleyball-team-generator) | 3.3 | Volleyball team balancing by skill, position, roster, and match history | constraints |
-| 151 | [PickWinner Random Team Generator](https://pickwinner.tools/tools/random-team-generator) | 3.3 | Clean privacy-friendly random team cards with shareable URLs | privacy-friendly |
-| 152 | [QuickRandomizer Random Team Generator](https://www.quickrandomizer.com/random-team-generator) | 3.3 | Modern Fisher-Yates team generator with copy-all and history | — |
-| 153 | [RandAnimal Random Group Generator](https://randanimal.com/random-group-generator.html) | 3.3 | Random group generator with title, find, save, and print controls | — |
-| 154 | [Random Media Hub Random Team Generator](https://www.randommediahub.com/random-team-generator) | 3.3 | Clean random team generator with count/size modes, quick team counts, shuffle, and copy | privacy-friendly |
-| 155 | [Random-Group-Generator.com](https://random-group-generator.com/) | 3.3 | Single-session browser grouping with copy/export/share controls and lightweight balance modes | constraints, strong-exports |
-| 156 | [Random.GG Team Generator](https://www.random.gg/team-generator/en) | 3.3 | Character-themed team generator with API access | — |
-| 157 | [Randommer Random Team Generator](https://randommer.com/random-team-generator/) | 3.3 | Random team generator with duplicate removal, split-by-space, copy, and text download | privacy-friendly |
-| 158 | [RandomOS Group Generator](https://randomos.co.uk/tools/group-generator/) | 3.3 | Clean random group generator with count/max-size modes and share link | privacy-friendly |
-| 159 | [Spin of Wheel Team Generator](https://spinofwheel.com/team-generator) | 3.3 | Polished team generator with copy-all and balanced-size claims | — |
-| 160 | [Sport Scheduler Pro Free Schedule Generator](https://sportschedulerpro.com/create) | 3.3 | Free round-robin team schedules with links and exports | multi-round, constraints, strong-exports |
-| 161 | [The Teaching Couple Classroom Toolkit](https://theteachingcouple.com/tools/) | 3.3 | Teacher classroom selector/grouper with tags, exclusions, import/export, and print | constraints |
-| 162 | [Tirage-au-Sort.com Créateur d’Équipes](https://www.tirage-au-sort.com/tirage-equipes) | 3.3 | Simple French crypto-random team creator with projection mode | — |
-| 163 | [WebRandom Random Team Generator](https://www.webrandom.com/) | 3.3 | No-account random teams with custom names, copy, text download, and share link | privacy-friendly |
-| 164 | [Wooclap Team Picker](https://tool.wooclap.com/en/free-group-maker) | 3.3 | Polished simple random teams with strong export options | privacy-friendly, strong-exports |
-| 165 | [Yuesha Random Group Tool](https://suiji.yuesha.com/fenzu/) | 3.3 | Chinese browser-local random group generator with file import, leaders, and copy output | — |
-| 166 | [Any One Will Do](https://anyonewilldo.com/) | 3.2 | Privacy-friendly browser-only random picker and group drafter | privacy-friendly |
-| 167 | [AnyOnlineTool Group Generator Tool](https://anyonlinetool.com/en/tool/group-generator-tool) | 3.2 | Credit-based group generator with copy, CSV, PDF, API, and embed controls | strong-exports |
-| 168 | [ClassroomTools.app Group Maker](https://www.classroomtools.app/tools/group-maker?names=Alice%2CBob%2CCharlie%2CDiana%2CEmma%2CFrank%2CGrace%2CHenry&groups=2) | 3.2 | Free no-tracking teacher group maker with URL-prefill and embed controls | privacy-friendly |
-| 169 | [ClassSeats](https://app.classseats.app/) | 3.2 | Teacher classroom-management app with local class files, student import, seating, attendance, and group generation | privacy-friendly |
-| 170 | [DecisionFlip Random Team Generator](https://decisionflip.com/random-team-generator) | 3.2 | Skill-aware random team maker with saved configurations and copy output | constraints |
-| 171 | [Der Zufallsgenerator Gruppen Zufall](https://derzufallsgenerator.de/gruppen-zufall) | 3.2 | German random group/team generator with group names and group-leader options | — |
-| 172 | [DigitaleTools Groepjesmaker](https://digitaletools.nl/tools/groepjesmaker/) | 3.2 | Dutch classroom group maker with count/participants modes and sharing | — |
-| 173 | [FastRounds](https://fastrounds.com/) | 3.2 | Small free speed-networking round rotation events | multi-round, constraints, self-join |
-| 174 | [Flipiffy Random Group Generator](https://flipiffy.com/random-tools/group-generator/) | 3.2 | Basic random groups with leaders, exclusions, saved list, CSV, and copy | constraints, strong-exports |
-| 175 | [Grouperapp.net](https://grouperapp.net/) | 3.2 | Google Classroom teachers who want paid group history and preferences | constraints, strong-exports |
-| 176 | [Groupify.it](https://groupify.it/) | 3.2 | Classroom peer-group tool with roster upload, sex field, group-size/count modes, and animation controls | — |
-| 177 | [Keamk](https://www.keamk.com/random-team-generator) | 3.2 | Random teams with basic gender or skill balancing | constraints, strong-exports |
-| 178 | [ParTeeOf18 Randomizer](https://parteeof18.com/randomizer/) | 3.2 | Productized golf pairing randomizer with random/manual/handicap/AB/ABCD and multi-round league ambitions | constraints |
-| 179 | [PrepPanel Classroom Group Generator](https://preppanelclassroom.com/) | 3.2 | Chrome-extension classroom tool with ability-balanced groups and relationship rules | constraints |
-| 180 | [PrintYourBrackets Round Robin Generator](https://www.printyourbrackets.com/round-robin-generator.php) | 3.2 | Tournament organizers who need printable round-robin schedules, pools, Excel export, and share links | multi-round, constraints, strong-exports |
-| 181 | [Pudone Random Grouper](https://pudone.com/random-grouper/) | 3.2 | Privacy-first random group generator with count/size modes, custom group names, animation, copy, and download claims | — |
-| 182 | [RandomPickerTool Team Generator](https://randompickertool.com/team-generator) | 3.2 | Clean no-tracking team generator with count/size modes, rebalance, and copy | privacy-friendly |
-| 183 | [RandomTeamBuilder.com](https://randomteambuilder.com/) | 3.2 | Visual random teams with drag-and-drop adjustment and exclusion-rule claims | constraints |
-| 184 | [RandoTeams](https://www.randoteams.com/) | 3.2 | Wheel-style random team splitter with split-all and drag-and-drop claims | — |
-| 185 | [Raugen Random Team Generator](https://raugen.com/toolbox/random-team-generator) | 3.2 | Quick random teams with custom team names, copy-all output, basic stats, and local generation history | ai-assisted |
-| 186 | [ScoreKeeperCo Random Team Generator](https://www.scorekeeper.co/random-team-generator) | 3.2 | Sports-oriented random team generator with reshuffle and scoreboard/bracket links | — |
-| 187 | [slack-meetups](https://github.com/liddiard/slack-meetups) | 3.2 | Open-source Slack bot for recurring random 1:1 meetup rounds | multi-round |
-| 188 | [Slumpgenerator Random Team Generator](https://slumpgenerator.com/random-team-generator) | 3.2 | No-account team randomizer with paste input, group-count/size modes, optional names, and leaders | — |
-| 189 | [Sorteador de Bingo Sorteador de Times](https://www.sorteadordebingo.com.br/ferramentas/sorteador-times) | 3.2 | Portuguese sports team sorter with optional positions and skill levels | constraints |
-| 190 | [Speed Friending and Dating Matcher](https://github.com/machinekoder/speed-friending-and-dating-matcher) | 3.2 | Open-source CLI/server matcher for speed-friending and speed-dating events | — |
-| 191 | [Stilest Random Team Generator](https://www.stilest.com/tools/random-team-generator) | 3.2 | Clean comma/newline team splitter with regenerate and copy controls | — |
-| 192 | [TeachTools Team Generator](https://www.teach-tools.org/) | 3.2 | No-login teacher team generator with leaders, drag-and-drop, shuffle, and print | — |
+| 5 | [Clever Groups](https://clevergroups.com/tryit) | 4.2 | Preference-based classroom, camp, event, and accommodation grouping | constraints, self-join, strong-exports |
+| 6 | [Balanced Random Team Maker / Hobbada](https://hobbada.github.io/en/) | 4.1 | Multilingual browser team maker with ability balancing, keep-apart, keep-together, and captains | constraints |
+| 7 | [CATME Team-Maker](https://info.catme.org/features/team-maker/) | 4.1 | Criterion-based student team formation with weighted instructor survey criteria | constraints |
+| 8 | [ClassroomGroupGenerator.com](https://classroomgroupgenerator.com/) | 4.1 | Teachers who want browser-saved rosters, constraints, presentation mode, and classroom-tool integration | constraints, strong-exports |
+| 9 | [Group Balancer](https://groupbalancer.com/) | 4.1 | Reusable group generator with bags, multi-person slips, custom group sizes, editing, sharing, and history | constraints |
+| 10 | [gruepr](https://github.com/gruepr/gruepr) | 4.1 | Open-source optimized student-team formation from survey/CSV data | constraints, strong-exports |
+| 11 | [TeamBracket Generator](https://teambracketgenerator.com/) | 4.1 | Browser-local random/skill-balanced teams plus printable tournament brackets | privacy-friendly, strong-exports |
+| 12 | [Visimon Breakout Room Generator Lite](https://www.visimon.de/breakout-room-generator-lite/) | 4.1 | Repeat-aware breakout groups across several rounds with encounter reporting | multi-round, privacy-friendly |
+| 13 | [Barasu-kun](https://yto.github.io/barasu/barasukun.html) | 4 | Japanese repeated grouping with low repeat co-member overlap | multi-round, privacy-friendly |
+| 14 | [Educatarea Random Group Generator](https://educatarea.com/random-group-generator/) | 4 | Teachers who need roles, restrictions, multiple pools, history, PDF, and print without an account | constraints, strong-exports |
+| 15 | [Good-Enough Golfers](https://goodenoughgolfers.com/) | 4 | Simple social-golfer-style multi-round schedules | multi-round, constraints, privacy-friendly, strong-exports |
+| 16 | [GoTimer Group Generator](https://gotimer.org/classroom/group-generator) | 4 | Teacher group generator with seed, fullscreen, save, copy, and recent-repeat avoidance | — |
+| 17 | [Grouper.school](https://grouper.school/) | 4 | Account-based classroom grouping with Google Classroom/Clever rosters and student attributes | constraints |
+| 18 | [Halftime Team Pairings](https://halftime.coffee/tools/team-pairings) | 4 | Pair/group generator with recent-repeat avoidance, markdown/text copy, saved browser history, and saved rounds | constraints |
+| 19 | [IIENSTITU Zufallsgruppen Generator](https://www.iienstitu.com/de/tools/random-group-generator) | 4 | German random group generator with keep-together/separate rules, level balancing, repeat-pair avoidance, leaders, saved lists, and CSV export | constraints |
+| 20 | [Not Random Groups](https://notrandomgroups.com/) | 4 | Teacher group generator with random and keep-together/keep-apart modes plus optional Google Classroom import | constraints |
+| 21 | [Optimal Group Generator](https://optimal-group-generator.com/) | 4 | Open-source repeat-avoidance group maker with previous records and no-login local storage | multi-round |
+| 22 | [PairForm](https://pair-form.com/) | 4 | Role-balanced event/workshop group formation with participant self-join links | constraints, self-join |
+| 23 | [PickTeams.net](https://pickteams.net/) | 4 | Featureful team picker with skill/gender tags, locked players, CSV export, and share links | constraints, strong-exports |
+| 24 | [QuizQuestions.org Team Generator](https://www.quizquestions.org/team-generator) | 4 | Advanced no-account team generator with labels, locks, drag-and-drop, added teams, and exports | constraints, strong-exports |
+| 25 | [RandomTeamGenerator.io](https://randomteamgenerator.io/) | 4 | Featureful random team generator with leaders, keep-together groups, share, TXT/CSV export, and locale support | constraints, strong-exports |
+| 26 | [Shuffly](https://shuffly.netlify.app/) | 4 | Skill- and gender-balanced random teams with strong free exports | constraints, strong-exports |
+| 27 | [Team Shake](https://www.rhine-o.com/www/iphone-apps/team-shake/) | 4 | Mobile-first balanced team generation for teachers and coaches | constraints, strong-exports |
+| 28 | [TeamMaker App](https://teammakerapp.vercel.app/) | 4 | Local, no-account team making with strong classroom presentation and exports | constraints, strong-exports |
+| 29 | [Random Wheel Tools Multi-Round Group Generator](https://randomwheeltools.com/en/multi-round-group-generator) | 4 | Private multi-round groups with visible repeat diagnostics | multi-round, privacy-friendly |
+| 30 | [Instructron Group Generator](https://instructron.com/tools/group-generator) | 3.9 | Teachers who want quick random groups with basic balancing and keep-apart rules | constraints, privacy-friendly, strong-exports |
+| 31 | [JAY Project Team Picker](https://jay-project.kr/ko/apps/team) | 3.9 | Korean browser-local team picker with balance mode, fixed people, saved rosters, and share URLs | — |
+| 32 | [Peerceptiv Group Formation](https://peerceptiv.zendesk.com/hc/en-us/articles/34657548219795-Group-Formation) | 3.9 | LMS-integrated optimized groups from survey, schedule, and topic preferences | constraints |
+| 33 | [ReadyGroupGo](https://www.readygroupgo.com/) | 3.9 | Classroom group generator with smart attributes, saved classes, share links, and class-code joining | constraints, self-join |
+| 34 | [BuddyMatcher](https://www.buddymatcher.co.uk/) | 3.8 | Teachers who need pairs/trios, local saved lists, and optional paid control features | constraints, privacy-friendly, strong-exports |
+| 35 | [Calcbe Team Generator](https://calcbe.com/en/tools/team-generator/) | 3.8 | Privacy-conscious one-session random teams with simple constraints and strong exports | constraints, privacy-friendly, strong-exports |
+| 36 | [Cogitans Générateur d’équipes](https://cogitans.fr/fr/outils/aleatoire/repartir-en-equipes/) | 3.8 | French local random or level-balanced team generator | privacy-friendly |
+| 37 | [MontaTime](https://montatime.com/) | 3.8 | Brazilian football team balancer with star levels, goalkeeper distribution, WhatsApp import, saved lists, and sharing | constraints, privacy-friendly |
+| 38 | [PickSpin Team Generator](https://pickspin.app/team-generator) | 3.8 | Polished team generator with templates, count/size modes, naming styles, text/CSV export, print, share, and local history | strong-exports |
+| 39 | [PlayRez Tennis Round Robin Generator](https://playrez.com/tools/tennis-round-robin-generator) | 3.8 | No-signup tennis/social round-robin generator with PDF/share outputs | multi-round, strong-exports |
+| 40 | [Random Group Picker](https://randomgrouppicker.com/) | 3.8 | Feature-rich random group picker with CSV import, label/gender balance, representatives, and exports | constraints, strong-exports |
+| 41 | [Random Roster](https://randomroster.com/) | 3.8 | Teacher group generator with capability balance, preferences, history, and seating charts | constraints |
+| 42 | [Randomify Team Generator](https://www.randomify.org/team-generator?entries=Alex%252CSam%252CJordan%252CCasey%252CRiley%252CMorgan&teams=2&size=3) | 3.8 | Well-rounded team generator with shareable parameters, captain mode, themed team names, copy, and CSV download | strong-exports |
+| 43 | [RandomPicker Random Team Generator](https://random-picker.app/random-team-generator) | 3.8 | Advanced browser-side teams with CSV/TXT import, locks, exclusions, skills, copy, and TXT download | constraints |
+| 44 | [Sabura Student Group Maker](https://sabura.app/en/groups) | 3.8 | Classroom group maker with optional leaders, saved lists for signed-in users, reshuffle, and share | privacy-friendly |
+| 45 | [Smart Group Maker](https://smartgroupmaker.com/) | 3.8 | Free visual group maker with balancing, fixed placements, and member relationship rules | constraints, strong-exports |
+| 46 | [Spinzoro Team Picker for Classrooms](https://spinzoro.com/en/team-picker-for-classrooms/) | 3.8 | Classroom team picker with count/size modes, strong-player marking, copy/share, Excel, and PDF export | constraints, strong-exports |
+| 47 | [Teach Arcade Group Maker](https://www.teacharcade.com/tools/group-maker.html) | 3.8 | Teacher group maker with repeat-avoidance history, print/share, and pairing records | — |
+| 48 | [Team Balancer Pro](https://autoteambalancer.pages.dev/) | 3.8 | Korean MMR/role-based team balancer for LoL, Valorant, and Overwatch internal matches | constraints, strong-exports |
+| 49 | [Team Randomizer Classroom Generator](https://team-randomizer.com/random-team-generator-for-classroom) | 3.8 | Classroom team randomizer with participant/team uploads, seed, CSV, screenshot, and sharing | strong-exports |
+| 50 | [TeamMixer](https://www.team-mixer.com/) | 3.8 | Korean AI-assisted team builder with tiers, positions, presets, and no-server-data claim | constraints, ai-assisted |
+| 51 | [WebToolNexus Random Team Generator](https://webtoolnexus.com/tools/random-team-generator/) | 3.8 | Skill-aware random teams with balance report and text export | constraints, privacy-friendly |
+| 52 | [BracketMaker.app Round Robin](https://bracketmaker.app/round-robin/) | 3.7 | Web round-robin tournament maker for singles, doubles, mixed doubles, and teams | multi-round, strong-exports |
+| 53 | [CedarWater Visibly Random](https://cedarwater.net/visiblyrandom/) | 3.7 | Teacher-oriented visibly random group maker with smart roster parsing, subjects, fullscreen, and roster save/download | privacy-friendly |
+| 54 | [Classroomscreen Group Maker](https://classroomscreen.com/app/template/widget-tutorials-tutorial-group-maker-v1) | 3.7 | Teachers already using Classroomscreen who want visual classroom groups, saved name lists, exclusions, and manual adjustment | constraints, privacy-friendly |
+| 55 | [digtools Team Generator](https://tools.digrart.jp/en/team-gen) | 3.7 | Browser-side teams with skills, NG pairs, leaders, save/load, CSV, text, and image output | constraints, strong-exports |
+| 56 | [FutScore Sorteio de Times](https://futscore.online/sorteio-de-times) | 3.7 | Portuguese football team sorter with skill stars, goalkeeper distribution, and quick mode | constraints, privacy-friendly |
+| 57 | [Game on Field Team Picker](https://www.gameonfield.in/game-setup/team-picker) | 3.7 | Sports team picker with crypto shuffle, skill snake draft, stratified pots, seed audit, CSV, and sharing | constraints, strong-exports |
+| 58 | [Klasindeling.be Groepjesmaker](https://klasindeling.be/groepjesmaker) | 3.7 | Dutch/Flemish teacher grouping with saved classes, student attributes, PDF, and print | constraints |
+| 59 | [MiniBreaks Squad Shuffle](https://minibreaks.io/apps/squad-shuffle) | 3.7 | Polished group shuffler with min/max/#groups modes, copy, print, share, editable links, and app chaining | — |
+| 60 | [Peon Inc Random Team Generator](https://www.peon-inc.net/community-tools/RandomTeamGenerator.html) | 3.7 | Local sports/team draft generator with pins, buddies, conflicts, and CSV roster import/export | constraints, privacy-friendly, strong-exports |
+| 61 | [Pickleheads Round Robin](https://www.pickleheads.com/round-robin) | 3.7 | Pickleball round robin and rotating-partner event tool | multi-round, self-join |
+| 62 | [Randomizer.uk Create Groups](https://randomizer.uk/multicriteria-team) | 3.7 | Multi-criteria random groups with proof/share/export options | constraints, strong-exports |
+| 63 | [RandomSelect Group Maker](https://randomselect.net/en/group-maker/) | 3.7 | Featureful group maker with count/size modes, AI fill, list save/load, share, and export | constraints, ai-assisted |
+| 64 | [Randraw Asia Constitute Team](https://cn.randraw.asia/constitute-team) | 3.7 | Pool-based random team generator with share/export/proof workflows | constraints, strong-exports |
+| 65 | [Randraw Multicriteria Team](https://randraw.com/multicriteria-team) | 3.7 | No-account multicriteria grouping with pots, separation rules, and exports | constraints, privacy-friendly, strong-exports |
+| 66 | [Shuffly.eu](https://shuffly.eu/) | 3.7 | Productized balanced team generator with skill/gender balance, imports, exports, saved setups, and subscriptions | constraints |
+| 67 | [Spin With The Wheel Group Maker](https://spinwiththewheel.com/group-maker) | 3.7 | Advanced browser group maker with single/bulk entry, multiple assignment methods, copy, print, and text export | — |
+| 68 | [SpinItWheel Team Generator](https://www.spinitwheel.com/team-generator.html) | 3.7 | Visual wheel-based team generator with custom names/colors, share, copy, and Excel export | — |
+| 69 | [SpinVibe Teachers](https://spinvibe.io/teachers/) | 3.7 | Teacher-focused classroom spinner, random group maker, speaker order, no-repeat picking, and projector mode | privacy-friendly |
+| 70 | [sptoolbox Random Group Generator](https://sptoolbox.com/tools/random-groups) | 3.7 | Teacher random groups with local saved class lists and keep-together/apart fields | constraints, privacy-friendly |
+| 71 | [TeamSplit](https://teamsplit.net/) | 3.7 | Polished no-account team splitting with import/export, reps, and team names | privacy-friendly |
+| 72 | [Tirage-au-Sort.net Constituer une équipe](https://www.tirage-au-sort.net/constituer-equipe) | 3.7 | French pool-based random team creator with share/export/proof workflows | constraints, strong-exports |
+| 73 | [VMaths Générateur Groupes Aléatoires Élèves](https://www.vmaths.fr/apps/generateur-groupes-aleatoires-eleves.html) | 3.7 | French student group generator with manual/CSV import, group count/size modes, keep-together constraints, and CSV export | constraints, strong-exports |
+| 74 | [Zapadisk Team Generator](https://zapadisk.be/team-generator.html) | 3.7 | Balancing sport/player teams by level, gender, and multi-day attendance | constraints |
+| 75 | [Zufallsgenerator Gruppen bilden](https://zufallsgenerator.de/gruppen-bilden) | 3.7 | German-speaking users who need random groups with pots, separation rules, fixed placements, and exports | constraints, strong-exports |
+| 76 | [TeamShuffler](https://teamshuffler.com/team-generator) | 3.7 | Quick free team splits with a paid round-robin extension | constraints |
+| 77 | [Batch Group Generator](https://batch.basith.me/) | 3.6 | Minimal aesthetic group generator with team size, prefix, extras options, suspense mode, drag/drop, and download | privacy-friendly |
+| 78 | [Draftastic](https://www.draftastic.co/) | 3.6 | Account-based team drafting platform with auto-pick, labels, invites, and CSV export | constraints, self-join, strong-exports |
+| 79 | [FerramentasJá Sorteador de Times](https://www.ferramentasja.com.br/app/sorteador-de-times) | 3.6 | Portuguese team sorter with score balancing, custom team names, copy, and report download | — |
+| 80 | [FreeRandomTools Random Team Generator](https://freerandomtools.org/random-team-generator/) | 3.6 | Sports-style teams with skill-balanced and captain modes, copy formats, history, and local state | constraints |
+| 81 | [FussFreeTools Random Group Generator](https://www.fussfreetools.com/random-group-generator.html) | 3.6 | Classroom-oriented group generator with pairs/size/count modes, copy, fullscreen, absent exclusion, and repeat-pair lock option | — |
+| 82 | [Genvalo Random Group Generator](https://www.genvalo.com/tools/random-group) | 3.6 | Clean random group generator with count/size modes and per-group copy buttons | — |
+| 83 | [GroupEng](https://groupeng.org/) | 3.6 | Open-source command-line grouping with distribute, aggregate, cluster, and balance rules | constraints |
+| 84 | [InstaGroups](https://instagroups.app/) | 3.6 | PE/coaching team generator with balancing, tournaments, analytics, and collaboration | constraints |
+| 85 | [Lazy Cat Tools Random Team Generator](https://lazycattools.com/tools/random-team-generator/) | 3.6 | Random team generator with upload, random names, reshuffle, share, copy, and print | — |
+| 86 | [LeagueLobster Round Robin Generator](https://scheduler.leaguelobster.com/round-robin-generator/) | 3.6 | Sports league round-robin scheduler with teams, games, weeks, scores, standings, and CSV export | multi-round, strong-exports |
+| 87 | [LiveReacting Random Team Generator](https://www.livereacting.com/tools/random-team-generator) | 3.6 | No-signup random teams with leaders, skill levels, custom names, and CSV/TXT export | constraints, strong-exports |
+| 88 | [Picker Wheel Team Picker](https://pickerwheel.com/tools/random-team-generator/) | 3.6 | Visual live random grouping and self-join team picking | constraints, self-join, strong-exports |
+| 89 | [Prompt2Tool Team Grouping Tool](https://prompt2tool.com/tools/productivity/team-grouping-tool) | 3.6 | Random teams with leader distribution and Excel export | constraints, privacy-friendly |
+| 90 | [Rise Random Team Generator](https://rise.global/tools/random-team-generator/) | 3.6 | Polished random team generator with count/size modes, copy, image export, and share links | — |
+| 91 | [Réparticlasse](https://shenriot.forge.apps.education.fr/reparticlasse) | 3.6 | French education group distributor with gender mix, level balancing, avatars, save/restore, and Scoregroupe mode | constraints, privacy-friendly |
+| 92 | [SnappyWords Random Group Generator](https://www.snappywords.com/random-generators/random-group-generator) | 3.6 | Group generator with count/size modes, leader options, image download, and CSV | strong-exports |
+| 93 | [Sorteador de Times](https://sorteadordetimes.com.br/sorteador-times) | 3.6 | Brazilian sports/esports team generator with skill stars, roles, saved lists, and import/export | constraints |
+| 94 | [TEAM MAKER](https://team-maker.net/) | 3.6 | Rating-based balanced team generator for games and small communities | — |
+| 95 | [Toolgami Random Team Generator](https://toolgami.bildirchin.com/tool/random-team-generator) | 3.6 | Random or skill-based teams with CSV/JSON export | constraints, strong-exports |
+| 96 | [ToolV Team Generator](https://toolv.com/en/app/team-generator) | 3.6 | Multi-mode browser-local team, pair, role, and seating generator | privacy-friendly |
+| 97 | [Akousa Random Team Generator](https://akousa.net/zh/tools/random-team-generator) | 3.5 | Browser-local random team generator with skill-balance toggle, captains, CSV/TXT export, and history | strong-exports |
+| 98 | [AttentionFlow Random Group Generator](https://www.attentionflow.net/en/tools/random/random-group-generator) | 3.5 | Local-browser group generator with CSV/Excel import/export claims and fair mode | privacy-friendly |
+| 99 | [BasicFreeTools Random Student Group Generator](https://basicfreetools.com/random-student-group-generator/) | 3.5 | Privacy-friendly student group generator with absent exclusions, reshuffle history, copy, and print | privacy-friendly |
+| 100 | [BestRandom Random Team Generator](https://bestrandom.net/random-team-generator) | 3.5 | Seeded random team generator with copy/share/reroll controls | — |
+| 101 | [Eenie Meenie Random Team Generator](https://eeniemeenie.photonbuilder.com/team-generator) | 3.5 | Browser-side teams with captain mode, skill ratings, and local saved groups | constraints |
+| 102 | [EveryRandom Team Generator](https://everyrandom.com/team-generator) | 3.5 | Featureful random team generator with count/size modes, copy, download, shuffle, and history | — |
+| 103 | [FlameAI Random Team Generator](https://www.flameai.net/tools/random-team) | 3.5 | Privacy-framed random team splitter with count/size modes, copy, download, and share | ai-assisted |
+| 104 | [Fly63 Random Group Tool](https://fly63.com/tool/team_group/) | 3.5 | Chinese random grouping with mutually exclusive members and Excel export | constraints |
+| 105 | [GroupMixes](https://groupmixes.com/group-generator) | 3.5 | Teachers who want quick mixed-ability classroom groups | constraints, strong-exports |
+| 106 | [LiveCloud Groepjesmaker](https://basisonderwijs.online/groepjesmaker) | 3.5 | Dutch classroom group maker with advanced keep-together/apart and board/PDF workflows | constraints |
+| 107 | [OnlineRadDraaien Groepjesmaker](https://onlineraddraaien.nl/groepjesmaker/) | 3.5 | Dutch group maker with count/size modes, copy, CSV export, and sharing | strong-exports |
+| 108 | [PickerSpin Team Generator](https://pickerspin.co/team-generator/) | 3.5 | Polished team picker with paste/comma input, count/size modes, copy-all, and reshuffle | — |
+| 109 | [Playpass Golf Schedule Maker](https://playpass.com/sports-software/golf-schedule-maker) | 3.5 | Golf rotating-partner and round-robin schedules | multi-round, constraints, strong-exports |
+| 110 | [RandoFox Random Team Generator](https://randofox.com/generators/random-teams) | 3.5 | Polished random team generator with secure randomness claims and copy controls | — |
+| 111 | [Randomly Pick Team Generator](https://randomly-pick.com/en/team-generator/) | 3.5 | Excel-friendly random or score-balanced team splitter with CSV output | strong-exports |
+| 112 | [RandomlyFun Random Pair Generator](https://randomlyfun.app/tools/random-pair-generator) | 3.5 | Fast random partner/pair generator with odd-person handling, copy, and share | — |
+| 113 | [RandomTeamMaker.click](https://randomteammaker.click/) | 3.5 | Private in-browser pair/group generator with group-size and leftovers policies | privacy-friendly |
+| 114 | [RobinDraw](https://robindraw.com/generator) | 3.5 | Instant browser round-robin schedule generator with CSV/PDF/share/live outputs | multi-round, strong-exports |
+| 115 | [TheToolApp Team Generator](https://thetoolapp.com/generators/team-generator/) | 3.5 | Modern team generator with paste, count/size modes, captains, colors, and drag/drop examples | — |
+| 116 | [ToolsZone Random Team Generator](https://www.toolszone.net/en/tools/random-team-generator) | 3.5 | Polished random team generator with count/size modes, regenerate, and copy-all output | — |
+| 117 | [Writing in the Stream Smart Group Generator](https://writinginthestream.com/wp-content/uploads/2026/03/randomgroupgenerator.html) | 3.5 | Teacher-owned local HTML grouping with attendance, class storage, drag/drop, and JSON import/export | constraints, privacy-friendly |
+| 118 | [AlhazApp Group Generator](https://alhazapp.com/en/groups) | 3.4 | Random group splitter with optional group heads, reshuffle, share, and saved-list account option | — |
+| 119 | [Classroom Toolkit Group Generator](https://classroomtoolkit.co.uk/group-generator) | 3.4 | Privacy-friendly classroom group generator with saved list and count/size modes | privacy-friendly |
+| 120 | [Decidable Team Divider](https://decidable-tools.com/en/team-divider) | 3.4 | Team divider with single/bulk add, leader support, and re-division | — |
+| 121 | [GetRandomNumber Random Team Generator](https://www.getrandomnumber.com/team-generator/) | 3.4 | Advanced team generator with save/load lists, size bounds, seed, balance mode, history, copy, and text export claims | — |
+| 122 | [GolfSoftware Play All Schedule Generator](https://www.golfsoftware.com/tools/schedule/playall.html) | 3.4 | Golf groups that need multi-event pairings from preset golfer counts and group sizes | multi-round, constraints, privacy-friendly |
+| 123 | [Groupformer](https://groupformer.com/) | 3.4 | Danish group former for repeated groups with gender/min-same-gender and host rotation use cases | — |
+| 124 | [GroupGuru Online](https://www.groupguruonline.com/) | 3.4 | Organizer-led classroom/activity group maker with participant join codes and criteria-based grouping | constraints, self-join |
+| 125 | [Kuakua Random Group Generator](https://kuakua.app/tools/random-group-generator) | 3.4 | Polished random group generator with count/size modes, reshuffle, and copy results | — |
+| 126 | [LoCo Disc Golf Team Generator](https://www.locodiscgolf.com/teams/) | 3.4 | Disc-golf team generator with team-size mode, output format choice, reset, and copy | privacy-friendly |
+| 127 | [MultiPicker Team Picker](https://multipicker.com/team-picker) | 3.4 | Simple teams where gender distribution, representatives, and custom team names matter | constraints |
+| 128 | [Randomara Classroom Group Generator](https://randomara.com/random-team-generator/for-classroom/) | 3.4 | Classroom random team generator with copy and fullscreen controls | — |
+| 129 | [RandomGroupGenerator.net](https://randomgroupgenerator.net/) | 3.4 | Polished one-off random groups with CSV/Excel-style exports | strong-exports |
+| 130 | [Sorteio Random Team Generator](https://sorteio.com/random-team-generator) | 3.4 | Random team generator with team-count/participants-per-team modes, leaders, and copy result | — |
+| 131 | [SpacebarCount Team Generator](https://www.spacebarcount.com/randomizers/team-generator/) | 3.4 | Polished browser-local team cards with bench and dedupe options | privacy-friendly |
+| 132 | [SpinRandomTool Team Generator](https://spinrandomtool.com/team-generator/) | 3.4 | Local browser team generator with presets, history, copy, and no-upload claim | privacy-friendly |
+| 133 | [Strategic Group Maker](https://workspace.google.com/marketplace/app/strategic_group_maker/997854293694) | 3.4 | Google Sheets add-on for strategic classroom groups and Zoom breakout export | constraints, strong-exports |
+| 134 | [TeamGenerator.net Team Generator](https://www.teamgenerator.net/team-generator) | 3.4 | Sports and game teams balanced by skill ratings and roles | constraints |
+| 135 | [TimeTiki Group Generator](https://timetiki.com/group-generator/) | 3.4 | Group-size generator with list utilities, copy, recent groups, and history | — |
+| 136 | [Toolora Team Generator](https://toolora.info/en/t/team-generator/) | 3.4 | Private browser-side random teams with copy and settings share | privacy-friendly |
+| 137 | [TXToolbox Smart Team Splitter](https://www.txtoolbox.com/tool/team-splitter) | 3.4 | Balanced team splitter with skill levels and greedy balancing algorithm | constraints |
+| 138 | [VMaths Générateur d’Équipes Aléatoires](https://www.vmaths.fr/apps/generateur-equipes-aleatoires.html) | 3.4 | French random team generator with TXT/CSV import, 2-20 teams, copy controls, and Fisher-Yates documentation | — |
+| 139 | [AI225 Team Generator](https://tools.ai225.com/en/tools/team-generator/) | 3.3 | Browser-side random teams with import, exclude toggles, history, copy, and export | ai-assisted |
+| 140 | [Calculation Support Random Group Generator](https://www.calculation.support/en/work-school/random-group-generator) | 3.3 | Random group generator with placeholders, file import, and Excel download | — |
+| 141 | [ClassInteractives Formgroup Creator](https://groupings.classinteractives.co.uk/) | 3.3 | UK-style form/class allocation using friends and must-avoid relationships | constraints, strong-exports |
+| 142 | [Clock Buddies Generator](https://clockbuddies.skillsconverged.com/) | 3.3 | Training/classroom clock-buddies partner generator with duplicate checks and themed labels | — |
+| 143 | [CodersTool Random Group Generator](https://www.coderstool.com/random-group-generator) | 3.3 | Reusable random groups with seed, history, sharing, TXT/CSV, and saved lists | constraints, strong-exports |
+| 144 | [DateRounds](https://daterounds.com/) | 3.3 | Small free speed-dating or networking rotation events | multi-round, constraints, self-join |
+| 145 | [DRAW-LOTS Team Generator](https://www.draw-lots.com/teams-generate/) | 3.3 | Team generator with seed/skill seeding controls, group sizing, and configurable picking | constraints |
+| 146 | [FreeClassroomTools Group Generator](https://www.freeclassroomtools.com/tools/group-generator) | 3.3 | Teacher-focused random group generator with reshuffle and classroom display styling | privacy-friendly |
+| 147 | [FreeToolly Random Group Picker](https://freetoolly.com/en/tools/random-group-picker) | 3.3 | Random group picker with count/size modes, leader/vice-leader assignment, and CSV export | — |
+| 148 | [Lembog Random Group Generator](https://lembog.com/tools/random-group-generator) | 3.3 | Clean random group generator with quick group-count buttons and copy-all output | — |
+| 149 | [MatchBalancer Volleyball Team Generator](https://matchbalancer.com/volleyball-team-generator) | 3.3 | Volleyball team balancing by skill, position, roster, and match history | constraints |
+| 150 | [PickWinner Random Team Generator](https://pickwinner.tools/tools/random-team-generator) | 3.3 | Clean privacy-friendly random team cards with shareable URLs | privacy-friendly |
+| 151 | [QuickRandomizer Random Team Generator](https://www.quickrandomizer.com/random-team-generator) | 3.3 | Modern Fisher-Yates team generator with copy-all and history | — |
+| 152 | [RandAnimal Random Group Generator](https://randanimal.com/random-group-generator.html) | 3.3 | Random group generator with title, find, save, and print controls | — |
+| 153 | [Random Media Hub Random Team Generator](https://www.randommediahub.com/random-team-generator) | 3.3 | Clean random team generator with count/size modes, quick team counts, shuffle, and copy | privacy-friendly |
+| 154 | [Random-Group-Generator.com](https://random-group-generator.com/) | 3.3 | Single-session browser grouping with copy/export/share controls and lightweight balance modes | constraints, strong-exports |
+| 155 | [Random.GG Team Generator](https://www.random.gg/team-generator/en) | 3.3 | Character-themed team generator with API access | — |
+| 156 | [Randommer Random Team Generator](https://randommer.com/random-team-generator/) | 3.3 | Random team generator with duplicate removal, split-by-space, copy, and text download | privacy-friendly |
+| 157 | [RandomOS Group Generator](https://randomos.co.uk/tools/group-generator/) | 3.3 | Clean random group generator with count/max-size modes and share link | privacy-friendly |
+| 158 | [Spin of Wheel Team Generator](https://spinofwheel.com/team-generator) | 3.3 | Polished team generator with copy-all and balanced-size claims | — |
+| 159 | [Sport Scheduler Pro Free Schedule Generator](https://sportschedulerpro.com/create) | 3.3 | Free round-robin team schedules with links and exports | multi-round, constraints, strong-exports |
+| 160 | [The Teaching Couple Classroom Toolkit](https://theteachingcouple.com/tools/) | 3.3 | Teacher classroom selector/grouper with tags, exclusions, import/export, and print | constraints |
+| 161 | [Tirage-au-Sort.com Créateur d’Équipes](https://www.tirage-au-sort.com/tirage-equipes) | 3.3 | Simple French crypto-random team creator with projection mode | — |
+| 162 | [WebRandom Random Team Generator](https://www.webrandom.com/) | 3.3 | No-account random teams with custom names, copy, text download, and share link | privacy-friendly |
+| 163 | [Wooclap Team Picker](https://tool.wooclap.com/en/free-group-maker) | 3.3 | Polished simple random teams with strong export options | privacy-friendly, strong-exports |
+| 164 | [Yuesha Random Group Tool](https://suiji.yuesha.com/fenzu/) | 3.3 | Chinese browser-local random group generator with file import, leaders, and copy output | — |
+| 165 | [Any One Will Do](https://anyonewilldo.com/) | 3.2 | Privacy-friendly browser-only random picker and group drafter | privacy-friendly |
+| 166 | [AnyOnlineTool Group Generator Tool](https://anyonlinetool.com/en/tool/group-generator-tool) | 3.2 | Credit-based group generator with copy, CSV, PDF, API, and embed controls | strong-exports |
+| 167 | [ClassroomTools.app Group Maker](https://www.classroomtools.app/tools/group-maker?names=Alice%2CBob%2CCharlie%2CDiana%2CEmma%2CFrank%2CGrace%2CHenry&groups=2) | 3.2 | Free no-tracking teacher group maker with URL-prefill and embed controls | privacy-friendly |
+| 168 | [ClassSeats](https://app.classseats.app/) | 3.2 | Teacher classroom-management app with local class files, student import, seating, attendance, and group generation | privacy-friendly |
+| 169 | [DecisionFlip Random Team Generator](https://decisionflip.com/random-team-generator) | 3.2 | Skill-aware random team maker with saved configurations and copy output | constraints |
+| 170 | [Der Zufallsgenerator Gruppen Zufall](https://derzufallsgenerator.de/gruppen-zufall) | 3.2 | German random group/team generator with group names and group-leader options | — |
+| 171 | [DigitaleTools Groepjesmaker](https://digitaletools.nl/tools/groepjesmaker/) | 3.2 | Dutch classroom group maker with count/participants modes and sharing | — |
+| 172 | [FastRounds](https://fastrounds.com/) | 3.2 | Small free speed-networking round rotation events | multi-round, constraints, self-join |
+| 173 | [Flipiffy Random Group Generator](https://flipiffy.com/random-tools/group-generator/) | 3.2 | Basic random groups with leaders, exclusions, saved list, CSV, and copy | constraints, strong-exports |
+| 174 | [Grouperapp.net](https://grouperapp.net/) | 3.2 | Google Classroom teachers who want paid group history and preferences | constraints, strong-exports |
+| 175 | [Groupify.it](https://groupify.it/) | 3.2 | Classroom peer-group tool with roster upload, sex field, group-size/count modes, and animation controls | — |
+| 176 | [Keamk](https://www.keamk.com/random-team-generator) | 3.2 | Random teams with basic gender or skill balancing | constraints, strong-exports |
+| 177 | [ParTeeOf18 Randomizer](https://parteeof18.com/randomizer/) | 3.2 | Productized golf pairing randomizer with random/manual/handicap/AB/ABCD and multi-round league ambitions | constraints |
+| 178 | [PrepPanel Classroom Group Generator](https://preppanelclassroom.com/) | 3.2 | Chrome-extension classroom tool with ability-balanced groups and relationship rules | constraints |
+| 179 | [PrintYourBrackets Round Robin Generator](https://www.printyourbrackets.com/round-robin-generator.php) | 3.2 | Tournament organizers who need printable round-robin schedules, pools, Excel export, and share links | multi-round, constraints, strong-exports |
+| 180 | [Pudone Random Grouper](https://pudone.com/random-grouper/) | 3.2 | Privacy-first random group generator with count/size modes, custom group names, animation, copy, and download claims | — |
+| 181 | [RandomPickerTool Team Generator](https://randompickertool.com/team-generator) | 3.2 | Clean no-tracking team generator with count/size modes, rebalance, and copy | privacy-friendly |
+| 182 | [RandomTeamBuilder.com](https://randomteambuilder.com/) | 3.2 | Visual random teams with drag-and-drop adjustment and exclusion-rule claims | constraints |
+| 183 | [RandoTeams](https://www.randoteams.com/) | 3.2 | Wheel-style random team splitter with split-all and drag-and-drop claims | — |
+| 184 | [Raugen Random Team Generator](https://raugen.com/toolbox/random-team-generator) | 3.2 | Quick random teams with custom team names, copy-all output, basic stats, and local generation history | ai-assisted |
+| 185 | [ScoreKeeperCo Random Team Generator](https://www.scorekeeper.co/random-team-generator) | 3.2 | Sports-oriented random team generator with reshuffle and scoreboard/bracket links | — |
+| 186 | [slack-meetups](https://github.com/liddiard/slack-meetups) | 3.2 | Open-source Slack bot for recurring random 1:1 meetup rounds | multi-round |
+| 187 | [Slumpgenerator Random Team Generator](https://slumpgenerator.com/random-team-generator) | 3.2 | No-account team randomizer with paste input, group-count/size modes, optional names, and leaders | — |
+| 188 | [Sorteador de Bingo Sorteador de Times](https://www.sorteadordebingo.com.br/ferramentas/sorteador-times) | 3.2 | Portuguese sports team sorter with optional positions and skill levels | constraints |
+| 189 | [Speed Friending and Dating Matcher](https://github.com/machinekoder/speed-friending-and-dating-matcher) | 3.2 | Open-source CLI/server matcher for speed-friending and speed-dating events | — |
+| 190 | [Stilest Random Team Generator](https://www.stilest.com/tools/random-team-generator) | 3.2 | Clean comma/newline team splitter with regenerate and copy controls | — |
+| 191 | [TeachTools Team Generator](https://www.teach-tools.org/) | 3.2 | No-login teacher team generator with leaders, drag-and-drop, shuffle, and print | — |
+| 192 | [TeamCreator](https://unitedwetransform.com/team-creator/) | 3.2 | Simple browser-local grouping with hard pair rules and CSV export | multi-round, constraints, privacy-friendly, strong-exports |
 | 193 | [Tekscape Random Group Generator](https://tekscape.io/tools/school/random-group-generator) | 3.2 | School random group generator with generated output and share/save actions | — |
 | 194 | [TextGround Random Group Generator](https://www.textground.com/tools/random-group-generator/) | 3.2 | Simple group splitting with bulk import, reshuffle, copy, and download | — |
 | 195 | [TienIchHay Random Group Generator](https://tienichhay.net/random-group.html) | 3.2 | Vietnamese/English random group generator with leader selection and CSV export | strong-exports |
