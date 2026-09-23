@@ -32,6 +32,9 @@ export const IMPORTANT_FEATURES = [
   'Multiple rounds/sessions',
   'Repeat encounter limits',
   'Unique-contact optimization',
+  'Progressive group reveal',
+  'Interactive assignment process',
+  'Manual post-generation editing',
   'Hard keep-apart constraints',
   'Hard keep-together constraints',
   'Attribute balance constraints',
@@ -167,6 +170,9 @@ function shortFeature(feature) {
     .replace(' constraints', '')
     .replace(' optimization', '')
     .replace('Multiple rounds/sessions', 'Multi-round')
+    .replace('Progressive group reveal', 'Staged reveal')
+    .replace('Interactive assignment process', 'Interactive draw')
+    .replace('Manual post-generation editing', 'Manual edits')
     .replace('No account required', 'No account')
     .replace('Runs in browser', 'Browser')
     .replace('Presentation/full-screen mode', 'Presentation')

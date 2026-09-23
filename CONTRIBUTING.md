@@ -24,7 +24,7 @@ Please include:
 
 Ratings are editorial and follow [`METHODOLOGY.md`](./METHODOLOGY.md). A correction request can prove that a factual detail is stale, but it does not automatically determine the final score.
 
-The most important rule: we rate **group generation**, not the parent product. A classroom platform, presentation tool, spreadsheet, AI assistant, or picker gets credit only for features that materially help create groups.
+The most important rule: we rate **group generation**, not the parent product. A classroom platform, presentation tool, spreadsheet, AI assistant, or picker gets credit only for features that materially help create, refine, or present groups.
 
 ## Data format
 

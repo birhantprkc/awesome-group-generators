@@ -30,6 +30,11 @@ RATING_KEYS = [
     "accountFriction",
     "resultQuality",
 ]
+INTERACTION_FEATURES = [
+    "Progressive group reveal",
+    "Interactive assignment process",
+    "Manual post-generation editing",
+]
 FEATURE_VALUES = {"yes", "partial", "no", "na"}
 
 USE_CASE_SHORTLISTS = [
@@ -54,9 +59,19 @@ USE_CASE_SHORTLISTS = [
         "These are credible alternatives when participant preference capture or classroom-specific setup matters more than repeat minimization.",
     ),
     (
-        "Interactive classroom or presentation reveal",
-        ["Picker Wheel Team Picker", "Classroomscreen Group Maker", "Online Stopwatch Random Group Generator"],
-        "Use these when the act of revealing teams live is part of the activity and presentation matters as much as assignment quality.",
+        "Staged group reveal",
+        ["Batch Group Generator", "AttentionFlow Random Group Generator", "Online Stopwatch Random Group Generator"],
+        "These reveal generated assignments in stages for an audience; they differ in classroom polish, controls, and exports.",
+    ),
+    (
+        "Interactive assignment",
+        ["Picker Wheel Team Picker", "Draftastic", "PairForm"],
+        "These let participants or organizers actively assign people through a wheel, draft, or self-join flow.",
+    ),
+    (
+        "Adjust groups after generation",
+        ["GroupMixer", "Clever Groups", "Classroomscreen Group Maker"],
+        "Use these when a generated draft needs organizer changes before the groups are used.",
     ),
     (
         "Polished simple random splitters",
@@ -145,6 +160,12 @@ def load_tools(source: Path) -> tuple[dict[str, Any], list[dict[str, Any]]]:
         if missing:
             raise ValueError(f"{item.get('name')} missing ratings: {missing}")
         features = {key: public_feature(value) for key, value in sorted(item.get("features", {}).items())}
+        missing_interaction = [key for key in INTERACTION_FEATURES if key not in features]
+        if missing_interaction:
+            raise ValueError(
+                f"{item.get('name')} missing reviewed interaction features: {missing_interaction}; "
+                "reconcile the review-builder source before importing it"
+            )
         tool_id = slugify(item["name"])
         if tool_id in seen_ids:
             suffix = 2
@@ -199,6 +220,7 @@ def write_csv(tools: list[dict[str, Any]]) -> None:
         "url",
         "overallRating",
         *RATING_KEYS,
+        *INTERACTION_FEATURES,
         "bestFor",
         "pricing",
         "tags",
@@ -213,6 +235,7 @@ def write_csv(tools: list[dict[str, Any]]) -> None:
                 "url": tool["url"],
                 "overallRating": tool["overallRating"],
                 **tool["ratings"],
+                **{feature: tool["features"][feature] for feature in INTERACTION_FEATURES},
                 "bestFor": tool["bestFor"],
                 "pricing": tool["pricing"],
                 "tags": ",".join(tool["tags"]),
@@ -280,6 +303,8 @@ This repository publishes a review dataset, scoring methodology, correction work
 - [`docs/SITE_MONITORING.md`](./docs/SITE_MONITORING.md) — page-snapshot baseline and change-check workflow
 - [`docs/UPDATE_PASS_2026-09-22.md`](./docs/UPDATE_PASS_2026-09-22.md) — latest reviewed corrections and market intake
 - [`docs/REPEAT_AVOIDANCE_BENCHMARK_2026-09-22.md`](./docs/REPEAT_AVOIDANCE_BENCHMARK_2026-09-22.md) — measured TeamCreator and GroupMixer repeat avoidance
+- [`docs/INTERACTION_FEATURE_AUDIT_2026-09-23.md`](./docs/INTERACTION_FEATURE_AUDIT_2026-09-23.md) — live reveal, interactive assignment, and manual editing audit
+- [`data/review-evidence/interaction-features-2026-09-23.json`](./data/review-evidence/interaction-features-2026-09-23.json) — per-tool support evidence for those three features
 
 Current export: **{meta['toolCount']} tools**, base review-builder revision **{meta.get('sourceRevisionId')}**, exported **{meta['exportedAt']}**.
 

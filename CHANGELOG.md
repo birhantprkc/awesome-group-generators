@@ -2,6 +2,8 @@
 
 ## 2026-09-23
 
+- Reviewed all 503 tools for progressive group reveal, interactive assignment, and manual editing after generation; added per-tool evidence, CSV columns, and website filters and presets.
+- Corrected SpinOfLuck Team Picker's stale wheel description and directly contradicted feature flags after checking its current generator; ratings remain unchanged pending a full rerating.
 - Clarified that feature support is rated at the level a free account can reach, with signup requirements scored under account friction, matching how account-only tools such as Social Golfer Online were already rated.
 - Marked GroupMixer's partial attendance and per-session capacities as `yes`: both work in full with a verified free account, and the account gate stays reflected in its account-friction score, pricing and cons.
 

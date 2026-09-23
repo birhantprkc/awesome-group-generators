@@ -76,7 +76,20 @@
           "additionalProperties": false
         },
         "ratingComments": { "type": "object", "additionalProperties": { "type": "string" } },
-        "features": { "type": "object", "additionalProperties": { "$ref": "#/$defs/featureSupport" } },
+        "features": {
+          "type": "object",
+          "required": [
+            "Progressive group reveal",
+            "Interactive assignment process",
+            "Manual post-generation editing"
+          ],
+          "properties": {
+            "Progressive group reveal": { "$ref": "#/$defs/featureSupport" },
+            "Interactive assignment process": { "$ref": "#/$defs/featureSupport" },
+            "Manual post-generation editing": { "$ref": "#/$defs/featureSupport" }
+          },
+          "additionalProperties": { "$ref": "#/$defs/featureSupport" }
+        },
         "pros": { "type": "array", "items": { "type": "string" } },
         "cons": { "type": "array", "items": { "type": "string" } },
         "reviewNote": { "type": "string" },

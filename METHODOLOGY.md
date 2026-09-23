@@ -1,6 +1,6 @@
 # Methodology
 
-This dataset rates tools for **group-generation capability specifically**. A tool does not get extra credit for unrelated picker, presentation, classroom-management, spreadsheet, AI, or platform features unless those features materially help create better groups.
+This dataset rates tools for **group-generation capability specifically**, including creating, refining, and presenting group assignments. A tool does not get extra credit for unrelated picker, presentation, classroom-management, spreadsheet, AI, or platform features unless they materially support that workflow.
 
 ## Rating scale
 
@@ -27,13 +27,13 @@ Visual clarity, information architecture, interaction quality, and lack of distr
 
 ### Features
 
-Depth of group-generation controls: group size/count, multi-round schedules, constraints, balancing, repeat minimization, saved rosters, imports, self-join, diagnostics, and workflow controls.
+Depth of group-generation controls: group size/count, multi-round schedules, constraints, balancing, repeat minimization, saved rosters, imports, self-join, manual adjustment after generation, live reveal, diagnostics, and workflow controls.
 
 Arbitrary group count or group size alone is real but basic functionality; by itself it usually does not justify a high feature score.
 
 ### Outputs
 
-How useful the results are after generation: copy, CSV, Excel, PDF/image, print, share links, Zoom breakout CSV, API output, export bundles, and diagnostics.
+How useful the results are after generation: copy, CSV, Excel, PDF/image, print, share links, live presentation, Zoom breakout CSV, API output, export bundles, and diagnostics.
 
 Copy-only output is intentionally scored low compared with structured exports.
 
@@ -51,6 +51,16 @@ How good the assignments are for the group-generation problem: fair group sizes,
 
 Strong randomization or polished animation does not raise result quality unless it improves the actual group assignments.
 
+## Live interaction and manual editing
+
+These are separate feature fields. Full-screen display, team-name editing, and fixed placement before generation are tracked elsewhere and do not imply support for these fields.
+
+- **Progressive group reveal:** the tool intentionally unveils generated group or member assignments to the organizer or audience in stages, such as one group at a time or a paced suspense mode. A single Start button can trigger the sequence. A static result with a decorative transition or a private self-join result shown only to one participant does not qualify.
+- **Interactive assignment process:** the organizer or participants repeatedly spin, draw, or advance a visible process that assigns people to groups. A single Generate or Reshuffle button does not qualify. A generic name picker that requires the user to build the groups elsewhere has only partial support at most.
+- **Manual post-generation editing:** the user can move or swap people between generated groups and keep the changed assignment. Editing input names, renaming teams, setting pins before generation, or regenerating the entire result does not qualify. Reviews should also note whether edits preserve capacities and constraints or warn when they break them.
+
+The three features describe the workflow. Animation alone does not improve the assignment-quality rating; manual edits may improve a result when the tool lets the organizer resolve real constraints.
+
 ## Feature support states
 
 Feature values use:
@@ -67,7 +77,7 @@ Unknowns are resolved before public export. If a feature value is wrong, open a 
 ## Scope rules
 
 - Review the specific group-generator workflow, not the parent product.
-- Do not credit unrelated themes, sounds, embeds, streaming, or generic API access unless they materially help generate groups.
+- Do not credit unrelated themes, sounds, embeds, streaming, or generic API access unless they materially help create, refine, or present groups.
 - Preset-only or workaround grouping ranks below normal random splitters.
 - Non-group-generator tools may be omitted or rated as low-scoring workarounds.
 - Spreadsheet and AI tools are judged as realistic grouping workflows, not as general-purpose platforms.

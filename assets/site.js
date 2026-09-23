@@ -206,6 +206,27 @@ function initThemeToggle() {
       minRating: 0,
     },
     {
+      id: 'reveal',
+      label: 'Live group reveal',
+      tags: [],
+      features: ['Progressive group reveal'],
+      minRating: 0,
+    },
+    {
+      id: 'interactive',
+      label: 'Interactive picking',
+      tags: [],
+      features: ['Interactive assignment process'],
+      minRating: 0,
+    },
+    {
+      id: 'manual-edit',
+      label: 'Edit generated groups',
+      tags: [],
+      features: ['Manual post-generation editing'],
+      minRating: 0,
+    },
+    {
       id: 'simple',
       label: 'Basic randomizers',
       tags: ['basic-randomizer'],
