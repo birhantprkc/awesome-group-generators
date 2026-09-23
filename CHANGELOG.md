@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-09-23
+
+- Clarified that feature support is rated at the level a free account can reach, with signup requirements scored under account friction, matching how account-only tools such as Social Golfer Online were already rated.
+- Marked GroupMixer's partial attendance and per-session capacities as `yes`: both work in full with a verified free account, and the account gate stays reflected in its account-friction score, pricing and cons.
+
 ## 2026-09-22
 
 - Added TeamCreator, Visimon Breakout Room Generator Lite, Random Wheel Tools Multi-Round Group Generator, and TeamShuffler after live workflow reviews.

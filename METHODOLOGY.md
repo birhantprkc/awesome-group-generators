@@ -56,9 +56,11 @@ Strong randomization or polished animation does not raise result quality unless 
 Feature values use:
 
 - `yes` — supported in a meaningful way
-- `partial` — supported only with limitations, a workaround, or account/app caveats
+- `partial` — supported only with limitations, a workaround, or a paid-plan, app-install or ecosystem requirement
 - `no` — not supported or not visible in the reviewed workflow
 - `na` — not applicable
+
+Features are rated at the level a free account can reach. Needing a free signup does not lower a feature value; it is scored under account friction instead.
 
 Unknowns are resolved before public export. If a feature value is wrong, open a correction issue with evidence.
 
