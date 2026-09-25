@@ -60,7 +60,7 @@ USE_CASE_SHORTLISTS = [
     ),
     (
         "Staged group reveal",
-        ["Batch Group Generator", "AttentionFlow Random Group Generator", "Online Stopwatch Random Group Generator"],
+        ["GroupMixer", "Batch Group Generator", "Online Stopwatch Random Group Generator"],
         "These reveal generated assignments in stages for an audience; they differ in classroom polish, controls, and exports.",
     ),
     (

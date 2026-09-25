@@ -16,6 +16,10 @@ const THEME_LABELS = {
   dark: 'Dark theme',
   system: 'Use system theme',
 };
+const FEATURE_EXPLANATIONS = {
+  'Visual/theme customization': 'Choose distinct visual designs or customize group-result appearance; light/dark alone is partial.',
+  'Weighted random entries': 'Give individual names different odds in a random draw; solver preference weights are separate.',
+};
 
 function resolveTheme(mode) {
   if (mode !== 'system') return mode;
@@ -383,9 +387,11 @@ function initThemeToggle() {
     const features = ordered.filter((feature) => !state.featureQuery || feature.toLowerCase().includes(state.featureQuery));
     el.featureList.innerHTML = features.map((feature) => {
       const count = state.tools.filter((tool) => hasFeature(tool, feature, { includePartial: state.includePartial })).length;
+      const explanation = FEATURE_EXPLANATIONS[feature];
       return `<button class="feature-button" type="button" data-feature="${escapeHtml(feature)}" aria-pressed="${state.features.has(feature)}">
         <strong>${escapeHtml(feature)}</strong>
         <span>${count} supporting ${state.includePartial ? 'yes/partial' : 'yes'}</span>
+        ${explanation ? `<small>${escapeHtml(explanation)}</small>` : ''}
       </button>`;
     }).join('');
     el.featureList.querySelectorAll('[data-feature]').forEach((button) => {

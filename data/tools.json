@@ -4,7 +4,7 @@
     "description": "A transparent, curated review dataset for group generators, team pickers, classroom grouping tools, breakout-room planners, and social-golfer schedulers.",
     "sourceRevisionId": 552,
     "sourceSavedAt": "2026-08-01T11:21:00.334297+00:00",
-    "exportedAt": "2026-09-23T11:20:49+00:00",
+    "exportedAt": "2026-09-25T10:29:01+00:00",
     "toolCount": 503,
     "ratingScale": "0.0 to 5.0 stars, higher is better",
     "ratingCategories": [
@@ -30,7 +30,7 @@
       "name": "GroupMixer",
       "url": "https://www.groupmixer.app",
       "bestFor": "Almost every group generation usecase",
-      "summary": "GroupMixer is much more capable than the simple randomizers on this list. It can also do a quick random split, but its real value is constraints, repeated sessions, partial attendance, imports/exports, repeat-pairing reduction, diagnostics, and local-first scenario workflows. The full workspace is more complex than a toy picker, and some advanced generation requires a verified account or Pro.",
+      "summary": "GroupMixer is much more capable than the simple randomizers on this list. It can also do a quick random split, but its real value is constraints, repeated sessions, partial attendance, imports/exports, repeat-pairing reduction, diagnostics, and local-first scenario workflows. The full workspace is more complex than a toy picker, and some advanced generation requires a verified account or Pro. Its live presentation can reveal groups or individual assignments in stages, and its appearance settings offer two design profiles plus light and dark modes.",
       "pricing": "Free browser-based tool. Standard grouping is unlimited without an account for up to 50 active people when attendance and group bounds stay the same. Advanced generation (over 50 active people, partial attendance, or changing group-size limits between rounds) requires a verified free account with 3 generations per UTC day. Pro is €6.99/month for unlimited advanced generation and cloud sync.",
       "overallRating": 4.7,
       "overallComment": "The strongest all-around group generator here if the user needs more than a one-off random split, but the advanced workspace is naturally denser than toy randomizers.",
@@ -45,9 +45,9 @@
       },
       "ratingComments": {
         "easeOfUse": "The basic landing-page flow is easy: paste names, choose groups or group size, and generate. The advanced grid/workspace is necessarily denser than one-click splitters because it exposes sessions, capacities, constraints, imports, diagnostics, and saved scenarios.",
-        "design": "Modern and much more polished than most utility sites. Some screens are naturally dense because the tool exposes advanced setup, and parts of the expert workspace/mobile experience could be smoother.",
-        "features": "Extremely deep for a group generator: multi-session scheduling, participant availability, editable groups, custom capacities and minimums, per-session capacity overrides, hard/soft constraints, weighted objectives, repeat reduction, imports, exports, saved scenarios/workspaces, saved result history, scenario import/export bundles, solver telemetry/result metadata, diagnostics, pair matrices, and API access. Some advanced generation is account/allowance gated; the main missing areas are self-join links and arbitrary non-group-generator customization.",
-        "outputs": "Excellent output coverage: CSV-style exports, copy/print/share workflows, embeddable result widgets, Zoom breakout CSV export, scenario bundles, result diagnostics, and API output. Not a literal 5/5 only because it does not cover every polished presentation/export format such as first-class PDF exports or fully custom branded reports.",
+        "design": "Modern and much more polished than most utility sites. Some screens are naturally dense because the tool exposes advanced setup, and parts of the expert workspace/mobile experience could be smoother. Users can switch between Clear and Editorial design profiles as well as light, dark, and system color modes.",
+        "features": "Extremely deep for a group generator: multi-session scheduling, participant availability, editable groups, custom capacities and minimums, per-session capacity overrides, hard/soft constraints, weighted objectives, repeat reduction, imports, exports, saved scenarios/workspaces, saved result history, scenario import/export bundles, solver telemetry/result metadata, diagnostics, pair matrices, and API access. Some advanced generation is account/allowance gated; the main missing areas are self-join links and arbitrary non-group-generator customization. Live staged reveal now supports person-by-person and group-by-group presentation with automatic or step-by-step pacing.",
+        "outputs": "Excellent output coverage: CSV-style exports, copy/print/share workflows, embeddable result widgets, Zoom breakout CSV export, scenario bundles, result diagnostics, and API output. Not a literal 5/5 only because it does not cover every polished presentation/export format such as first-class PDF exports or fully custom branded reports. A live staged reveal is also available for presenting assignments to an audience.",
         "privacy": "Very strong for a web-based group generator, mainly because normal solving runs in the browser and does not upload participant names, group assignments, or full scenario contents to GroupMixer servers. Drafts, saved scenarios, saved results, and UI state are stored locally in the browser via IndexedDB/localStorage/sessionStorage/service-worker cache. It does not deserve a perfect score because hosting sees normal technical request logs, product telemetry may receive page views and coarse events, solver failures may send anonymized scenario structure, and feedback can transmit whatever the user submits. Optional cloud sync uploads encrypted scenario and result documents. No participant roster upload is needed for normal browser solving, and no account is required for that standard path.",
         "accountFriction": "No account is required for ordinary grouping, local saving, or exports. A verified account is required for the free advanced-generation allowance; Pro removes that allowance and adds cloud sync.",
         "resultQuality": "This is the result-quality outlier in the comparison. GroupMixer goes above and beyond: it uses a custom-built solver engine designed specifically for social-golfer-like, multi-session group assignment cases. For this problem class, that domain-specific machinery can outperform general tools such as OR-Tools and enterprise constraint solvers such as Gurobi or Hexaly by a huge margin, because the solver encodes extensive SGP-specific theory, construction logic, local search, repeat minimization, constraints, capacities, partial attendance, and diagnostics directly into the search. It is plausibly at or beyond the level a user can expect from current academic SGP literature for many practical cases."
@@ -82,7 +82,7 @@
         "Person/group visit count constraints": "yes",
         "Pinned people / fixed placements": "yes",
         "Presentation/full-screen mode": "yes",
-        "Progressive group reveal": "no",
+        "Progressive group reveal": "yes",
         "Repeat encounter limits": "yes",
         "Result comments": "no",
         "Result quality diagnostics": "yes",
@@ -103,7 +103,7 @@
         "Storage management/cleanup": "yes",
         "Team leader / representative assignment": "no",
         "Unique-contact optimization": "yes",
-        "Visual/theme customization": "partial",
+        "Visual/theme customization": "yes",
         "Weighted random entries": "no",
         "Weighted soft constraints": "yes",
         "Zoom breakout CSV import/export": "yes"
@@ -115,7 +115,9 @@
         "Runs in the browser with no account",
         "Strong import/export options, including embeds, Zoom CSV, and API access",
         "Scenario manager with saved workspaces and result history",
-        "Scenario import/export bundles, diagnostics, and storage management"
+        "Scenario import/export bundles, diagnostics, and storage management",
+        "Live staged group reveal with person-by-person or group-by-group styles and manual or automatic pacing",
+        "Two design profiles and light/dark appearance modes"
       ],
       "cons": [
         "Relatively new and unknown",
@@ -124,7 +126,7 @@
         "Advanced generation has a verified-account daily allowance; unlimited use requires Pro",
         "No self-join flow"
       ],
-      "reviewNote": "Best fit when group quality matters. This is not just a one-shot roster splitter: it has a real scenario manager, saved workspaces, saved results, import/export bundles, storage cleanup/export tooling, API access, and solver/result metadata. The solver should be described as a purpose-built social golfer / multi-session assignment engine, not a generic randomizer. Overkill if the user only wants a novelty randomizer.",
+      "reviewNote": "Best fit when group quality matters. This is not just a one-shot roster splitter: it has a real scenario manager, saved workspaces, saved results, import/export bundles, storage cleanup/export tooling, API access, and solver/result metadata. The solver should be described as a purpose-built social golfer / multi-session assignment engine, not a generic randomizer. Overkill if the user only wants a novelty randomizer. Rechecked 2026-09-25 in the live browser: Live reveal hides assignments until they are presented in stages; Appearance offers Clear and Editorial design profiles alongside Light, Dark, and System modes. Weighted random entries stays no because the product weights optimization preferences, not per-person draw odds.",
       "tags": [
         "multi-round",
         "constraints",

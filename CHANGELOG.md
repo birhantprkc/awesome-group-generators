@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-09-25
+
+- Verified GroupMixer's live staged reveal and two design profiles in the current browser workflow; corrected both feature flags to `yes` and clarified how visual customization and weighted random entries are scored.
+
 ## 2026-09-23
 
 - Reviewed all 503 tools for progressive group reveal, interactive assignment, and manual editing after generation; added per-tool evidence, CSV columns, and website filters and presets.

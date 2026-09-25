@@ -609,6 +609,7 @@ html.theme-transitioning::view-transition-new(root) {
 }
 .feature-button strong { display: block; font-size: .92rem; }
 .feature-button span { display: block; margin-top: 3px; color: var(--muted); font-size: .78rem; }
+.feature-button small { display: block; margin-top: 5px; color: var(--muted); line-height: 1.35; }
 .filter-footer {
   display: flex;
   align-items: center;

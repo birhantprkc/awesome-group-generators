@@ -11,15 +11,15 @@
       "id": "groupmixer",
       "rank": 1,
       "features": {
-        "Progressive group reveal": "no",
+        "Progressive group reveal": "yes",
         "Interactive assignment process": "no",
         "Manual post-generation editing": "yes"
       },
       "evidence": {
         "Progressive group reveal": {
-          "basis": "no-visible-support",
-          "url": "https://www.groupmixer.app",
-          "note": "Reviewed workflow generates or displays groups as a completed result; no staged or one-at-a-time reveal control is documented."
+          "basis": "live",
+          "url": "https://groupmixer.app/",
+          "note": "Verified 2026-09-25 in the live free browser workflow: Live reveal opened a presentation with assignments initially hidden, person-by-person Deal/Spotlight and group-by-group Flip/Roll call styles, and automatic or step-by-step pacing. In a group-by-group step-by-step run, groups became visible in sequence."
         },
         "Interactive assignment process": {
           "basis": "no-visible-support",

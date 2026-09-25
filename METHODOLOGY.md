@@ -61,6 +61,11 @@ These are separate feature fields. Full-screen display, team-name editing, and f
 
 The three features describe the workflow. Animation alone does not improve the assignment-quality rating; manual edits may improve a result when the tool lets the organizer resolve real constraints.
 
+## Appearance and random-draw weights
+
+- **Visual/theme customization:** `yes` means users can choose between meaningfully different design profiles or customize the appearance of the grouping result. A custom logo or arbitrary color picker is not required. Light/dark mode alone is `partial` because it changes contrast without offering a distinct visual design. A fixed appearance is `no`.
+- **Weighted random entries:** users can give individual names or entries different probabilities in a random draw. For example, with Alice weighted 3 and Bob weighted 1, Alice is three times as likely to be picked on a draw. Weights assigned to balancing rules, penalties, or other solver goals are tracked under **Weighted soft constraints** instead; they do not change a person's direct draw odds.
+
 ## Feature support states
 
 Feature values use:

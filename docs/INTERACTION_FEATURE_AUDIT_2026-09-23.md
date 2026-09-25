@@ -6,7 +6,7 @@ This pass reviews every ranked tool for three ways people use a grouping result:
 
 | Feature | Yes | Partial | No |
 |---|---:|---:|---:|
-| Progressive group reveal | 11 | 0 | 492 |
+| Progressive group reveal | 12 | 0 | 491 |
 | Interactive assignment process | 7 | 7 | 489 |
 | Manual post-generation editing | 27 | 2 | 474 |
 
@@ -27,5 +27,7 @@ Full-screen display and self-join links remain separate features. A self-join li
 Each tool's existing review record was checked, and official pages or live workflows were inspected for likely support and unclear cases. The evidence file distinguishes observations of a live workflow, official documentation, existing review observations, and cases where support was not visible in the reviewed workflow. `no` means no support was found in that workflow; it is not proof that a hidden or newly added feature cannot exist. Report a correction with a direct workflow or documentation link if a field is stale.
 
 This pass exposed stale product descriptions beyond the three new fields. SpinOfLuck's current [Team Picker](https://www.spinofluck.com/team-picker) presents a one-click group generator rather than the repeated wheel workflow described in the previous catalog review. Its catalog prose and eight directly contradicted prior feature flags were corrected from the current [generator](https://www.spinofluck.com/team-picker/generate) and official guide. Its numeric ratings remain at their previous values pending a full rerating. Team Balancer Pro's listed endpoint did not load during this pass, so its prior swap-control observation could not be reverified.
+
+**2026-09-25 correction:** GroupMixer now has a live staged reveal. In the current browser workflow, enabling Live reveal before generating opened a presentation with person-by-person and group-by-group styles, automatic or step-by-step pacing, and initially hidden assignments. Its reveal value changed from `no` to `yes`; the table above and per-tool evidence reflect this correction. This does not turn the 2026-09-23 pass into a fresh review of the other 502 tools.
 
 This pass records feature support. It does not recalculate the overall or category ratings. Animation and presentation can make the grouping experience more useful, while assignment quality continues to describe the groups produced.
